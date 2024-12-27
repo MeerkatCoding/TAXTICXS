@@ -1,0 +1,230 @@
+{
+  "active": true,
+  "connections": {
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract from File": {
+      "main": [
+        [
+          {
+            "node": "Code1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code1": {
+      "main": [
+        [
+          {
+            "node": "Execute Workflow",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "If",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2024-12-23T15:31:22.112Z",
+  "id": "dv85swCWJVwoVyCk",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "[TAXTICXS] Chatbot",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "pdf",
+        "options": {}
+      },
+      "id": "10a04ce2-4cf9-416b-9221-ef3729afc243",
+      "name": "Extract from File",
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        80,
+        -20
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "bc85173d-c8a3-40f1-b40c-50d5d3c230ac",
+              "leftValue": "={{ $json.files }}",
+              "rightValue": "",
+              "operator": {
+                "type": "array",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "08ce7ed9-42ee-4433-9dcf-c27ed016049b",
+      "name": "If",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -300,
+        180
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "3979af2b-6d7f-4340-8008-b5534391847d",
+              "name": "text",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "d4ea28d4-fb64-47f0-afb1-030db5595b78",
+      "name": "Edit Fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -60,
+        340
+      ]
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "lc5BmfzHTCR8VX49",
+          "mode": "list",
+          "cachedResultName": "[TAXTICXS] Client Insights"
+        },
+        "mode": "each",
+        "options": {}
+      },
+      "id": "00f5641c-7de0-44e3-8b00-a129459c9711",
+      "name": "Execute Workflow",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.1,
+      "position": [
+        440,
+        -20
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.last().json\nconst binaryData = $input.last().binary\n\nlet output = []\n\nObject.keys(binaryData).forEach( b => {\n  output.push({\n    json: data,\n    binary: { data: binaryData[b]}\n  })\n})\n\nreturn output"
+      },
+      "id": "961ce5b4-8b8a-4b4f-a64a-dc57bcb26bf9",
+      "name": "Code",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -100,
+        -20
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nlet result = \"\"\n\nfor (const item of $input.all()) {\n  result += item.json.info.Title + \": \"  + item.json.text + \"\\n\\n\\n\\n\";\n}\n\nreturn {\"text\":result};"
+      },
+      "id": "a005284e-4b16-4a19-95a7-2408b8e99608",
+      "name": "Code1",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        -20
+      ]
+    },
+    {
+      "parameters": {
+        "public": true,
+        "initialMessages": "I’m here to help you create the tax plan. How can I assist you today?\n\n📌 To get started:\n\n- Attach the client questionnaire (in PDF format).\n- Once everything is ready, just type \"Create\" to proceed!\n\n⏳ The creation process takes approximately 10-15 minutes.",
+        "options": {
+          "allowFileUploads": true,
+          "subtitle": "Start a chat. We're here to help you 24/7.",
+          "title": "Hi there! 👋"
+        }
+      },
+      "id": "9b120d0e-3b52-4416-92d0-e96d2f8554b8",
+      "name": "When chat message received",
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        -500,
+        180
+      ],
+      "webhookId": "07f80529-11cf-4dd2-aee4-7f16bad15bdb"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": {
+    "lastId": 1
+  },
+  "tags": [
+    {
+      "createdAt": "2024-12-27T15:27:59.273Z",
+      "updatedAt": "2024-12-27T15:27:59.273Z",
+      "id": "8RbCKw8lngp96QRS",
+      "name": "TAXTICXS"
+    }
+  ],
+  "triggerCount": 2,
+  "updatedAt": "2024-12-27T16:59:35.000Z",
+  "versionId": "7f762fc7-4a6c-450f-b731-52d9dc94c84c"
+}
