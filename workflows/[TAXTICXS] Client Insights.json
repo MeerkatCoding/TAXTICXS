@@ -1,9 +1,7 @@
 {
-  "createdAt": "2024-12-23T15:46:44.633Z",
-  "updatedAt": "2024-12-27T15:28:01.000Z",
-  "id": "lc5BmfzHTCR8VX49",
-  "name": "[TAXTICXS] Client Insights",
-  "active": false,
+  "meta": {
+    "instanceId": "2eeaa7283ed603a330111283a3e23ffcb6a399e898b514894a036f6d0a8ef94b"
+  },
   "nodes": [
     {
       "parameters": {
@@ -1386,6 +1384,22 @@
         ]
       ]
     },
+    "HTML": {
+      "main": [
+        [
+          {
+            "node": "Convert to File1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Execute Workflow",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "loop": {
       "main": [
         [
@@ -1515,6 +1529,17 @@
         ]
       ]
     },
+    "Executive Summary": {
+      "main": [
+        [
+          {
+            "node": "Chat Memory Manager1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "Chat Memory Manager1": {
       "main": [
         [
@@ -1548,17 +1573,6 @@
         ]
       ]
     },
-    "Executive Summary": {
-      "main": [
-        [
-          {
-            "node": "Chat Memory Manager1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Anthropic Chat Model5": {
       "ai_languageModel": [
         [
@@ -1575,6 +1589,17 @@
         [
           {
             "node": "AI Agent4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Current Situation Analysis": {
+      "main": [
+        [
+          {
+            "node": "Get Prompt",
             "type": "main",
             "index": 0
           }
@@ -1614,6 +1639,17 @@
         ]
       ]
     },
+    "System Prompt": {
+      "main": [
+        [
+          {
+            "node": "AI Agent5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "Window Buffer Memory8": {
       "ai_memory": [
         [
@@ -1636,17 +1672,6 @@
         ]
       ]
     },
-    "System Prompt": {
-      "main": [
-        [
-          {
-            "node": "AI Agent5",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Return Accumulator Section": {
       "main": [
         [
@@ -1663,17 +1688,6 @@
         [
           {
             "node": "loop",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Current Situation Analysis": {
-      "main": [
-        [
-          {
-            "node": "Get Prompt",
             "type": "main",
             "index": 0
           }
@@ -1757,17 +1771,6 @@
         ]
       ]
     },
-    "Anthropic Chat Model": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "Information Extractor",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Information Extractor": {
       "main": [
         [
@@ -1779,17 +1782,12 @@
         ]
       ]
     },
-    "HTML": {
-      "main": [
+    "Anthropic Chat Model": {
+      "ai_languageModel": [
         [
           {
-            "node": "Convert to File1",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Execute Workflow",
-            "type": "main",
+            "node": "Information Extractor",
+            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -1829,43 +1827,26 @@
       ]
     }
   },
-  "settings": {
-    "executionOrder": "v1"
-  },
-  "staticData": null,
-  "meta": null,
   "pinData": {
     "Execute Workflow Trigger": [
       {
-        "json": {
-          "numpages": 2,
-          "numrender": 2,
-          "info": {
-            "PDFFormatVersion": "1.4",
-            "Language": null,
-            "EncryptFilterName": null,
-            "IsLinearized": false,
-            "IsAcroFormPresent": false,
-            "IsXFAPresent": false,
-            "IsCollectionPresent": false,
-            "IsSignaturesPresent": false,
-            "Title": "Untitled document",
-            "Producer": "Skia/PDF m133 Google Docs Renderer"
-          },
-          "text": "# Personal Information\n- Name: Jessie Jackson\n- Email: test@gmail.com\n- Phone: +1 678.939.3882\n- Filing Status: Single\n- Occupation: Pharmacist\n# Income Sources\n- Primary Sources: Salary, Capital gains, Rental income\n- Annual Income: $200,000\n- Additional Income: Capital gains in real estate\n# Tax Deductions & Credits\nCurrent Deductions:\n- Mortgage interest\n- Property taxes\n- Charitable contributions\n# Investment & Assets\n## Retirement & Investment Accounts\n- 401(k) Balance: $20,000\n- Brokerage Account Balance: $10,000\n## Cryptocurrency Holdings\n- Crypto.com: -$7,000\n- Uphold: -$6,000\n- Robinhood: -$70,000\n## Real Estate\n- Primary Residence: 3633 Dudley Ave, Baltimore, MD 21213\n- Status: Under contract to be sold on 12/16 for $120,000\n- Previous Property Transaction:\n- Purchase Price: $250,000\n- Sale Price: $410,000\n## Business Information\n- Entity Type: LLC\n- Years in Operation: 5 years\n- Annual Revenue: $30,000-$40,000\n- Initial Acquisition Cost: $70,000-$80,000\n- Monthly Cashflow: $15,000-$20,000\n# Debts & Liabilities\n- Current Debts: Student Loans, Credit Cards\n\n- Tax Status: Outstanding taxes for previous and current year\n# Investment Profile\n- Risk Tolerance: Aggressive\n# Notable Financial Events\n- Brokerage Account Losses: $22,000\n- Cryptocurrency Gains: $30,000\n# Additional Notes\n- Currently owns primary residence (pending sale)\n- No dependents\n- Single business ownership\n- Monthly cashflow indicates significant regular income",
-          "version": "2.16.105"
-        }
+        "numpages": 2,
+        "numrender": 2,
+        "info": {
+          "PDFFormatVersion": "1.4",
+          "Language": null,
+          "EncryptFilterName": null,
+          "IsLinearized": false,
+          "IsAcroFormPresent": false,
+          "IsXFAPresent": false,
+          "IsCollectionPresent": false,
+          "IsSignaturesPresent": false,
+          "Title": "Untitled document",
+          "Producer": "Skia/PDF m133 Google Docs Renderer"
+        },
+        "text": "# Personal Information\n- Name: Jessie Jackson\n- Email: test@gmail.com\n- Phone: +1 678.939.3882\n- Filing Status: Single\n- Occupation: Pharmacist\n# Income Sources\n- Primary Sources: Salary, Capital gains, Rental income\n- Annual Income: $200,000\n- Additional Income: Capital gains in real estate\n# Tax Deductions & Credits\nCurrent Deductions:\n- Mortgage interest\n- Property taxes\n- Charitable contributions\n# Investment & Assets\n## Retirement & Investment Accounts\n- 401(k) Balance: $20,000\n- Brokerage Account Balance: $10,000\n## Cryptocurrency Holdings\n- Crypto.com: -$7,000\n- Uphold: -$6,000\n- Robinhood: -$70,000\n## Real Estate\n- Primary Residence: 3633 Dudley Ave, Baltimore, MD 21213\n- Status: Under contract to be sold on 12/16 for $120,000\n- Previous Property Transaction:\n- Purchase Price: $250,000\n- Sale Price: $410,000\n## Business Information\n- Entity Type: LLC\n- Years in Operation: 5 years\n- Annual Revenue: $30,000-$40,000\n- Initial Acquisition Cost: $70,000-$80,000\n- Monthly Cashflow: $15,000-$20,000\n# Debts & Liabilities\n- Current Debts: Student Loans, Credit Cards\n\n- Tax Status: Outstanding taxes for previous and current year\n# Investment Profile\n- Risk Tolerance: Aggressive\n# Notable Financial Events\n- Brokerage Account Losses: $22,000\n- Cryptocurrency Gains: $30,000\n# Additional Notes\n- Currently owns primary residence (pending sale)\n- No dependents\n- Single business ownership\n- Monthly cashflow indicates significant regular income",
+        "version": "2.16.105"
       }
     ]
-  },
-  "versionId": "0b406a6d-f7ad-4db8-ab4a-d300ef3c6ba0",
-  "triggerCount": 0,
-  "tags": [
-    {
-      "createdAt": "2024-12-27T15:27:59.273Z",
-      "updatedAt": "2024-12-27T15:27:59.273Z",
-      "id": "8RbCKw8lngp96QRS",
-      "name": "TAXTICXS"
-    }
-  ]
+  }
 }
