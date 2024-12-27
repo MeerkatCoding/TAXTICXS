@@ -1,0 +1,679 @@
+{
+  "active": true,
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Normalize client data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract arrays": {
+      "main": [
+        [
+          {
+            "node": "Duplicate template",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Duplicate template": {
+      "main": [
+        [
+          {
+            "node": "Update duplicated document",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Update duplicated document": {
+      "main": [
+        [
+          {
+            "node": "Share updated document to view",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Share updated document to view": {
+      "main": [
+        [
+          {
+            "node": "HTTP request to convert the doc to pdf",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize client data": {
+      "main": [
+        [
+          {
+            "node": "Extract arrays",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP request to convert the doc to pdf": {
+      "main": [
+        [
+          {
+            "node": "Upload pdf file into drive",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2024-12-24T14:15:41.363Z",
+  "id": "kJji8Ld3lhBptkCg",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "[TAXTICXS] Trust",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "taxtics-tally-form",
+        "options": {}
+      },
+      "id": "d1de650a-29a2-4480-9138-41b78c68c488",
+      "name": "Webhook",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        600,
+        0
+      ],
+      "webhookId": "dad402ee-1534-4df3-9ad8-99b97b619564"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Access the Webhook data\nconst webhookData = $('Webhook').item.json.body.data.fields;\n\n// Find the specific fields for Beneficiaries and Trustees\nconst beneficiariesField = webhookData.find(field => field.label.toLowerCase().includes(\"beneficiaries\"));\nconst trusteesField = webhookData.find(field => field.label.toLowerCase().includes(\"trustees\"));\n\n// Validate if the fields exist and have values\nif (!beneficiariesField || !beneficiariesField.value) {\n    throw new Error(\"Beneficiaries field not found or is empty.\");\n}\n\nif (!trusteesField || !trusteesField.value) {\n    throw new Error(\"Trustees field not found or is empty.\");\n}\n\n// Extract and parse the Beneficiaries string\nconst rawBeneficiariesString = beneficiariesField.value;\nconst parsedBeneficiaries = rawBeneficiariesString\n    .replace(/^\\[/, \"\") // Remove starting [\n    .replace(/\\]$/, \"\") // Remove ending ]\n    .split(\"] [\") // Split on separators\n    .map(item => item.split(\";\").map(part => part.trim())); // Split individual items into components and trim whitespace\n\n// Format the Beneficiaries into strings with and without birthdates\nconst beneficiariesWithBirthdates = parsedBeneficiaries\n    .map(parts => `${parts[0]}, born on ${parts[1]}, relationship: ${parts[2]}`)\n    .join(\"; \");\n\nconst beneficiariesWithoutBirthdates = parsedBeneficiaries\n    .map(parts => `${parts[0]}, relationship: ${parts[2]}`)\n    .join(\"; \");\n\n// Extract and parse the Trustees string\nconst rawTrusteesString = trusteesField.value;\nconst parsedTrustees = rawTrusteesString\n    .replace(/^\\[/, \"\") // Remove starting [\n    .replace(/\\]$/, \"\") // Remove ending ]\n    .split(\"] [\") // Split on separators\n    .map(item => item.split(\";\").map(part => part.trim())); // Split individual items into components and trim whitespace\n\n// Format the Trustees into strings by role\nconst initialTrustees = parsedTrustees\n    .filter(parts => parts[1].toLowerCase().includes(\"initial\"))\n    .map(parts => `${parts[0]}, role: ${parts[1]}, address: ${parts[2]}`)\n    .join(\"; \");\n\nconst successorTrustees = parsedTrustees\n    .filter(parts => parts[1].toLowerCase().includes(\"successor\"))\n    .map(parts => `${parts[0]}, role: ${parts[1]}, address: ${parts[2]}`)\n    .join(\"; \");\n\n// Return the formatted strings\nreturn [\n    {\n        json: {\n            beneficiaries_with_birthdates: beneficiariesWithBirthdates,\n            beneficiaries_without_birthdates: beneficiariesWithoutBirthdates,\n            initial_trustees: initialTrustees,\n            successor_trustees: successorTrustees\n        }\n    }\n];\n"
+      },
+      "id": "a13b6775-891f-4c06-9de6-16f5bd6f16f0",
+      "name": "Extract arrays",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1020,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "operation": "copy",
+        "fileId": {
+          "__rl": true,
+          "value": "1MES-vdd67Bklq3UqhXdgW-f0rWMLiiyanZSvboyuYg4",
+          "mode": "list",
+          "cachedResultName": "[MODEL TAXTICS] NEW TRUST TEMPLATE- Sample of Single Person Trust- 12-16-24",
+          "cachedResultUrl": "https://docs.google.com/document/d/1MES-vdd67Bklq3UqhXdgW-f0rWMLiiyanZSvboyuYg4/edit?usp=drivesdk"
+        },
+        "options": {
+          "name": "=[{{ $('Normalize client data').item.json.client_estate_name }}] NEW TRUST",
+          "parents": []
+        }
+      },
+      "name": "Duplicate template",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 1,
+      "position": [
+        1220,
+        0
+      ],
+      "id": "00fdff25-3319-4131-a33a-5937a94e0a71",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "EBdNEwzhPc81Tixb",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "operation": "update",
+        "documentURL": "={{$json[\"id\"]}}",
+        "actionsUi": {
+          "actionFields": [
+            {
+              "action": "replaceAll",
+              "text": "(CLIENT ESTATE NAME)",
+              "replaceText": "={{ $('Normalize client data').item.json.client_estate_name.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(CLIENT ADDRESS)",
+              "replaceText": "={{ $('Normalize client data').item.json.client_address.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(CLIENT TRUSTEE ADDRESS)",
+              "replaceText": "={{ $('Normalize client data').item.json.client_trustee_address.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(CLIENT NAME)",
+              "replaceText": "={{ $('Normalize client data').item.json.client_name.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(CITY, STATE)",
+              "replaceText": "={{ $('Normalize client data').item.json.city_state.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(TRUST DATE)",
+              "replaceText": "={{ $('Normalize client data').item.json.trust_date }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(CLIENT SPOUSE)",
+              "replaceText": "={{ $('Normalize client data').item.json.spouse_name.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(ESTATE NAME)",
+              "replaceText": "={{ $('Normalize client data').item.json.estate_name.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(CLIENT STATE)",
+              "replaceText": "={{ $('Normalize client data').item.json.client_state.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(CLIENT COUNTY)",
+              "replaceText": "={{ $('Normalize client data').item.json.county.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(PERSONAL REP)",
+              "replaceText": "={{ $('Normalize client data').item.json.personal_representative.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(STATE & STATE TRUST TAX  FORM#)",
+              "replaceText": "={{ $('Normalize client data').item.json.state_trust_tax_form.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(CLIENT SSN)",
+              "replaceText": "={{ $('Normalize client data').item.json.client_ssn }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(Choice of governing law)",
+              "replaceText": "={{ $('Normalize client data').item.json.governing_law_choice }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(Trustee Name)",
+              "replaceText": "={{ $('Normalize client data').item.json.client_trustee }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(BENEFICIARIES)",
+              "replaceText": "={{ $('Extract arrays').item.json.beneficiaries_without_birthdates.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "object": "=text",
+              "action": "replaceAll",
+              "text": "(CLIENT SPOUSE NAME)",
+              "replaceText": "={{ $('Normalize client data').item.json.spouse_name.toUpperCase() }}",
+              "matchCase": true,
+              "index": 0
+            },
+            {
+              "action": "replaceAll",
+              "text": "(TRUSTEE NAME)",
+              "replaceText": "={{ $('Normalize client data').item.json.client_trustee.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(Client Name)",
+              "replaceText": "={{ $('Normalize client data').item.json.client_name }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(SPOUSE NAME)",
+              "replaceText": "={{ $('Normalize client data').item.json.spouse_name.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(SPOUSE)",
+              "replaceText": "={{ $('Normalize client data').item.json.spouse_name.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(COUNTY, STATE)",
+              "replaceText": "={{ $('Normalize client data').item.json.county.toUpperCase() }}, {{ $('Normalize client data').item.json.client_state.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(Client State)",
+              "replaceText": "={{ $('Normalize client data').item.json.client_state }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(BENEFICIARIES NAMES & BIRTHDATES)",
+              "replaceText": "={{ $('Extract arrays').item.json.beneficiaries_with_birthdates.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(CLIENT TRUSTEE)",
+              "replaceText": "={{ $('Normalize client data').item.json.client_trustee.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(STATE & STATE TRUST TAX  FORM#)",
+              "replaceText": "={{ $('Normalize client data').item.json.state_trust_tax_form.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(CLIENT INITIAL TRUSTEE)",
+              "replaceText": "={{ $('Extract arrays').item.json.initial_trustees.toUpperCase() }}",
+              "matchCase": true
+            },
+            {
+              "action": "replaceAll",
+              "text": "(CLIENT SUCCESSOR TRUSTEE)",
+              "replaceText": "={{ $('Extract arrays').item.json.successor_trustees.toUpperCase() }}",
+              "matchCase": true
+            }
+          ]
+        }
+      },
+      "name": "Update duplicated document",
+      "type": "n8n-nodes-base.googleDocs",
+      "typeVersion": 1,
+      "position": [
+        1420,
+        0
+      ],
+      "id": "bb2a7e79-e8bc-4761-9b50-0e301d910667",
+      "credentials": {
+        "googleDocsOAuth2Api": {
+          "id": "MZ3a4mFkG3wH13JC",
+          "name": "Google Docs account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "authentication": "oAuth2",
+        "operation": "share",
+        "fileId": "={{$json[\"documentId\"]}}",
+        "permissionsUi": {
+          "permissionsValues": {
+            "role": "reader",
+            "type": "anyone"
+          }
+        },
+        "options": {}
+      },
+      "name": "Share updated document to view",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 1,
+      "position": [
+        1620,
+        0
+      ],
+      "id": "9ee2e8f7-3c2d-42ee-8451-5d8032bd9b1a",
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "EBdNEwzhPc81Tixb",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "={\n  \"trust_name\": \"{{ $json.body.data.fields[0].value }}\",\n  \"client_estate_name\": \"{{ $json.body.data.fields[1].value }}\",\n  \"client_name\": \"{{ $json.body.data.fields[2].value }}\",\n  \"trust_date\": \"{{ $json.body.data.fields[3].value }}\",\n  \"client_address\": \"{{ $json.body.data.fields[4].value }}\",\n  \"client_trustee\": \"{{ $json.body.data.fields[5].value }}\",\n  \"client_trustee_address\": \"{{ $json.body.data.fields[6].value }}\",\n  \"spouse_name\": \"{{ $json.body.data.fields[29].value }}\",\n  \"city_state\": \"{{ $json.body.data.fields[30].value }}\",\n  \"county\": \"{{ $json.body.data.fields[11].value }}\",\n  \"hipaa_agent\": \"{{ $json.body.data.fields[23].value }}\",\n  \"personal_representative\": \"{{ $json.body.data.fields[12].value }}\",\n  \"state_trust_tax_form\": \"{{ $json.body.data.fields[14].value }}\",\n  \"client_ssn\": \"{{ $json.body.data.fields[14].value }}\",\n  \"client_state\": \"{{ $json.body.data.fields[1].value }}\",\n  \"client_county\": \"{{ $json.body.data.fields[11].value }}\",\n  \"county_state\": \"{{ $json.body.data.fields[17].value }}\",\n  \"governing_law_choice\": \"{{ $json.body.data.fields[18].value }}\",\n  \"spouse\": \"{{ $json.body.data.fields[20].value }}\",\n  \"client_spouse_name\": \"{{ $json.body.data.fields[20].value }}\",\n  \"client_spouse\": \"{{ $json.body.data.fields[20].value }}\",\n  \"estate_name\": \"{{ $json.body.data.fields[22].value }}\",\n  \"durable_power_of_attorney\": {\n    \"initial_agent\": \"{{ $json.body.data.fields[24].value }}\",\n    \"successor_agent\": \"{{ $json.body.data.fields[25].value }}\"\n  },\n}\n",
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        820,
+        0
+      ],
+      "id": "3433fc29-61d9-4774-887c-c0ebb12ba29b",
+      "name": "Normalize client data"
+    },
+    {
+      "parameters": {
+        "url": "=https://docs.google.com/feeds/download/documents/export/Export?id={{$node[\"Duplicate template\"].json[\"id\"]}}&exportFormat=pdf",
+        "responseFormat": "file",
+        "dataPropertyName": "=data",
+        "options": {}
+      },
+      "name": "HTTP request to convert the doc to pdf",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 1,
+      "position": [
+        1840,
+        0
+      ],
+      "alwaysOutputData": false,
+      "id": "b4eb9d19-80d8-4925-8494-14d0a0c4edd3"
+    },
+    {
+      "parameters": {
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "root",
+          "mode": "list",
+          "cachedResultName": "/ (Root folder)",
+          "cachedResultUrl": "https://drive.google.com/drive"
+        },
+        "options": {}
+      },
+      "id": "2a294182-4364-4f07-aa24-ebe7353dda75",
+      "name": "Upload pdf file into drive",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        2060,
+        0
+      ],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "EBdNEwzhPc81Tixb",
+          "name": "Google Drive account"
+        }
+      }
+    }
+  ],
+  "pinData": {
+    "Webhook": [
+      {
+        "json": {
+          "headers": {
+            "host": "n8ngcp.meerkatcoding.com",
+            "user-agent": "Tally Webhooks",
+            "content-length": "3899",
+            "accept": "application/json, text/plain, */*",
+            "accept-encoding": "gzip, compress, deflate, br",
+            "content-type": "application/json",
+            "x-forwarded-for": "34.96.41.107",
+            "x-forwarded-host": "n8ngcp.meerkatcoding.com",
+            "x-forwarded-port": "443",
+            "x-forwarded-proto": "https",
+            "x-forwarded-server": "99c6dcd7365a",
+            "x-real-ip": "34.96.41.107"
+          },
+          "params": {},
+          "query": {},
+          "body": {
+            "eventId": "08f2a96d-a32e-4c02-b558-849e8d66a9b6",
+            "eventType": "FORM_RESPONSE",
+            "createdAt": "2024-12-26T16:34:06.802Z",
+            "data": {
+              "responseId": "8lX48k",
+              "submissionId": "8lX48k",
+              "respondentId": "qzk9Y5",
+              "formId": "np4g51",
+              "formName": "TallyForm Taxtics",
+              "createdAt": "2024-12-26T16:34:06.000Z",
+              "fields": [
+                {
+                  "key": "question_PDO8pQ",
+                  "label": "Trust Name\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Taxtics Trust"
+                },
+                {
+                  "key": "question_E5W8Ko",
+                  "label": "Client State Name\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Sunrise Estate Trust"
+                },
+                {
+                  "key": "question_rBP25M",
+                  "label": "Client Name\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Emily Clark"
+                },
+                {
+                  "key": "question_4BrPQb",
+                  "label": "Trust Date",
+                  "type": "INPUT_TEXT",
+                  "value": "2023-05-15"
+                },
+                {
+                  "key": "question_jbPGZR",
+                  "label": "Client Address\n",
+                  "type": "INPUT_TEXT",
+                  "value": "789 Sunset Boulevard, Paradise City, Sunshine State, 12345"
+                },
+                {
+                  "key": "question_2BPOXp",
+                  "label": "Client Trustee \n",
+                  "type": "INPUT_TEXT",
+                  "value": "Robert Clark"
+                },
+                {
+                  "key": "question_xjY9rG",
+                  "label": "Client Trustee Address\n",
+                  "type": "INPUT_TEXT",
+                  "value": "101 Trustee Way, Paradise City, Sunshine State, 12345"
+                },
+                {
+                  "key": "question_ZoaP80",
+                  "label": "Trustees\n",
+                  "type": "INPUT_TEXT",
+                  "value": "[Robert Clark; Initial Trustee; 101 Trustee Way, Paradise City, Sunshine State, 12345] [Sophia Johnson; Successor Trustee; 202 Backup Lane, Paradise City, Sunshine State, 12345]"
+                },
+                {
+                  "key": "question_AKvWKB",
+                  "label": "Beneficiaries\n",
+                  "type": "INPUT_TEXT",
+                  "value": "[Olivia Clark; 2010-03-12; Child] [Ethan Clark; 2013-07-08; Child]"
+                },
+                {
+                  "key": "question_yNYeN0",
+                  "label": "Spouse Name\n",
+                  "type": "INPUT_TEXT",
+                  "value": "David Clark"
+                },
+                {
+                  "key": "question_Xr0OrO",
+                  "label": "City State\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Paradise City, Sunshine State"
+                },
+                {
+                  "key": "question_8zxjzA",
+                  "label": "County\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Harmony County"
+                },
+                {
+                  "key": "question_zNYWN1",
+                  "label": "Personal Representative\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Andrew Taylor"
+                },
+                {
+                  "key": "question_54xE4M",
+                  "label": "State Trust Tax Form\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Form 1041-TRUST"
+                },
+                {
+                  "key": "question_dNdQNz",
+                  "label": "Client SSN\n",
+                  "type": "INPUT_TEXT",
+                  "value": "123-45-6789"
+                },
+                {
+                  "key": "question_YRaVRq",
+                  "label": "Client State \n",
+                  "type": "INPUT_TEXT",
+                  "value": "Sunshine State"
+                },
+                {
+                  "key": "question_DKz0Kb",
+                  "label": "Client County\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Harmony County"
+                },
+                {
+                  "key": "question_lqrVq5",
+                  "label": "County State\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Harmony County, Sunshine State"
+                },
+                {
+                  "key": "question_RdP8dl",
+                  "label": "Governing Law Choice\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Sunshine State Trust Law"
+                },
+                {
+                  "key": "question_oDGlD1",
+                  "label": "Spouse",
+                  "type": "INPUT_TEXT",
+                  "value": "David Clark"
+                },
+                {
+                  "key": "question_GKlYKj",
+                  "label": "Client Spouse\n",
+                  "type": "INPUT_TEXT",
+                  "value": "David Clark"
+                },
+                {
+                  "key": "question_rBP2BM",
+                  "label": "Beneficiaries Names and Birthdays\n",
+                  "type": "INPUT_TEXT",
+                  "value": "[Olivia Clark; 2010-03-12] [Ethan Clark; 2013-07-08]"
+                },
+                {
+                  "key": "question_jbPGbR",
+                  "label": "Estate Name\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Sunshine estate Trust"
+                },
+                {
+                  "key": "question_Zoavky",
+                  "label": "Hipaa Agent",
+                  "type": "INPUT_TEXT",
+                  "value": "Dr. Michael Brown"
+                },
+                {
+                  "key": "question_NDoMNQ",
+                  "label": "Initial Agent",
+                  "type": "INPUT_TEXT",
+                  "value": "Sarah Johnson"
+                },
+                {
+                  "key": "question_qaVoQ7",
+                  "label": "Sucessor Agent",
+                  "type": "INPUT_TEXT",
+                  "value": "Mark Lee"
+                },
+                {
+                  "key": "question_ZoaPo0",
+                  "label": "Cash Accounts",
+                  "type": "INPUT_TEXT",
+                  "value": "Chase Checking Account; CitiBank Savings Account"
+                },
+                {
+                  "key": "question_NDo8DG",
+                  "label": "Investment Accounts\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Fidelity Investment Account"
+                },
+                {
+                  "key": "question_qaVja2",
+                  "label": "Real Property\n",
+                  "type": "INPUT_TEXT",
+                  "value": "[456 Mountain Road, Paradise City, Sunshine State, 12345; Vacation Home] [123 Greenfield Lane, Paradise City, Sunshine State, 12345; Primary Residence]"
+                },
+                {
+                  "key": "question_AKvWYW",
+                  "label": "Realease Authorization\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Yes"
+                },
+                {
+                  "key": "question_BK78d7",
+                  "label": "Memorial Instructions\n",
+                  "type": "INPUT_TEXT",
+                  "value": "Traditional burial, small family gathering"
+                }
+              ]
+            }
+          },
+          "webhookUrl": "https://n8ngcp.meerkatcoding.com/webhook/taxtics-tally-form",
+          "executionMode": "production"
+        }
+      }
+    ]
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2024-12-27T15:27:59.273Z",
+      "updatedAt": "2024-12-27T15:27:59.273Z",
+      "id": "8RbCKw8lngp96QRS",
+      "name": "TAXTICXS"
+    }
+  ],
+  "triggerCount": 1,
+  "updatedAt": "2024-12-27T16:59:57.000Z",
+  "versionId": "c51cb469-86be-47bc-b725-20969294ab83"
+}
