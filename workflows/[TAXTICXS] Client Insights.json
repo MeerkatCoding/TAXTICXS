@@ -34,11 +34,6 @@
         ]
       ]
     },
-    "HTTP Request2": {
-      "main": [
-        []
-      ]
-    },
     "Convert to File1": {
       "main": [
         [
@@ -491,12 +486,7 @@
       "main": [
         [
           {
-            "node": "Convert to File1",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Execute Workflow",
+            "node": "AI Agent",
             "type": "main",
             "index": 0
           }
@@ -536,11 +526,71 @@
         ]
       ]
     },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML1": {
+      "main": [
+        [
+          {
+            "node": "Convert to File1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Execute Workflow",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "AI Agent4": {
       "main": [
         [
           {
             "node": "Return Section",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request2": {
+      "main": [
+        [
+          {
+            "node": "Google Drive1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "HTML1",
             "type": "main",
             "index": 0
           }
@@ -606,7 +656,7 @@
       "type": "n8n-nodes-base.executeWorkflowTrigger",
       "typeVersion": 1,
       "position": [
-        540,
+        580,
         1800
       ]
     },
@@ -632,8 +682,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2860,
-        880
+        3700,
+        1020
       ]
     },
     {
@@ -649,8 +699,8 @@
       "type": "n8n-nodes-base.convertToFile",
       "typeVersion": 1.1,
       "position": [
-        2620,
-        880
+        3460,
+        1020
       ]
     },
     {
@@ -675,8 +725,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        3080,
-        880
+        3920,
+        1020
       ],
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -704,8 +754,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        3660,
-        1040
+        4500,
+        1180
       ]
     },
     {
@@ -723,8 +773,8 @@
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.1,
       "position": [
-        2660,
-        1200
+        3500,
+        1340
       ]
     },
     {
@@ -749,8 +799,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        2880,
-        1200
+        3720,
+        1340
       ],
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -778,8 +828,8 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        3460,
-        1040
+        4300,
+        1180
       ]
     },
     {
@@ -791,8 +841,8 @@
       "type": "n8n-nodes-base.html",
       "typeVersion": 1.2,
       "position": [
-        2360,
-        980
+        2400,
+        1060
       ]
     },
     {
@@ -1736,8 +1786,8 @@
       "type": "@n8n/n8n-nodes-langchain.informationExtractor",
       "typeVersion": 1,
       "position": [
-        1980,
-        980
+        2020,
+        1060
       ]
     },
     {
@@ -1750,8 +1800,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.2,
       "position": [
-        1960,
-        1160
+        2000,
+        1240
       ],
       "credentials": {
         "anthropicApi": {
@@ -1769,8 +1819,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1760,
-        980
+        1800,
+        1060
       ]
     },
     {
@@ -1780,8 +1830,8 @@
       "type": "n8n-nodes-base.merge",
       "typeVersion": 3,
       "position": [
-        3300,
-        1040
+        4140,
+        1180
       ]
     },
     {
@@ -1803,6 +1853,56 @@
     },
     {
       "parameters": {
+        "model": "gpt-4o",
+        "options": {
+          "maxTokens": 16000,
+          "responseFormat": "json_object",
+          "temperature": 0.1
+        }
+      },
+      "id": "554d58c2-3749-4b9f-bd99-34b7c30bb230",
+      "name": "OpenAI Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1,
+      "position": [
+        2680,
+        1240
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": "9JkEtAFuDdryUy6O",
+          "name": "Meerkat - OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n\t\"html\": \"<html>\\n   <head>\\n      <style>\\n         body { font-family: 'Georgia','Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; line-height: 1.6; color: #0b090a; background-color: #fff ; } \\n         h2 { color: #0b090a; margin-bottom: 20px; } \\n         h3 { color: #0b090a; margin-top: 20px; margin-bottom: 10px; } \\n         p { margin-bottom: 10px; } \\n         ul { margin-bot\"\n}"
+      },
+      "id": "22f2dd99-b5df-4aa2-94e7-1105f801667d",
+      "name": "Structured Output Parser",
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        2900,
+        1240
+      ]
+    },
+    {
+      "parameters": {
+        "html": "{{ $json.output.html }}"
+      },
+      "id": "c5b0158f-7980-46d0-90ee-54a42de015ab",
+      "name": "HTML1",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        3120,
+        1060
+      ]
+    },
+    {
+      "parameters": {
         "promptType": "define",
         "text": "={{ $('User Prompt').first().json.prompt }}",
         "options": {
@@ -1816,6 +1916,24 @@
       "position": [
         3120,
         1540
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.html }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "=You will rewrite the HTML text following the outlined requirements, ensuring the same structure and length are maintained.\n\n**Maintain All Sections:**\n\n- Preserve every section of the original document, ensuring no content is omitted.\n- Each section must be rewritten to retain its original meaning and intent while improving clarity and organization.\n\n**Eliminate Redundancy:**\n   - Consolidate repeated explanations of key concepts, such as core structures (e.g., \"Living Trust → FLP → FMC\") and money flow patterns, into a single, concise section.\n   - Merge duplicate implementation steps into a unified sequence.\n\n\n**Organize Financial Projections:**\n   - Consolidate scattered tax savings numbers and financial projections into a single section for clarity.\n   - Resolve discrepancies in projections across sections to ensure uniformity.\n\n\n**Streamline Current Situation Analysis:**\n   - Remove repeated elements from the situation analysis, client profiles, and financial overviews.\n   - Present this information in a single, well-organized section.\n\n\n**Unify Implementation Steps:**\n   - Combine fragmented implementation steps and ensure they appear in one section.\n   - Present timelines and action items only once in a clear and consistent format.\n\nFormat all content with HTML structure using <h2>, <h3>, <p>, <ul>, and <table> tags.\n\nReturn the result as an HTML text in json."
+        }
+      },
+      "id": "f46b9ea7-3ef4-47a9-bbf1-dfc5dcdc7b26",
+      "name": "AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        2660,
+        1060
       ]
     }
   ],
@@ -1856,6 +1974,6 @@
     }
   ],
   "triggerCount": 0,
-  "updatedAt": "2025-01-07T19:49:48.000Z",
-  "versionId": "5c1d3666-4867-4a6a-beee-dd5fd1d4a43e"
+  "updatedAt": "2025-01-08T16:32:51.000Z",
+  "versionId": "07912281-378f-4736-bd9b-90faa5fcc012"
 }
