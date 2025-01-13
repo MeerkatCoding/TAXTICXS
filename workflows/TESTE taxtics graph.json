@@ -1,0 +1,2551 @@
+{
+  "active": false,
+  "connections": {
+    "Google Drive": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Google Drive",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Workflow Trigger": {
+      "main": [
+        [
+          {
+            "node": "User Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to File1": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive1": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Workflow": {
+      "main": [
+        [
+          {
+            "node": "Google Drive4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Drive4": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Aggregate": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "loop": {
+      "main": [
+        [
+          {
+            "node": "Output HTML",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "preprocess",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "preprocess": {
+      "main": [
+        [
+          {
+            "node": "Switch1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "All Sections": {
+      "main": [
+        [
+          {
+            "node": "Split Sections",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "User Prompt": {
+      "main": [
+        [
+          {
+            "node": "All Sections",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Sections": {
+      "main": [
+        [
+          {
+            "node": "loop",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Chat Memory Manager1": {
+      "main": [
+        [
+          {
+            "node": "First System Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory2": {
+      "ai_memory": [
+        [
+          {
+            "node": "Chat Memory Manager1",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory3": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent4",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Executive Summary": {
+      "main": [
+        [
+          {
+            "node": "Chat Memory Manager1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Anthropic Chat Model5": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent4",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "First System Prompt": {
+      "main": [
+        [
+          {
+            "node": "AI Agent4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Chat Memory Manager2": {
+      "main": [
+        [
+          {
+            "node": "System Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory7": {
+      "ai_memory": [
+        [
+          {
+            "node": "Chat Memory Manager2",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Prompt": {
+      "main": [
+        [
+          {
+            "node": "Chat Memory Manager2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory8": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent5",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Anthropic Chat Model6": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent5",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "System Prompt": {
+      "main": [
+        [
+          {
+            "node": "AI Agent5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return Accumulator Section": {
+      "main": [
+        [
+          {
+            "node": "Return Section",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return Section": {
+      "main": [
+        [
+          {
+            "node": "loop",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Current Situation Analysis": {
+      "main": [
+        [
+          {
+            "node": "Get Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Detailed Business Structure Overview": {
+      "main": [
+        [
+          {
+            "node": "Get Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Identified Tax Planning Opportunities": {
+      "main": [
+        [
+          {
+            "node": "Get Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Strategy Recommendations": {
+      "main": [
+        [
+          {
+            "node": "Get Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Implementation Roadmap": {
+      "main": [
+        [
+          {
+            "node": "Get Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Additional Considerations": {
+      "main": [
+        [
+          {
+            "node": "Get Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ongoing Optimization Plan": {
+      "main": [
+        [
+          {
+            "node": "Get Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Tax Strategy Summary": {
+      "main": [
+        [
+          {
+            "node": "Get Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Anthropic Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Information Extractor",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Information Extractor": {
+      "main": [
+        [
+          {
+            "node": "HTML",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Output HTML": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Aggregate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Financial Projections": {
+      "main": [
+        [
+          {
+            "node": "Get Prompt1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "Financial Projections",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Anthropic Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Chart Output",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Call n8n Workflow Tool1": {
+      "ai_tool": [
+        [
+          {
+            "node": "Chart Output",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser1": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "Chart Output",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get Prompt1": {
+      "main": [
+        [
+          {
+            "node": "Chat Memory Manager",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Chat Memory Manager": {
+      "main": [
+        [
+          {
+            "node": "System Prompt1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "Chat Memory Manager",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "System Prompt1": {
+      "main": [
+        [
+          {
+            "node": "AI Agent6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Anthropic Chat Model7": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent6",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory9": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent6",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Return Accumulator Section1": {
+      "main": [
+        [
+          {
+            "node": "Return Section",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent4": {
+      "main": [
+        [
+          {
+            "node": "Return Section",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent5": {
+      "main": [
+        [
+          {
+            "node": "Return Accumulator Section",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Markdown": {
+      "main": [
+        [
+          {
+            "node": "Information Extractor",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML": {
+      "main": [
+        [
+          {
+            "node": "Convert to File1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Execute Workflow",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Markdown",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Chart Output": {
+      "main": [
+        [
+          {
+            "node": "Return Accumulator Section1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent6": {
+      "main": [
+        [
+          {
+            "node": "Chart Output",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "createdAt": "2025-01-13T13:40:34.327Z",
+  "id": "HniETH6iAUdH5wIA",
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "name": "TESTE taxtics graph",
+  "nodes": [
+    {
+      "parameters": {
+        "operation": "download",
+        "fileId": {
+          "__rl": true,
+          "value": "1R2FkDg14fbjTKViJbr5X4HU0dQc6zRgc",
+          "mode": "list",
+          "cachedResultName": " Jessie Jackson.pdf",
+          "cachedResultUrl": "https://drive.google.com/file/d/1R2FkDg14fbjTKViJbr5X4HU0dQc6zRgc/view?usp=drivesdk"
+        },
+        "options": {}
+      },
+      "id": "27cf0985-4256-4bc8-8825-1d561e2af708",
+      "name": "Google Drive",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        4200,
+        3040
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "pdf",
+        "options": {}
+      },
+      "id": "0e6701a0-2ad4-4e32-b070-09e5d80d3183",
+      "name": "Extract from File",
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [
+        4440,
+        3040
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "3b561e1e-0f9f-471f-a4de-531a0145f322",
+      "name": "When clicking ‘Test workflow’",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        3980,
+        3040
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "6291d9cc-399d-4b20-b160-37644f649f8d",
+      "name": "Execute Workflow Trigger",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1580,
+        1000
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://gotenberg:3000/forms/chromium/convert/html",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "files",
+              "inputDataFieldName": "data"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "1d784258-641b-422b-bf21-4ea1c8d4a468",
+      "name": "HTTP Request2",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1540,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "toText",
+        "sourceProperty": "html",
+        "options": {
+          "fileName": "index.html"
+        }
+      },
+      "id": "94b8e38e-6351-4321-811d-8c61ac22264d",
+      "name": "Convert to File1",
+      "type": "n8n-nodes-base.convertToFile",
+      "typeVersion": 1.1,
+      "position": [
+        1300,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "name": "={{$('Information Extractor').item.json.output.client_name }} Tax Plan.pdf",
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1bUkqHz17Imm-dpxfsMt7Kr2fRouCEiJe",
+          "mode": "list",
+          "cachedResultName": "output",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/1bUkqHz17Imm-dpxfsMt7Kr2fRouCEiJe"
+        },
+        "options": {}
+      },
+      "id": "ccf2c959-8eec-41ca-93f4-51846ba63e96",
+      "name": "Google Drive1",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1760,
+        220
+      ],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "EBdNEwzhPc81Tixb",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "dcc5847e-ea96-4108-aca4-005685c992b6",
+              "name": "text",
+              "value": "=Accessed DOC on: [{{ $json.name[1] }}]({{  $json.webViewLink[1] }})\n\\\nAccessed PDF on: [{{ $json.name[0] }}]({{  $json.webViewLink[0] }})",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "bd67b1f9-726f-4c02-95a5-1f217370a171",
+      "name": "Edit Fields1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2340,
+        380
+      ]
+    },
+    {
+      "parameters": {
+        "workflowId": {
+          "__rl": true,
+          "value": "XbwvWmjHbBZBp9iV",
+          "mode": "list",
+          "cachedResultName": "[TAXTICX] PDF -> DOCX"
+        },
+        "options": {}
+      },
+      "id": "a688cea2-0c2f-489b-9c56-a9a76ea87bdb",
+      "name": "Execute Workflow",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1.1,
+      "position": [
+        1340,
+        540
+      ]
+    },
+    {
+      "parameters": {
+        "name": "={{$('Information Extractor').item.json.output.client_name }} Tax Plan.docx",
+        "driveId": {
+          "__rl": true,
+          "mode": "list",
+          "value": "My Drive"
+        },
+        "folderId": {
+          "__rl": true,
+          "value": "1bUkqHz17Imm-dpxfsMt7Kr2fRouCEiJe",
+          "mode": "list",
+          "cachedResultName": "output",
+          "cachedResultUrl": "https://drive.google.com/drive/folders/1bUkqHz17Imm-dpxfsMt7Kr2fRouCEiJe"
+        },
+        "options": {}
+      },
+      "id": "4ca11b44-d7b8-47aa-b69a-1a6163f46815",
+      "name": "Google Drive4",
+      "type": "n8n-nodes-base.googleDrive",
+      "typeVersion": 3,
+      "position": [
+        1560,
+        540
+      ],
+      "credentials": {
+        "googleDriveOAuth2Api": {
+          "id": "EBdNEwzhPc81Tixb",
+          "name": "Google Drive account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "fieldsToAggregate": {
+          "fieldToAggregate": [
+            {
+              "fieldToAggregate": "webViewLink"
+            },
+            {
+              "fieldToAggregate": "name"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "36658351-aab9-432d-bd7e-868e565e391d",
+      "name": "Aggregate",
+      "type": "n8n-nodes-base.aggregate",
+      "typeVersion": 1,
+      "position": [
+        2140,
+        380
+      ]
+    },
+    {
+      "parameters": {
+        "html": "<html>\n   <head>\n      <style>body { font-family: 'Georgia','Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; line-height: 1.6; color: #0b090a; background-color: #fff ; } h2 { color: #0b090a; margin-bottom: 20px; } h3 { color: #0b090a; margin-top: 20px; margin-bottom: 10px; } p { margin-bottom: 10px; } ul { margin-bottom: 10px; padding-left: 20px; } table { width: 100%; border-collapse: collapse; margin-bottom: 20px; } th, td { border: 1px solid #ccc; padding: 10px; text-align: left; } th { background-color: #e7e7e7; } \n      .Subtitle { margin-top:0pt; margin-bottom:16pt; page-break-before:auto; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-family:Arial; font-size:15pt; font-style:normal; color:#666666 }\n\t\t\t.Title { margin-top:0pt; margin-bottom:3pt; page-break-before:auto; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:26pt }\n\t\t\t.awlist1 { list-style:none; counter-reset:awlistcounter60_0 }\n\t\t\t.awlist1 > li:before { content:'●'; counter-increment:awlistcounter60_0 }\n\t\t\t.awlist2 { list-style:none; counter-reset:awlistcounter38_0 }\n\t\t\t.awlist2 > li:before { content:'●'; counter-increment:awlistcounter38_0 }\t\t\n        @media (max-width: 900px) { \nimg { \n   max-width: 100%;\n   height: auto;\n}\nli,h1, h2, h3, h4, h5, h6, p, tr { font-family: 'Arial'; color:#0b090a}\n.table-container {\n    overflow-x: auto;\n    -webkit-overflow-scrolling: touch;\n}\n\ntable {\n    width: 100%;\n    border-collapse: collapse;\n}\n\ntd, th {\n    padding: 8px;\n    text-align: left;\n    border: 1px solid #000;\n}\n}\t\n      </style>\n   </head>\n   <body>\n     <p class=\"Title\" style=\"margin-top:28.4pt; margin-bottom:0pt; page-break-inside:auto; page-break-after:auto; line-height:normal; widows:0; orphans:0; font-size:56.5pt\">\n\t\t\t\t<strong><span style=\"font-family:'Georgia'; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"margin-top:28.4pt; margin-bottom:0pt; page-break-inside:auto; page-break-after:auto; line-height:normal; widows:0; orphans:0; font-size:56.5pt\">\n\t\t\t\t<strong><span style=\"font-family:'Georgia'; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"margin-top:28.4pt; margin-bottom:0pt; page-break-inside:auto; page-break-after:auto; line-height:normal; widows:0; orphans:0; font-size:56.5pt\">\n\t\t\t\t<strong><span style=\"font-family:'Georgia'; \">{{$json.output.client_name.toUpperCase() }}</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:5.2pt; margin-left:14.1pt; line-height:normal; widows:0; orphans:0; font-size:24.5pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; color:#da0404\">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:5.2pt; line-height:normal; widows:0; orphans:0; font-size:22.5pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; color:#da0404\">Tax Planning Report | Year {{ new Date().getFullYear() }}</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"line-height:normal; widows:0; orphans:0; font-size:10pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:15.7pt; line-height:normal; widows:0; orphans:0; font-size:19pt\">\n\t\t\t\t<strong><span style=\"font-family:'Georgia'\n                          ; \">&#xa0;</span></strong><strong><span style=\"font-family:'Georgia'; \">Presented by Fitz Hall</span></strong>\n\t\t\t</p>\n\t\t\t<h1 style=\"margin-top:24pt; page-break-inside:auto; page-break-after:auto; line-height:normal; font-size:23pt\">\n\t\t\t\t<a id=\"_qvoly82ig0k3\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n     <h1 style=\"margin-top:24pt; page-break-inside:auto; page-break-after:auto; line-height:normal; font-size:23pt\">\n\t\t\t\t<a id=\"_qvoly82ig0k3\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n\t\t\t<h1 style=\"margin-top:24pt; page-break-inside:auto; page-break-after:auto; line-height:normal; font-size:23pt\">\n\t\t\t\t<a id=\"_xcxevk9wu0e\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n\t\t\t<h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n     <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n\t\t\t<p style=\"line-height:normal\">\n\t\t\t\t&#xa0;\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"margin-right:77.05pt; line-height:normal; widows:0; orphans:0\">\n\t\t\t\t<a id=\"_z0b2r8w1cnip\"></a>&#xa0;\n\t\t\t</p>\n     <p class=\"Title\" style=\"margin-right:77.05pt; line-height:normal; widows:0; orphans:0\">\n\t\t\t\t<a id=\"_z0b2r8w1cnip\"></a>&#xa0;\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"line-height:normal; widows:0; orphans:0\">\n\t\t\t\t<a id=\"_ob78r7otydpj\"></a><strong><span style=\"font-family:Merriweather; \">TABLE OF CONTENTS</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:0.55pt; line-height:normal; widows:0; orphans:0; font-size:10pt\">\n\t\t\t\t<strong><span style=\"font-family:Tahoma; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-top:6.45pt; margin-left:25.2pt; line-height:normal; widows:0; orphans:0; padding-left:1.15pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tExecutive Summary\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"2\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:33.67pt; line-height:normal; widows:0; orphans:0; padding-left:1.53pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tCurrent Situation Analysis\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.2pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"3\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-top:0.05pt; margin-left:42.15pt; line-height:normal; widows:0; orphans:0; padding-left:1.9pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tDetailed Business Structure Overview\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.2pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"4\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:39.69pt; line-height:normal; widows:0; orphans:0; padding-left:0.81pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tIdentified Tax Planning Opportunities\n\t\t\t\t</li>\n\t\t\t</ol>\n           <p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"5\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:31.22pt; line-height:normal; widows:0; orphans:0; padding-left:0.43pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tFinancial Projections\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\n\t\t\t<p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"6\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:31.22pt; line-height:normal; widows:0; orphans:0; padding-left:0.43pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tStrategy Recommendations\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.2pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"7\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:39.69pt; line-height:normal; widows:0; orphans:0; padding-left:0.81pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tImplementation Roadmap\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"8\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:48.16pt; line-height:normal; widows:0; orphans:0; padding-left:1.19pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tAdditional Considerations\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"9\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:56.63pt; line-height:normal; widows:0; orphans:0; padding-left:1.52pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tOngoing Optimization Plan\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.2pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"10\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:40.57pt; line-height:normal; widows:0; orphans:0; padding-left:0.53pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tTax Strategy Summary\n\t\t\t\t</li>\n\t\t\t</ol>\n     <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n     <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n      <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n      <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n     {{ $('AI Agent').item.json.output.html }}\n   </body>\n</html>"
+      },
+      "id": "4ee1eebf-2584-4ca4-8d9d-7d17f737dd1c",
+      "name": "HTML",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        520,
+        380
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "a15f2788-963f-4ff6-a9e1-01f68cad11e9",
+      "name": "loop",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -800,
+        1000
+      ]
+    },
+    {
+      "parameters": {
+        "functionCode": "const newItems = [];\n\nfor (let i = 0; i < items.length; i++) {\n  const item = items[i];\n  \n  // Get the JSON from the \"test\" node of the previous item, if it exists\n  let previousItem = null;\n  if ($runIndex > 0) {\n    previousItem = $('Return Section').first(0, $runIndex - 1).json.output;\n  }\n  \n  // Get the JSON from the last node of the current item in the loop\n  const loopJson = item.json;\n  \n  // Create a new object with both JSON data\n  const newItem = {\n    previousOutput: previousItem,\n    data: loopJson.section\n  };\n  \n  newItems.push(newItem);\n}\n\nreturn newItems;"
+      },
+      "id": "2b5c9587-5977-4b0d-8bdd-b03ef623f923",
+      "name": "preprocess",
+      "type": "n8n-nodes-base.function",
+      "position": [
+        -540,
+        1100
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{\n  \"section\":\n  [\n    \"Executive Summary\",\n    \"Current Situation Analysis\",\n    \"Detailed Business Structure Overview\",\n    \"Identified Tax Planning Opportunities\",\n    \"Strategy Recommendations\",\n    \"Financial Projections\",\n    \"Implementation Roadmap\",\n    \"Additional Considerations\",\n    \"Ongoing Optimization Plan\",\n    \"Tax Strategy Summary\"\n]\n}\n",
+        "options": {}
+      },
+      "id": "330cf150-2a10-4099-9e9b-219a9c72ae39",
+      "name": "All Sections",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1180,
+        1000
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9be9052c-216d-4501-9cb5-68350bc36ee7",
+              "name": "user_beyer",
+              "value": "Our in house tax strategy applied to all clients:\n\"Family operating system tax strategy\\noverview: This stratgy is desigend for high earners whi typcially would not have a lot\\nof dedcutions.\\nThis strategy uses creative structures similair to family office to create\\nopportunities for clinet to transform living expsenses into ordinary and necsaary\\nbusiness expenses.\\nThis is doen through creatively turnign their life into a business and clear\\ndocumentation.\\nhow this is achieved:\\nControl flow\\nYou → Living Trust (as Trustee)\\nLiving Trust → owns 99% FLP as LP\\nFMC → owns 1% FLP as GP\\nMoney flow\\nYour W2 → Living Trust\\nLiving Trust → FLP (capital contribution)\\nFLP → FMC (management fees)\\nFMC → You (12k salary)\\nThis Structure:\\n* Maintains liability protection\\n* Creates proper business substance\\n* Allows expense justification\\n* Provides clean K1s\\n* Protects assets\\n* Minimizes taxes\\nThis structure avoids high risk schedule c, creates legitimate business chain, and\\nallows you to reclassify fam expenses into business expenses\\nThis structure avoids high risk schedule c, creates legitimate business chain, and\\nallows you to reclassify fam expenses into business expenses\"\n\nClient Overview:\n\"# Personal Tax Information - Michael Beyer\\n## Contact Information\\n- Name: Michael Beyer\\n- Email: mbeyerbjj@gmail.com\\n- Phone: +1 (404) 314-0172\\n## Filing Status & Dependents\\n- Status: Married Filing Jointly\\n- Dependents:\\n- Emma (age 4)\\n- Olivia (age 7)\\n- Inaam (age 76)\\n- Boulos (age 82)\\n## Employment\\n- Primary Occupation: Product Management Manager at The Home Depot\\n- Side Gigs: None currently\\n## Income Sources\\n- Primary Sources:\\n- Salary\\n- Bonuses\\n- Dividends\\n- Expected Changes: No significant changes anticipated\\n## Deductions & Tax Situation\\n- Current Deductions:\\n- Mortgage Interest\\n- Property Taxes\\n- Charitable Contributions\\n- Status: Uncertain about itemizing vs. standard deduction\\n## Assets & Investments\\n- Investment Accounts:\\n- 401(k)\\n- Brokerage Accounts\\n- Cryptocurrency: None\\n- Real Estate: Owner-occupied home\\n- Capital Gains/Losses: None reported\\n## Retirement & Planning\\n- Current 401(k): Active\\n- Old Retirement Accounts: No outstanding rollovers\\n\\n- Retirement Planning: Not approaching retirement age\\n## Debt & Financial Obligations\\n- Current Debt: Business Loans\\n- Future Debt Plans: No planned new debt\\n## Risk & Tax History\\n- Risk Tolerance: Moderate\\n- IRS Audit History: Yes\\n- Outstanding Tax Issues: None\\n## Financial Goals & Concerns\\n### 5-10 Year Goals:\\n- Increase savings\\n- Get monthly spending under control\\n- Purchase first business\\n### Primary Tax Concern:\\nFeels tax withholding is excessive\\n## Additional Notes\\n- No foreign income or assets\\n- No estate plan or trusts established\\n- No HSA or FSA reported\\n- No significant medical expenses\"\n\nTax Plan Example:\n\"[[CLIENT_NAME Prepared: [[DATE]]\nClient Profile\nCurrent AGI \nFIling Status\nAge\nCurrent Tax Liability \nState Tax liability \nBusiness Structure (If applicable) \n\nImplemented tax strategy\n\nFamily structure: \n\nCurrent Assets:\n\nGoals:\n\nRisk Tolerance: \n\nTable Contents\n\nExecutive Summary\n[[EXECUTIVE_SUMMARY]]\nClient and Business Overview\nKey Findings and Recommendations\nPotential Tax Savings Summary\nCurrent Situation Analysis\n[[CURRENT_SITUATION]]\nDetailed Business Structure Overview\nCurrent Financial Snapshot\nComprehensive Tax Liability Breakdown\nEffective Tax Rate Analysis\nIdentified Opportunities\n[[IDENTIFIED_OPPORTUNITIES]]\nDetailed List of Tax Optimization Areas\nPrioritization of Opportunities\nPotential Impact Analysis\nDetailed Strategy Recommendations\n[[STRATEGY_RECOMMENDATIONS]]\nStrategy Descriptions\nTax Code References\nPotential Tax Savings Calculations\nImplementation Plans\nRisk Analysis\nCase Studies\nFinancial Projections\n[[FINANCIAL_PROJECTIONS]]\nCurrent Structure (5-year)\nProposed Strategies (5-year)\nKey Assumptions\nSensitivity Analysis\nComparative Charts\nImplementation Roadmap\n[[IMPLEMENTATION_ROADMAP]]\nStrategy Implementation Timeline\nKey Milestones\nAction Items\nResponsibility Assignments\nObstacle Mitigation Plans\nAdditional Considerations\n[[ADDITIONAL_CONSIDERATIONS]]\nNon-Tax Benefits\nFuture Opportunities\nIndustry-Specific Factors\nOngoing Optimization Plan\n[[ONGOING_OPTIMIZATION]]\nStrategy Review Schedule\nBusiness Change Adaptation Process\nClient Education Plan\nAppendices\n[[APPENDICES]]\nDetailed Calculations\nTax Code References\nTerms Glossary\nAdditional Resources\n\"",
+              "type": "string"
+            },
+            {
+              "id": "8876c43f-97dd-4ead-a773-410a396345d6",
+              "name": "prompt",
+              "value": "=Our in house tax strategy applied to all clients:\n\"Family operating system tax strategy\\noverview: This stratgy is desigend for high earners whi typcially would not have a lot\\nof dedcutions.\\nThis strategy uses creative structures similair to family office to create\\nopportunities for clinet to transform living expsenses into ordinary and necsaary\\nbusiness expenses.\\nThis is doen through creatively turnign their life into a business and clear\\ndocumentation.\\nhow this is achieved:\\nControl flow\\nYou → Living Trust (as Trustee)\\nLiving Trust → owns 99% FLP as LP\\nFMC → owns 1% FLP as GP\\nMoney flow\\nYour W2 → Living Trust\\nLiving Trust → FLP (capital contribution)\\nFLP → FMC (management fees)\\nFMC → You (12k salary)\\nThis Structure:\\n* Maintains liability protection\\n* Creates proper business substance\\n* Allows expense justification\\n* Provides clean K1s\\n* Protects assets\\n* Minimizes taxes\\nThis structure avoids high risk schedule c, creates legitimate business chain, and\\nallows you to reclassify fam expenses into business expenses\\nThis structure avoids high risk schedule c, creates legitimate business chain, and\\nallows you to reclassify fam expenses into business expenses\"\n\nClient Overview:\n{{ JSON.stringify($json.text) }}\n\nTax Plan Example:\n\"[[CLIENT_NAME Prepared: [[DATE]]\nClient Profile\nCurrent AGI \nFIling Status\nAge\nCurrent Tax Liability \nState Tax liability \nBusiness Structure (If applicable) \n\nImplemented tax strategy\n\nFamily structure: \n\nCurrent Assets:\n\nGoals:\n\nRisk Tolerance: \n\nTable Contents\n\nExecutive Summary\n[[EXECUTIVE_SUMMARY]]\nClient and Business Overview\nKey Findings and Recommendations\nPotential Tax Savings Summary\nCurrent Situation Analysis\n[[CURRENT_SITUATION]]\nDetailed Business Structure Overview\nCurrent Financial Snapshot\nComprehensive Tax Liability Breakdown\nEffective Tax Rate Analysis\nIdentified Opportunities\n[[IDENTIFIED_OPPORTUNITIES]]\nDetailed List of Tax Optimization Areas\nPrioritization of Opportunities\nPotential Impact Analysis\nDetailed Strategy Recommendations\n[[STRATEGY_RECOMMENDATIONS]]\nStrategy Descriptions\nTax Code References\nPotential Tax Savings Calculations\nImplementation Plans\nRisk Analysis\nCase Studies\nFinancial Projections\n[[FINANCIAL_PROJECTIONS]]\nCurrent Structure (5-year)\nProposed Strategies (5-year)\nKey Assumptions\nSensitivity Analysis\nComparative Charts\nImplementation Roadmap\n[[IMPLEMENTATION_ROADMAP]]\nStrategy Implementation Timeline\nKey Milestones\nAction Items\nResponsibility Assignments\nObstacle Mitigation Plans\nAdditional Considerations\n[[ADDITIONAL_CONSIDERATIONS]]\nNon-Tax Benefits\nFuture Opportunities\nIndustry-Specific Factors\nOngoing Optimization Plan\n[[ONGOING_OPTIMIZATION]]\nStrategy Review Schedule\nBusiness Change Adaptation Process\nClient Education Plan\nAppendices\n[[APPENDICES]]\nDetailed Calculations\nTax Code References\nTerms Glossary\nAdditional Resources\n\"",
+              "type": "string"
+            },
+            {
+              "id": "7628e832-09b4-4ba2-9b2e-421b842f86d4",
+              "name": "user_bill",
+              "value": "Our in house tax strategy applied to all clients:\n\"Family operating system tax strategy\\noverview: This stratgy is desigend for high earners whi typcially would not have a lot\\nof dedcutions.\\nThis strategy uses creative structures similair to family office to create\\nopportunities for clinet to transform living expsenses into ordinary and necsaary\\nbusiness expenses.\\nThis is doen through creatively turnign their life into a business and clear\\ndocumentation.\\nhow this is achieved:\\nControl flow\\nYou → Living Trust (as Trustee)\\nLiving Trust → owns 99% FLP as LP\\nFMC → owns 1% FLP as GP\\nMoney flow\\nYour W2 → Living Trust\\nLiving Trust → FLP (capital contribution)\\nFLP → FMC (management fees)\\nFMC → You (12k salary)\\nThis Structure:\\n* Maintains liability protection\\n* Creates proper business substance\\n* Allows expense justification\\n* Provides clean K1s\\n* Protects assets\\n* Minimizes taxes\\nThis structure avoids high risk schedule c, creates legitimate business chain, and\\nallows you to reclassify fam expenses into business expenses\\nThis structure avoids high risk schedule c, creates legitimate business chain, and\\nallows you to reclassify fam expenses into business expenses\"\n\nClient Overview:\n\"# Personal Tax Information - Bill Ennis\n\n## Contact Information\n- Name: Bill Ennis\n- Email: bennistech@gmail.com\n- Phone: +1 (404) 555-0123\n\n## Filing Status & Dependents\n- Status: Married Filing Jointly\n- Dependents:\n  - Aryanna (College)\n  - Gianna (College)\n  - Dominic (High School)\n\n## Employment\n- Primary Occupation: Tech Company Owner\n- Business Structure: S Corporation\n- Side Gigs: None\n\n## Income Sources\n- Primary Sources:\n  - Business Income\n  - Bitcoin Investments\n  - Company Shares\n- Expected Changes: None anticipated\n\n## Deductions & Tax Situation\n- Current Deductions:\n  - Business Expenses\n  - Family Management Company\n  - Family Trust\n- Status: AGI $170,000, Federal Tax $21,000, State Tax $9,000\n\n## Assets & Investments\n- Investment Accounts:\n  - Bitcoin Holdings\n  - Company Shares ($100,000 taxes paid)\n- Cryptocurrency: Yes, Bitcoin\n- Real Estate: None currently\n- Capital Gains/Losses: Unrealized gains on company shares\n\n## Retirement & Planning\n- Current Age: 56\n- Retirement Planning: Not approaching immediate retirement\n- Old Retirement Accounts: Not specified\n\n## Debt & Financial Obligations\n- Current Debt: Not specified\n- Future Debt Plans: Planning vacation rental property purchase\n\n## Risk & Tax History\n- Risk Tolerance: Moderate\n- IRS Audit History: Not specified\n- Outstanding Tax Issues: None\n\n## Financial Goals & Concerns\n### Goals:\n- Acquire vacation rental property\n- Reduce overall tax burden\n- Mitigate capital gains on company shares\n\n### Primary Tax Concern:\nCurrent tax liability is too high\n\n## Additional Notes\n- Has existing family trust structure\n- Has family management company\n- Tech industry specific considerations\n- Three dependents in college/high school\n- S Corporation already established\"\n\nTax Plan Example:\n\"[[CLIENT_NAME Prepared: [[DATE]]\nClient Profile\nCurrent AGI \nFIling Status\nAge\nCurrent Tax Liability \nState Tax liability \nBusiness Structure (If applicable) \n\nImplemented tax strategy\n\nFamily structure: \n\nCurrent Assets:\n\nGoals:\n\nRisk Tolerance: \n\nTable Contents\n\nExecutive Summary\n[[EXECUTIVE_SUMMARY]]\nClient and Business Overview\nKey Findings and Recommendations\nPotential Tax Savings Summary\nCurrent Situation Analysis\n[[CURRENT_SITUATION]]\nDetailed Business Structure Overview\nCurrent Financial Snapshot\nComprehensive Tax Liability Breakdown\nEffective Tax Rate Analysis\nIdentified Opportunities\n[[IDENTIFIED_OPPORTUNITIES]]\nDetailed List of Tax Optimization Areas\nPrioritization of Opportunities\nPotential Impact Analysis\nDetailed Strategy Recommendations\n[[STRATEGY_RECOMMENDATIONS]]\nStrategy Descriptions\nTax Code References\nPotential Tax Savings Calculations\nImplementation Plans\nRisk Analysis\nCase Studies\nFinancial Projections\n[[FINANCIAL_PROJECTIONS]]\nCurrent Structure (5-year)\nProposed Strategies (5-year)\nKey Assumptions\nSensitivity Analysis\nComparative Charts\nImplementation Roadmap\n[[IMPLEMENTATION_ROADMAP]]\nStrategy Implementation Timeline\nKey Milestones\nAction Items\nResponsibility Assignments\nObstacle Mitigation Plans\nAdditional Considerations\n[[ADDITIONAL_CONSIDERATIONS]]\nNon-Tax Benefits\nFuture Opportunities\nIndustry-Specific Factors\nOngoing Optimization Plan\n[[ONGOING_OPTIMIZATION]]\nStrategy Review Schedule\nBusiness Change Adaptation Process\nClient Education Plan\nAppendices\n[[APPENDICES]]\nDetailed Calculations\nTax Code References\nTerms Glossary\nAdditional Resources\n\"",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "06e02f88-be60-4835-9156-372131f12d3a",
+      "name": "User Prompt",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1380,
+        1000
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "section",
+        "options": {}
+      },
+      "id": "60e33829-e499-4dc6-971a-a963271a7565",
+      "name": "Split Sections",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        -1020,
+        1000
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
+              "name": "system",
+              "value": "You are a family office tax strategist.\n\nWe will use the template as an outline.\n\nCreate section \"Executive Summary\".\n\nCore Strategy Focus:\nIntegrate the Family Operating System - our framework for transforming personal finances into strategic business operations, typically converting 50% of personal expenses into business deductions through proper entity structure and documentation.\n\nSection Requirements:\n1. Length: appropriate length to delive high quality end result for client so that they feel as though they got what they paid for\n2. Voice: Direct and personal but without greetings/introductions\n3. Format: Start with section heading only\n4. Always consider the year as the current year.\n12. Use clearer headings and subheadings.\n13. Eliminate redundancies.\n24. Explain Acronyms\n25. Define acronyms like FLP, FMC, and FOS the first time they are used.\n\nSection Structure:\n1. Begin with **Executive Summary**\n2. Write a brief overview of the topic, addressing the reader directly in the second person. Avoid overly formal language and phrases like 'based on'.\n3. Present recommendations with specific:\n    - Tax savings potential\n    - Documentation requirements\n    - Entity structure implications\n    - Implementation steps\n    - Compliance considerations\n    - Focus on current vs optimized structure\n    - Include specific savings projections with tables\n    - Show rate comparisons\n    - Detail compliance requirements\n    - Detail organizational design\n    - Show entity relationships\n    - Include control flow explanations\n    - Emphasize tax implications\n    - Present risk management framework\n    - Include protection strategies\n    - Show risk assessment\n    - Address legal requirements\n    - Detail growth strategies\n    - Include projection models\n    - Show investment strategy\n    - Emphasize tax efficiency\n    - Focus on generational transfer\n    - Detail trust structures\n    - Show transfer strategy\n    - Include tax implications\n4. Always use the current year in this format Prepared: current_year, do not put month and day (e.g., Prepared: 2025).\n5. Always write a summary text at the beginning, write as much text as you can.\n6. Always give a written context conclusion that summarizes and explains important points at the end of the section.\n6. Don't use graph mermaid in markdown\n\nFormat all content with Markdown structure.\n\nInclude relevant numerical analysis in table format showing before/after scenarios.",
+              "type": "string"
+            },
+            {
+              "id": "314db41d-d2d3-4a69-81f7-a3b50ebecfa8",
+              "name": "user_beyer",
+              "value": "={{ $('User Prompt').first().json.user_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "70b16846-7644-4878-b2e7-8023d99add7b",
+              "name": "ai_beyer",
+              "value": "**Executive Summary**\n=====================\n\n**Client:** Michael & Diana Beyer\n\n**Prepared:** 2025\n\nBill Ennis, aged 56, married filing jointly with three dependents. Mr. Ennis operates a tech company structured as an S Corporation. His current Adjusted Gross Income (AGI) is $170,000. The family has already implemented several tax strategies, including a family trust, S Corporation structure, and a family management company\n\n**Current Financial Overview**\n------------------------------\n\n*           **AGI:** $290,899\n*           **Primary Income Source:** Home Depot (Product Management Manager)\n*           **Federal Tax Liability:** $44,469\n*           **State Tax Liability (GA):** $13,407\n*           **Family Structure:** Married with 4 dependents (2 children, 2 elderly parents)\n\n**Key Goals Identified**\n------------------------\n\n1.  Reduce tax withholding efficiency\n2.  Prepare for business acquisition (5-10 year timeline)\n3.  Increase savings\n4.  Get monthly spending under control\n\n**Strategic Focus Areas**\n-------------------------\n\n1.  Implementation of Family Operating System tax strategy\n2.  Tax-efficient business structuring\n3.  Dependent care optimization\n4.  Investment and retirement planning\n5.  Healthcare cost optimization\n\n**Projected Impact**\n--------------------\n\nImplementation of our recommended strategies could result in:\n\n*           **Potential annual tax savings:** $15,000-20,000\n*           Improved business expense deductibility\n*           Enhanced asset protection\n*           Streamlined family financial management\n\n \n-\n\n**Risk Considerations**\n-----------------------\n\n*           Previous IRS audit history requires careful documentation\n*           Need for proper business substance in all structures\n*           Importance of maintaining clear separation between personal and business expenses\n\n**Next Steps**\n--------------\n\n1.  Establish proper legal entities (Family Limited Partnership, Management Company)\n2.  Implement documentation systems\n3.  Begin restructuring personal expenses into legitimate business expenses\n4.  Review and optimize current withholding structure\n\n**Implementation Timeline**\n---------------------------\n\n**Phase**\n\n**Timeline**\n\n**Key Deliverables**\n\nInitial Setup\n\n30-60 days\n\nEntity formation, documentation systems\n\nImplementation\n\n60-90 days\n\nBusiness structure activation, expense restructuring\n\nOptimization\n\n90-180 days\n\nSystem refinement, full strategy deployment\n\n**Financial Impact Summary**\n----------------------------\n\n### **Year 1 Projected Savings**\n\n### **5-Year Projected Savings**\n\n**$15,000 - $20,000**\n\n**$75,000 - $100,000**\n\n### **Additional Business Benefits**\n\nEnhanced structure for future acquisition\n\n**Note:** All projections are based on current tax law and circumstances. Regular reviews and adjustments will be necessary to maintain optimal results.",
+              "type": "string"
+            },
+            {
+              "id": "9560b012-f765-41c6-8acb-1526a6fc887f",
+              "name": "user_bill",
+              "value": "={{ $('User Prompt').first().json.user_bill }}",
+              "type": "string"
+            },
+            {
+              "id": "1be524ae-69d6-49c2-b5db-4cde6f8cea16",
+              "name": "ai_bill",
+              "value": "I. Executive Summary\nClient and Business Overview:\nBill Ennis, aged 56, married filing jointly with three dependents. Mr.\nEnnis operates a tech company structured as an S Corporation. His\ncurrent Adjusted Gross Income (AGI) is $170,000. The family has\nalready implemented several tax strategies, including a family trust, S\nCorporation structure, and a family management company.\nKey Findings and Recommendations:\n1. Implement a Qualified Opportunity Zone (QOZ) investment strategy\nto defer and potentially reduce capital gains tax on company shares.\n2. Establish a Charitable Remainder Trust (CRT) to generate tax\ndeductions and manage capital gains.\n3. Explore Real Estate Professional Status for Mrs. Ennis in conjunction\nwith the desired vacation rental property.\n4. Consider a 1031 exchange for the gains on the sale of vacation rental\nproperty.\n5. Implement tax-efficient Bitcoin investment strategies.\n6. Optimize education tax credits for college-aged dependents.\n7. Enhance retirement account contributions and management.\n8. Implement a Short-Term Rental Strategy with Accelerated\nDepreciation\n9. Implement a tax-loss harvesting strategy to offset Bitcoin gains.\nPotential Tax Savings Summary:\nThe implementation of these strategies have the potential to\nsignificantly reduce your tax liability. Exact savings will depend on\nthe specific implementation of each strategy, but conservative\nestimates suggest:\nCapital gains tax deferral and reduction through QOZ investment\nImmediate tax deduction and capital gains avoidance through CRT\nPotential rental property loss offsets against other income\nDeferred capital gains on real estate investments through 1031\nexchange\nMinimized capital gains on Bitcoin investments\nMaximized education credits for eligible dependents\nShort-term rental strategy with accelerated depreciation\nPotential to offset up to 100% of Bitcoin gains through strategic\nstock loss harvesting\n",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "d15cfff5-db31-41ea-b2b1-84978cbbc20b",
+      "name": "Executive Summary",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        100,
+        740
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "insert",
+        "insertMode": "override",
+        "messages": {
+          "messageValues": [
+            {
+              "type": "user",
+              "message": "={{ $json.user_beyer }}"
+            },
+            {
+              "type": "ai",
+              "message": "={{ $json.ai_beyer }}"
+            },
+            {
+              "type": "user",
+              "message": "={{ $json.user_bill }}"
+            },
+            {
+              "type": "ai",
+              "message": "={{ $json.ai_bill }}"
+            }
+          ]
+        }
+      },
+      "id": "d7730bd3-50d7-424a-b63b-531a46bced3f",
+      "name": "Chat Memory Manager1",
+      "type": "@n8n/n8n-nodes-langchain.memoryManager",
+      "typeVersion": 1.1,
+      "position": [
+        340,
+        740
+      ]
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "tax-plan-key",
+        "contextWindowLength": 0
+      },
+      "id": "8d27f543-f4bf-410c-bf49-5a03346caee2",
+      "name": "Window Buffer Memory2",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        360,
+        900
+      ]
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "tax-plan-key",
+        "contextWindowLength": 10
+      },
+      "id": "f51d9c8d-2650-4df6-b9fe-35a2fd1a9f0f",
+      "name": "Window Buffer Memory3",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        1080,
+        920
+      ]
+    },
+    {
+      "parameters": {
+        "model": "claude-3-5-sonnet-20241022",
+        "options": {}
+      },
+      "id": "a16af339-6732-4687-9174-bc42e52ef2ea",
+      "name": "Anthropic Chat Model5",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.2,
+      "position": [
+        960,
+        920
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "xBWJQjIePD8Jl6hU",
+          "name": "Meerkat Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f608c99a-8d10-4433-967e-2b1c63ae60e0",
+              "name": "system",
+              "value": "={{ $('Executive Summary').item.json.system }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a0835c4d-064c-4865-851e-d6ccd2aeab7c",
+      "name": "First System Prompt",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        740,
+        740
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
+              "name": "system",
+              "value": "You are a family office tax strategist.\n\nWe will use the template as an outline.\n\nCreate section \"Current Situation Analysis\".\n\nCore Strategy Focus:\nIntegrate the Family Operating System - our framework for transforming personal finances into strategic business operations, typically converting 50% of personal expenses into business deductions through proper entity structure and documentation.\n\nSection Requirements:\n1. Length: appropriate length to delive high quality end result for client so that they feel as though they got what they paid for\n2. Voice: Direct and personal but without greetings/introductions\n3. Format: Start with section heading only\n4. Always consider the year as the current year.\n5. Enhance Risk Management and Compliance:\n6. Incorporate more detailed guidance on documentation requirements.\n7. Emphasize the importance of maintaining a clear separation between personal and business activities.\n8. Provide specific examples of acceptable business purposes for expenses.\n9. Include a section on potential IRS audit triggers and how to mitigate them.\n10. Improve Organization and Structure:\n11. Reorganize the content to create a more logical flow.\n12. Use clearer headings and subheadings.\n13. Eliminate redundancies.\n14. Expand Implementation Roadmap:\n15. Provide a more detailed, step-by-step roadmap, potentially incorporating checklists and timelines.\n16. Include specific instructions for setting up accounting systems and expense tracking procedures.\n17. Address the automation aspect directly, outlining how technology will be used to streamline implementation.\n18. Address Dependent Care and Business Acquisition:\n19. Add sections on dependent care strategies and business acquisition planning, even if they are less detailed than in Plan 1.\n20. Provide an overview of how the FOS structure can be adapted to accommodate these needs.\n21. Clarify Long-Term Vision:\n22. Include a section on long-term financial planning and how the FOS strategy fits into the client's overall goals.\n23. Briefly discuss asset protection and wealth transfer considerations.\n24. Explain Acronyms\n25. Define acronyms like FLP, FMC, and FOS the first time they are used.\n\nSection Structure:\n1. Begin with **Current Situation Analysis**\n2. Write a brief overview of the topic, addressing the reader directly in the second person. Avoid overly formal language and phrases like 'based on'.\n3. Present recommendations with specific:\n    - Tax savings potential\n    - Documentation requirements\n    - Entity structure implications\n    - Implementation steps\n    - Compliance considerations\n    - Focus on current vs optimized structure\n    - Include specific savings projections with tables\n    - Show rate comparisons\n    - Detail compliance requirements\n    - Detail organizational design\n    - Show entity relationships\n    - Include control flow explanations\n    - Emphasize tax implications\n    - Present risk management framework\n    - Include protection strategies\n    - Show risk assessment\n    - Address legal requirements\n    - Detail growth strategies\n    - Include projection models\n    - Show investment strategy\n    - Emphasize tax efficiency\n    - Focus on generational transfer\n    - Detail trust structures\n    - Show transfer strategy\n    - Include tax implications\n",
+              "type": "string"
+            },
+            {
+              "id": "314db41d-d2d3-4a69-81f7-a3b50ebecfa8",
+              "name": "user_beyer",
+              "value": "={{ $('User Prompt').first().json.user_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "70b16846-7644-4878-b2e7-8023d99add7b",
+              "name": "ai_beyer",
+              "value": "**Current Situation Analysis**\n==============================\n\n**Client and Business Overview**\n--------------------------------\n\n### **Personal Profile**\n\n**DETAILS**\n\n**INFORMATION**\n\n**Primary Taxpayer**\n\nMichael Bayer\n\n**Occupation**\n\nProduct Management Manager at Home Depot\n\n**Prior Tax History**\n\nHas experienced IRS audit\n\n**Spouse**\n\nDiana Beyer\n\n**Filing Status**\n\nMarried Filing Jointly\n\n**Location**\n\nMarietta, GA (State tax implications)\n\n###  \n\n###  \n\n###  \n\n###  \n\n###  \n\n### **Family Structure**\n\n**CHILDREN**\n\n**AGE**\n\nEmma\n\n4 years old\n\nOlivia\n\n7 years old\n\n**ADULT DEPENDENTS**\n\n**AGE**\n\nInaam\n\n76 years old\n\nBoulos\n\n82 years old\n\n**TOTAL DEPENDENTS**\n\n**4 (four)**\n\n \n-\n\n \n-\n\n \n-\n\n \n-\n\n \n-\n\n \n-\n\n**Current Financial Snapshot**\n------------------------------\n\n### **Income Sources (2023)**\n\nW-2 Income\n\n$286,481\n\nInterest Income\n\n$1,630\n\nCapital Gains\n\n$2,788\n\n**Total AGI**\n\n**$290,899**\n\n1.  CURRENT TAX PROFILE\n\nFederal Tax Liability\n\n$44,469\n\nGeorgia State Tax\n\n$13,407\n\n**_Current Withholding:_**\n\nFederal\n\n$40,600\n\nState\n\n$15,499\n\n**_Balance Due:_**\n\nFederal\n\n$3,822\n\nState\n\n$2,092\n\n2.  Deductions and Credits\n\nTotal Itemized Deductions\n\n$27,983\n\nMortgage Interest\n\n$9,385\n\nSALT Deductions\n\n$10,000 (limited)\n\n**_Charitable Contributions: $8,598_**\n\nCash\n\n$3,635\n\nNon-cash\n\n$4,963\n\nChild Tax Credit\n\n$5,000\n\nChild Care Credit\n\n$1,200\n\n3.  Current Tax-Advantaged Accounts\n\nHSA Contribution\n\n$7,750 (family coverage)\n\n401(k)\n\nActive participation\n\nBrokerage Accounts\n\nPresent\n\n \n-\n\n**Key Areas of Concern**\n------------------------\n\n### **Tax Efficiency Issues**\n\n1.        **Withholding Management**\n    *           Currently overwithholding\n    *           Resulting in significant tax refunds\n    *           Opportunity for improved cash flow management\n2.        **Income Structure**\n    *           Heavily W-2 dependent\n    *           Limited tax-advantaged income sources\n    *           Few business deductions available\n3.        **Deduction Optimization**\n    *           Not maximizing available deductions\n    *           Limited business write-offs\n    *           Room for charitable giving optimization\n\n### **Financial Planning Challenges**\n\n1.        **Monthly Spending**\n    *           Expressed concern about control\n    *           Need for better tracking and categorization\n    *           Opportunity for business expense reclassification\n2.        **Savings Goals**\n    *           Desire to increase savings rate\n    *           Business acquisition planning\n    *           Retirement planning considerations\n\n### **Risk Factors**\n\n1.        **Audit History**\n    *           Previous IRS audit experience\n    *           Needs robust documentation system\n    *           Required careful planning for future structures\n2.        **Multiple Dependents**\n    *           Complex dependent care situations\n    *           Mix of child and elder care requirements\n    *           Need for tax-efficient care arrangements\n\n**Immediate Opportunities Identified**\n--------------------------------------\n\n1.  Implementation of family operating system tax strategy\n2.  Restructuring of personal expenses\n3.  Tax-efficient business entity formation\n4.  Optimization of dependent care benefits\n5.  Enhancement of retirement and investment strategies",
+              "type": "string"
+            },
+            {
+              "id": "23c530df-8029-4a27-8686-0fe98b4197fc",
+              "name": "user_bill",
+              "value": "={{ $('User Prompt').first().json.user_bill }}",
+              "type": "string"
+            },
+            {
+              "id": "3e2c0586-0261-436e-a7f8-ea1fae80df5e",
+              "name": "ai_bill",
+              "value": "II. Current Situation Analysis\nDetailed Business Structure Overview:\nS Corporation structure for the tech company\nFamily Management Company in place ( Employment of Wife,\nand Son)\nFamily Trust established\nCurrent Financial Snapshot:\nAdjusted Gross Income (AGI): $170,000\nAssets:\nTech company (value to be determined)\nBitcoin holdings (amount and value to be specified)\nCompany shares (with $100,000 in taxes already paid)\nPotential for real estate investment: Client has expressed\ninterest and has the financial capacity to invest in a short-term\nrental property.\nComprehensive Tax Liability Breakdown:\nFederal Income Tax (estimated):\nStandard Deduction: $29,200 (2024 estimate for married filing\njointly, age 55+)\nTaxable Income: $140,800 ($170,000 - $29,200)\nEstimated Federal Tax: $21,832 (based on 2024 tax brackets)\nPotential Additional Taxes:\nSelf-employment tax\nState and local taxes (depending on location)\nCapital gains tax on Bitcoin and company shares (when realized)\nEffective Tax Rate Analysis:\nEstimated Effective Federal Tax Rate: 12.8% ($21,832 / $170,000)\nNote: This rate does not include potential state taxes, self\u0002employment taxes, or future capital gains taxes",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "b720dbef-3be8-4a21-a556-986c1d9682fc",
+      "name": "Current Situation Analysis",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        80,
+        1180
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "insert",
+        "insertMode": "override",
+        "messages": {
+          "messageValues": [
+            {
+              "type": "user",
+              "message": "={{ $json.user_beyer }}"
+            },
+            {
+              "type": "ai",
+              "message": "={{ $json.ai_beyer }}"
+            },
+            {
+              "type": "user",
+              "message": "={{ $json.user_bill }}"
+            },
+            {
+              "type": "ai",
+              "message": "={{ $json.ai_bill }}"
+            }
+          ]
+        }
+      },
+      "id": "8c9b6169-0870-4984-b600-96157c599b3a",
+      "name": "Chat Memory Manager2",
+      "type": "@n8n/n8n-nodes-langchain.memoryManager",
+      "typeVersion": 1.1,
+      "position": [
+        600,
+        1540
+      ]
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "tax-plan-key",
+        "contextWindowLength": 0
+      },
+      "id": "f43d5a12-9ac5-4431-a7bd-ee773cf0979e",
+      "name": "Window Buffer Memory7",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        640,
+        1680
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
+              "name": "system",
+              "value": "={{ $json.system }}\n4. Write a text at the beginning of the section, contextualizing the subject of the section, however take into account the text as a time, it is part of a document, so take into account what has already been written in {previous sections}..\n5. Give a written context conclusion that summarizes and explains important points at the end of the section. Don't use the word \"Conclusion:\" or \"Summary:\" I want the text directly. Remember to consider what has already been said in previous sections, that is, do not be repetitive.\n6. Don't use graph mermaid in markdown\n\nFormat all content with Markdown structure.\n\nInclude relevant numerical analysis in table format showing before/after scenarios.\n\n{previous sections}\n{{ $('preprocess').item.json.previousOutput }}\n\nAvoid Redundancy considering the {previous sections} created previously.",
+              "type": "string"
+            },
+            {
+              "id": "314db41d-d2d3-4a69-81f7-a3b50ebecfa8",
+              "name": "user_beyer",
+              "value": "={{ $json.user_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "70b16846-7644-4878-b2e7-8023d99add7b",
+              "name": "ai_beyer",
+              "value": "={{ $json.ai_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "25626cb6-489c-499f-a641-6393ad94e73a",
+              "name": "previous_ai",
+              "value": "={{ $('preprocess').item.json.previousOutput }}",
+              "type": "string"
+            },
+            {
+              "id": "a5d040b7-b7c5-45e6-a660-ad0042166446",
+              "name": "user_bill",
+              "value": "={{ $json.user_bill }}",
+              "type": "string"
+            },
+            {
+              "id": "184cf9c6-84c4-436e-ba8e-366a799b1e47",
+              "name": "ai_bill",
+              "value": "={{ $json.ai_bill }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "30b62bcd-f4ca-4d7b-b485-41870f8a408d",
+      "name": "Get Prompt",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        420,
+        1540
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f608c99a-8d10-4433-967e-2b1c63ae60e0",
+              "name": "system",
+              "value": "={{ $('Get Prompt').item.json.system }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "f9923dd2-ee53-4600-bc06-7d20f14fb530",
+      "name": "System Prompt",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        960,
+        1540
+      ]
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "tax-plan-key",
+        "contextWindowLength": 10
+      },
+      "id": "36b432b2-7762-4109-9c9f-3b76ed849e76",
+      "name": "Window Buffer Memory8",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        1300,
+        1740
+      ]
+    },
+    {
+      "parameters": {
+        "model": "claude-3-5-sonnet-20241022",
+        "options": {}
+      },
+      "id": "9bf54e9b-58b6-47fd-8b36-2e0e0dd182f7",
+      "name": "Anthropic Chat Model6",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.2,
+      "position": [
+        1200,
+        1740
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "xBWJQjIePD8Jl6hU",
+          "name": "Meerkat Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "bad86184-8c02-432d-92ab-225af2c1feff",
+              "name": "output",
+              "value": "={{ $('Get Prompt').item.json.previous_ai }}\n{{ $json.output }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "21e27381-dbb4-4e38-b4d2-15c962765178",
+      "name": "Return Accumulator Section",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1560,
+        1560
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "bad86184-8c02-432d-92ab-225af2c1feff",
+              "name": "output",
+              "value": "={{ $json.output }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "d0279bd7-5bcc-4833-963b-9a213c2eebb9",
+      "name": "Return Section",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        3260,
+        3300
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
+              "name": "system",
+              "value": "You are a family office tax strategist.\n\nWe will use the template as an outline.\n\nCreate section \"Detailed Business Structure Overview\".\n\nCore Strategy Focus:\nIntegrate the Family Operating System - our framework for transforming personal finances into strategic business operations, typically converting 50% of personal expenses into business deductions through proper entity structure and documentation.\n\n\nSection Requirements:\n1. Length: appropriate length to delive high quality end result for client so that they feel as though they got what they paid for\n2. Voice: Direct and personal but without greetings/introductions\n3. Format: Start with section heading only\n4. Always consider the year as the current year.\n5. Enhance Risk Management and Compliance:\n6. Incorporate more detailed guidance on documentation requirements.\n7. Emphasize the importance of maintaining a clear separation between personal and business activities.\n8. Provide specific examples of acceptable business purposes for expenses.\n9. Include a section on potential IRS audit triggers and how to mitigate them.\n10. Improve Organization and Structure:\n11. Reorganize the content to create a more logical flow.\n12. Use clearer headings and subheadings.\n13. Eliminate redundancies.\n14. Expand Implementation Roadmap:\n15. Provide a more detailed, step-by-step roadmap, potentially incorporating checklists and timelines.\n16. Include specific instructions for setting up accounting systems and expense tracking procedures.\n17. Address the automation aspect directly, outlining how technology will be used to streamline implementation.\n18. Address Dependent Care and Business Acquisition:\n19. Add sections on dependent care strategies and business acquisition planning, even if they are less detailed than in Plan 1.\n20. Provide an overview of how the FOS structure can be adapted to accommodate these needs.\n21. Clarify Long-Term Vision:\n22. Include a section on long-term financial planning and how the FOS strategy fits into the client's overall goals.\n23. Briefly discuss asset protection and wealth transfer considerations.\n24. Explain Acronyms\n25. Define acronyms like FLP, FMC, and FOS the first time they are used.\n\nSection Structure:\n1. Begin with **Detailed Business Structure Overview**\n2. Write a brief overview of the topic, addressing the reader directly in the second person. Avoid overly formal language and phrases like 'based on'.\n3. Present recommendations with specific:\n    - Tax savings potential\n    - Documentation requirements\n    - Entity structure implications\n    - Implementation steps\n    - Compliance considerations\n    - Focus on current vs optimized structure\n    - Include specific savings projections with tables\n    - Show rate comparisons\n    - Detail compliance requirements\n    - Detail organizational design\n    - Show entity relationships\n    - Include control flow explanations\n    - Emphasize tax implications\n    - Present risk management framework\n    - Include protection strategies\n    - Show risk assessment\n    - Address legal requirements\n    - Detail growth strategies\n    - Include projection models\n    - Show investment strategy\n    - Emphasize tax efficiency\n    - Focus on generational transfer\n    - Detail trust structures\n    - Show transfer strategy\n    - Include tax implications\n\n",
+              "type": "string"
+            },
+            {
+              "id": "314db41d-d2d3-4a69-81f7-a3b50ebecfa8",
+              "name": "user_beyer",
+              "value": "={{ $('User Prompt').first().json.user_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "70b16846-7644-4878-b2e7-8023d99add7b",
+              "name": "ai_beyer",
+              "value": "| **Detailed Business Structure Overview**\n==========================================\n\n**Proposed Entity Structure**\n-----------------------------\n\n### **Core Entities**\n\n*           **Living Trust**\n    *           Primary entity for asset protection\n    *           Acts as trustee for family assets\n    *           Owns 99% of Family Limited Partnership\n*           **Family Limited Partnership (FLP)**\n    *           Limited Partner: Living Trust (99% ownership)\n    *           General Partner: Family Management Company (1% ownership)\n    *           Primary vehicle for business operations\n*           **Family Management Company (FMC)**\n    *           S-Corporation structure\n    *           Manages FLP operations\n    *           Employs family members\n    *           Handles business operations\n\n### **Control Flow Structure**\n\n*           **Primary Control Path:**\n    *           Michael & Diana Beyer → Living Trust (as Trustees)\n    *           Living Trust → FLP (as Limited Partner)\n    *           FMC → FLP (as General Partner)\n\n### **Money Flow Structure**\n\n*           **Income Path:**\n    *           Home Depot W2 ($286,481) → Living Trust\n    *           Living Trust → FLP (capital contribution)\n    *           FLP → FMC (management fees)\n    *           FMC → Family Members (reasonable compensation)\n\n**Business Operations Framework**\n---------------------------------\n\n### **Family Management Company Functions**\n\n*           **Property Management**\n    *           Primary residence oversight\n    *           Future investment property management\n    *           Maintenance coordination\n*           **Family Office Services**\n    *           Financial planning and coordination\n    *           Dependent care management\n    *           Healthcare coordination (4 dependents)\n    *           Education planning (2 children)\n*           **Business Development**\n    *           Future business acquisition planning\n    *           Investment management\n    *           Strategic planning\n\n### **Expense Categories**\n\n*           **Legitimate Business Expenses**\n    *           Home office expenses\n    *           Professional development\n    *           Business travel\n    *           Technology and communications\n    *           Professional services\n*           **Mixed-Use Expenses**\n    *           Vehicle expenses (business portion)\n    *           Home maintenance (business areas)\n    *           Insurance (business coverage)\n    *           Professional memberships\n\n**Compliance and Documentation**\n--------------------------------\n\n### **Required Documentation**\n\n*           **Entity Formation Documents**\n    *           Trust agreement\n    *           FLP partnership agreement\n    *           FMC corporate documents\n    *           Operating agreements\n*           **Operational Documentation**\n    *           Management agreements\n    *           Employment contracts\n    *           Lease agreements\n    *           Service contracts\n*           **Financial Records**\n    *           Separate bank accounts\n    *           Professional bookkeeping\n    *           Expense tracking systems\n    *           Financial statements",
+              "type": "string"
+            },
+            {
+              "id": "7df8f33a-a78f-4d98-882e-6aa09d828f74",
+              "name": "user_bill",
+              "value": "={{ $('User Prompt').first().json.user_bill }}",
+              "type": "string"
+            },
+            {
+              "id": "5072a63b-d8c6-4686-a62f-4286205d7a9a",
+              "name": "ai_bill",
+              "value": "Detailed Business Structure Overview\nCore Entities\nS Corporation (Tech Company)\n\nPrimary business entity\nOwnership: Bill Ennis (majority shareholder)\nFunction: Main operating company for technology business\nCurrent tax treatment: Pass-through entity\nAnnual revenue reported through Schedule K-1\n\nFamily Trust\n\nType: Currently established family trust\nPurpose: Asset protection and estate planning\nBeneficiaries: Spouse and three children\nTrust assets include:\n\nCompany shares\nInvestment holdings\nFuture real estate acquisitions\n\n\n\nFamily Management Company\n\nStructure: Separate legal entity\nPurpose: Management of family business interests\nKey functions:\n\nBusiness administration\nAsset management\nFamily office services\nProperty management (future rental property)\n\n\n\nControl Flow Structure\nPrimary Control Paths\n\nTech Company (S Corp)\n\nDirect control by Bill Ennis as CEO/Owner\nManagement oversight through board structure\nProfessional management team in place\n\n\nFamily Trust\n\nTrustees: Bill and spouse\nProfessional trustee involvement\nClear succession planning established\n\n\nFamily Management Company\n\nOversight by family members\nProfessional management integration\nDirect reporting to trust structure\n\n\n\nMoney Flow Structure\nPrimary Income Streams\n\nTech Company Operations\n\nBusiness revenue\nService contracts\nTechnology licensing\nConsulting fees\n\n\nInvestment Income\n\nBitcoin holdings\nCompany shares\nFuture rental income\n\n\nFamily Management Company\n\nManagement fees\nService agreements\nProperty management fees (future)\n\n\n\nBusiness Operations Framework\nTechnology Company Operations\n\nCore business activities:\n\nSoftware development\nTech consulting\nProduct management\nClient services\n\n\n\nFamily Management Functions\n\nAsset Management\n\nInvestment oversight\nProperty management (future)\nPortfolio rebalancing\nRisk management\n\n\nBusiness Administration\n\nAccounting and bookkeeping\nTax planning and compliance\nLegal coordination\nInsurance management\n\n\nFamily Office Services\n\nEducation planning for dependents\nRetirement strategy\nEstate planning coordination\nWealth preservation\n\n\n\nCompliance and Documentation\nRequired Documentation\n\nCorporate Records\n\nBoard meeting minutes\nShareholder agreements\nOperating agreements\nAnnual reports\n\n\nTrust Documentation\n\nTrust agreements\nBeneficiary designations\nAsset transfer records\nAnnual trust reviews\n\n\nFinancial Records\n\nSeparate accounting systems\nProfessional bookkeeping\nTax documentation\nInvestment records\n\n\n\nRegulatory Compliance\n\nS Corporation Requirements\n\nShareholder restrictions\nSingle class of stock\nAnnual election verification\nState compliance requirements\n\n\nTrust Compliance\n\nFiduciary responsibilities\nDistribution requirements\nTax reporting obligations\nAnnual reviews\n\n\nFamily Management Company\n\nBusiness licensing\nInsurance requirements\nEmployment regulations\nService agreements\n\n\n\nFuture Integration Considerations\nVacation Rental Property\n\nIntegration into existing structure\nManagement through Family Management Company\nTax-efficient ownership structure\nProperty management systems\n\nBitcoin Investment Strategy\n\nCustody solutions\nRisk management protocols\nTax reporting procedures\nInvestment policy guidelines\n\nEducation Funding\n\nCollege expense management\nTax-efficient distribution strategies\nScholarship coordination\nFinancial aid planning",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "8801dbec-aa78-4f43-8896-eb69d1dc7693",
+      "name": "Detailed Business Structure Overview",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        80,
+        1440
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
+              "name": "system",
+              "value": "You are a family office tax strategist.\n\nWe will use the template as an outline.\n\nCreate section \"Identified Tax Planning Opportunities\".\n\nCore Strategy Focus:\nIntegrate the Family Operating System - our framework for transforming personal finances into strategic business operations, typically converting 50% of personal expenses into business deductions through proper entity structure and documentation.\n\n\nSection Requirements:\n1. Length: appropriate length to delive high quality end result for client so that they feel as though they got what they paid for\n2. Voice: Direct and personal but without greetings/introductions\n3. Format: Start with section heading only\n4. Always consider the year as the current year.\n5. Enhance Risk Management and Compliance:\n6. Incorporate more detailed guidance on documentation requirements.\n7. Emphasize the importance of maintaining a clear separation between personal and business activities.\n8. Provide specific examples of acceptable business purposes for expenses.\n9. Include a section on potential IRS audit triggers and how to mitigate them.\n10. Improve Organization and Structure:\n11. Reorganize the content to create a more logical flow.\n12. Use clearer headings and subheadings.\n13. Eliminate redundancies.\n14. Expand Implementation Roadmap:\n15. Provide a more detailed, step-by-step roadmap, potentially incorporating checklists and timelines.\n16. Include specific instructions for setting up accounting systems and expense tracking procedures.\n17. Address the automation aspect directly, outlining how technology will be used to streamline implementation.\n18. Address Dependent Care and Business Acquisition:\n19. Add sections on dependent care strategies and business acquisition planning, even if they are less detailed than in Plan 1.\n20. Provide an overview of how the FOS structure can be adapted to accommodate these needs.\n21. Clarify Long-Term Vision:\n22. Include a section on long-term financial planning and how the FOS strategy fits into the client's overall goals.\n23. Briefly discuss asset protection and wealth transfer considerations.\n24. Explain Acronyms\n25. Define acronyms like FLP, FMC, and FOS the first time they are used.\nSection Structure:\n1. Begin with **Identified Tax Planning Opportunities**\n2. Write a brief overview of the topic, addressing the reader directly in the second person. Avoid overly formal language and phrases like 'based on'.\n3. Present recommendations with specific:\n    - Tax savings potential\n    - Documentation requirements\n    - Entity structure implications\n    - Implementation steps\n    - Compliance considerations\n    - Focus on current vs optimized structure\n    - Include specific savings projections with tables\n    - Show rate comparisons\n    - Detail compliance requirements\n    - Detail organizational design\n    - Show entity relationships\n    - Include control flow explanations\n    - Emphasize tax implications\n    - Present risk management framework\n    - Include protection strategies\n    - Show risk assessment\n    - Address legal requirements\n    - Detail growth strategies\n    - Include projection models\n    - Show investment strategy\n    - Emphasize tax efficiency\n    - Focus on generational transfer\n    - Detail trust structures\n    - Show transfer strategy\n    - Include tax implications\n",
+              "type": "string"
+            },
+            {
+              "id": "314db41d-d2d3-4a69-81f7-a3b50ebecfa8",
+              "name": "user_beyer",
+              "value": "={{ $('User Prompt').first().json.user_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "70b16846-7644-4878-b2e7-8023d99add7b",
+              "name": "ai_beyer",
+              "value": "**Identified Tax Planning Opportunities**\n=========================================\n\n**Immediate Tax Reduction Opportunities**\n-----------------------------------------\n\n### **1\\. Family Operating System Implementation**\n\n*           **Potential Annual Tax Savings: $15,000 - $25,000**\n    *           Conversion of personal expenses to business deductions: $10,000 - $15,000\n    *           Management fee structuring: $5,000 - $10,000\n    *           Home office and technology deductions: $2,000 - $3,000\n\n###  \n\n### **2\\. Retirement and Benefits Optimization**\n\n*           **Potential Annual Tax Savings: $8,000 - $12,000**\n    *           Maximize 401(k) contribution: $23,000 \n    *           Catch-up contributions when eligible\n    *           HSA family contribution: Already maximizing at $7,750\n    *           Tax savings at 35% marginal rate\n\n### **3\\. Dependent Care Strategies**\n\n*           **Potential Annual Tax Savings: $3,000 - $5,000**\n    *           Dependent care FSA: $5,000\n    *           Elder care expenses through FMC: $4,000 - $6,000\n    *           Medical expense reimbursement: $3,000 - $5,000\n\n**Business Development Opportunities**\n--------------------------------------\n\n### **1\\. Future Business Acquisition Strategy**\n\n*           **Structured Purchase Planning**\n    *           Use FLP for business acquisition\n    *           Tax-efficient financing structure\n    *           Step-up basis opportunities\n    *           Section 179 expensing potential\n\n### **2\\. Real Estate Investment Opportunities**\n\n*           **Property Investment Through FLP**\n    *           Commercial property for future business\n    *           Depreciation benefits\n    *           1031 exchange potential\n    *           Cost segregation studies\n\n**Asset Protection Opportunities**\n----------------------------------\n\n### **1\\. Liability Protection Structure**\n\n*           **Multi-Entity Protection Strategy**\n    *           Living Trust asset protection\n    *           FLP liability shield\n    *           Corporate veil through FMC\n    *           Insurance optimization\n\n**Cash Flow Enhancement Opportunities**\n---------------------------------------\n\n### **1\\. Withholding Optimization**\n\n*           **Current Situation**\n    *           Federal overwithholding: $3,822\n    *           State overwithholding: $2,092\n    *           Opportunity for immediate cash flow improvement\n\n### **2\\. Expense Restructuring**\n\n*           **Business Expense Conversion**\n    *           Technology expenses: $2,000 - $3,000 annually\n    *           Home office: $3,000 - $4,000 annually\n    *           Professional development: $2,000 - $3,000 annually\n    *           Travel and entertainment: $3,000 - $5,000 annually\n\n**Priority Implementation Ranking**\n-----------------------------------\n\n1.  Family Operating System Structure Implementation\n2.  Retirement and Benefits Optimization\n3.  Dependent Care Strategy Implementation\n4.  Business Acquisition Preparation\n5.  Cash Flow Enhancement Implementation",
+              "type": "string"
+            },
+            {
+              "id": "e8852e96-4b71-478e-be29-af0af29c56de",
+              "name": "user_bill",
+              "value": "={{ $('User Prompt').first().json.user_bill }}",
+              "type": "string"
+            },
+            {
+              "id": "17db6933-3b88-4819-beaa-e413b637055e",
+              "name": "ai_bill",
+              "value": "III. Identified\nOpportunities\nDetailed list of identified areas for tax\noptimization:\na) Qualified Opportunity Zone (QOZ) investment\nb) Charitable Remainder Trust (CRT)\nc) Real Estate Professional Status for vacation rental\nd) 1031 exchange for vacation rental property (future sale)\ne) Tax-efficient Bitcoin investment strategies\nf) Education tax credits optimization\ng) Retirement account optimization\nh) Short-Term Rental Strategy with Accelerated Depreciation\ni) Tax-Loss Harvesting Strategy for Bitcoin Gains\nPrioritization of opportunities:\n1. Short-Term Rental Strategy with Accelerated Depreciation\nHighest priority due to significant immediate and long-term tax\nbenefits\nAligns with goals for tax reduction and asset diversification\n2. Qualified Opportunity Zone (QOZ) investment\nHigh priority due to potential for significant capital gains tax\ndeferral and reduction\n3. Charitable Remainder Trust (CRT)\nHigh priority for managing capital gains and generating\nimmediate tax deductions\n4. 1031 exchange for vacation rental property\nLow priority to align with client's goal of acquiring a vacation\nrental first, with future potential to sell.\n5. Tax-Loss Harvesting Strategy for Bitcoin Gains\nHigh priority given the client's Bitcoin holdings\n6. Real Estate Professional Status for vacation rental\nMedium priority, dependent on Mrs. Ennis's ability to meet hour\nrequirements\n7. Tax-efficient Bitcoin investment strategies\nMedium priority to manage potential future capital gains\n8. Education tax credits optimization\nMedium priority for immediate tax savings\n9. Retirement account optimization\nOngoing priority for long-term tax management\nPotential impact of each opportunity:\na) Qualified Opportunity Zone (QOZ) investment\nPotential to defer capital gains tax on company shares\nPossible reduction of deferred gain by 10% if held for 5 years\nTax-free appreciation if held for 10+ years\nb) Charitable Remainder Trust (CRT)\nImmediate tax deduction based on the present value of the future\ndonation\nAvoidance of capital gains tax on appreciated assets transferred to\nthe trust\nPotential for increased income through reinvestment of trust assets\nc) Real Estate Professional Status for vacation rental\nAbility to deduct rental property losses against other income\nPotential tax savings dependent on property performance and\nMrs. Ennis's involvement\nd) 1031 exchange for vacation rental property sale\nDeferral of capital gains tax on the exchange of like-kind\nproperties\nPotential for significant tax savings if property appreciates over\ntime\ne) Tax-efficient Bitcoin investment strategies\nMinimization of capital gains tax through strategies like tax\u0002loss harvesting\nPotential for long-term capital gains rates on holdings kept for\nover a year\nf) Education tax credits optimization\nPotential for up to $2,500 per eligible student through the\nAmerican Opportunity Tax Credit\nPossible Lifetime Learning Credit for graduate students or part\u0002time students\ng) Retirement account optimization\nTax-deferred growth in traditional accounts\nTax-free growth in Roth accounts\nPotential for reducing current taxable income through\ncontributions to traditional accounts\nh) Short-Term Rental Strategy with Accelerated Depreciation:\nPotential for up to $200,000 in first-year depreciation\ndeductions (assuming a $500,000 property)\nEstimated tax savings of $44,000 in the first year (at 22%\nmarginal tax rate)\nOngoing tax benefits from rental income offset by depreciation\nand expenses\nPotential for property appreciation and building of real estate\nportfolio\nQualification as active investor could allow for deduction of\nrental losses against other income\ni) Tax-Loss Harvesting Strategy for Bitcoin Gains:\nPotential to fully offset Bitcoin gains, eliminating associated tax\nliability\nProvides flexibility in managing overall investment portfolio\nAllows for maintenance of Bitcoin position while mitigating tax\nimpact\nThis section outlines the key opportunities for tax optimization,\nprioritized based on potential impact and your goals. In the next\nsection, we'll dive deeper into each of these strategies with more\ndetailed recommendations",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "b62d77ab-2f51-4079-a16e-afaaebf379f6",
+      "name": "Identified Tax Planning Opportunities",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        80,
+        1680
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
+              "name": "system",
+              "value": "You are a family office tax strategist.\n\nWe will use the template as an outline.\n\nCreate section \"Strategy Recommendations\".\n\nCore Strategy Focus:\nIntegrate the Family Operating System - our framework for transforming personal finances into strategic business operations, typically converting 50% of personal expenses into business deductions through proper entity structure and documentation.\n\n\nSection Requirements:\n1. Length: appropriate length to delive high quality end result for client so that they feel as though they got what they paid for\n2. Voice: Direct and personal but without greetings/introductions\n3. Format: Start with section heading only\n4. Always consider the year as the current year.\n5. Enhance Risk Management and Compliance:\n6. Incorporate more detailed guidance on documentation requirements.\n7. Emphasize the importance of maintaining a clear separation between personal and business activities.\n8. Provide specific examples of acceptable business purposes for expenses.\n9. Include a section on potential IRS audit triggers and how to mitigate them.\n10. Improve Organization and Structure:\n11. Reorganize the content to create a more logical flow.\n12. Use clearer headings and subheadings.\n13. Eliminate redundancies.\n14. Expand Implementation Roadmap:\n15. Provide a more detailed, step-by-step roadmap, potentially incorporating checklists and timelines.\n16. Include specific instructions for setting up accounting systems and expense tracking procedures.\n17. Address the automation aspect directly, outlining how technology will be used to streamline implementation.\n18. Address Dependent Care and Business Acquisition:\n19. Add sections on dependent care strategies and business acquisition planning, even if they are less detailed than in Plan 1.\n20. Provide an overview of how the FOS structure can be adapted to accommodate these needs.\n21. Clarify Long-Term Vision:\n22. Include a section on long-term financial planning and how the FOS strategy fits into the client's overall goals.\n23. Briefly discuss asset protection and wealth transfer considerations.\n24. Explain Acronyms\n25. Define acronyms like FLP, FMC, and FOS the first time they are used.\n\nSection Structure:\n1. Begin with **Strategy Recommendations**\n2. Write a brief overview of the topic, addressing the reader directly in the second person. Avoid overly formal language and phrases like 'based on'.\n3. Present recommendations with specific:\n    - Tax savings potential\n    - Documentation requirements\n    - Entity structure implications\n    - Implementation steps\n    - Compliance considerations\n    - Focus on current vs optimized structure\n    - Include specific savings projections with tables\n    - Show rate comparisons\n    - Detail compliance requirements\n    - Detail organizational design\n    - Show entity relationships\n    - Include control flow explanations\n    - Emphasize tax implications\n    - Present risk management framework\n    - Include protection strategies\n    - Show risk assessment\n    - Address legal requirements\n    - Detail growth strategies\n    - Include projection models\n    - Show investment strategy\n    - Emphasize tax efficiency\n    - Focus on generational transfer\n    - Detail trust structures\n    - Show transfer strategy\n    - Include tax implications\n",
+              "type": "string"
+            },
+            {
+              "id": "314db41d-d2d3-4a69-81f7-a3b50ebecfa8",
+              "name": "user_beyer",
+              "value": "={{ $('User Prompt').first().json.user_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "70b16846-7644-4878-b2e7-8023d99add7b",
+              "name": "ai_beyer",
+              "value": "**Strategy Recommendations**\n============================\n\n**Core Strategy 1: Family Operating System Implementation**\n-----------------------------------------------------------\n\n### **Phase 1: Entity Formation**\n\n*           **Living Trust Establishment**\n    *           Create revocable living trust\n    *           Transfer appropriate assets to trust\n    *           Designate Michael and Diana as co-trustees\n    *           Estimated Cost: $3,500 - $5,500\n    *           Timeline: 30-45 days\n*           **Family Limited Partnership (FLP)**\n    *           Form Georgia FLP\n    *           Structure ownership: 99% Living Trust, 1% FMC\n    *           Develop partnership agreement\n    *           Establish operating procedures\n    *           Estimated Cost: $3,000 - $4,000\n    *           Timeline: 45-60 days\n*           **Family Management Company (FMC)**\n    *           Form S-Corporation\n    *           Establish bylaws and operating procedures\n    *           Set up accounting systems\n    *           Implement payroll system\n    *           Estimated Cost: $2,000 - $3,000\n    *           Timeline: 30-45 days\n\n### **Phase 2: Business Activity Implementation**\n\n*           **Legitimate Business Activities**\n    *           Family office management services\n    *           Property management\n    *           Investment oversight\n    *           Business development\n    *           Timeline: 60-90 days\n*           **Documentation Systems**\n    *           QuickBooks Online setup\n    *           Expense tracking software\n    *           Document management system\n    *           Regular financial reporting\n    *           Estimated Cost: $50-100/month\n\n**Core Strategy 2: Retirement and Benefits Optimization**\n---------------------------------------------------------\n\n### **Immediate Actions**\n\n*           **401(k) Maximization**\n    *           Increase contribution to $22,500 annual limit\n    *           Review Home Depot matching policies\n    *           Adjust withholding accordingly\n    *           Annual Tax Savings: $7,875 (35% bracket)\n*           **HSA Strategy**\n    *           Maintain maximum family contribution ($7,750)\n    *           Invest HSA funds for long-term growth\n    *           Keep medical receipts for future tax-free withdrawals\n    *           Annual Tax Savings: $2,712 (35% bracket)\n\n**Core Strategy 3: Dependent Care Optimization**\n------------------------------------------------\n\n### **Implementation Steps**\n\n*           **Childcare Expenses**\n    *           Maximize dependent care FSA ($5,000)\n    *           Structure additional care through FMC\n    *           Document all care expenses meticulously\n    *           Annual Tax Savings: $1,750 (35% bracket)\n*           **Elder Care Strategy**\n    *           Implement caregiver agreements through FMC\n    *           Structure medical expense reimbursements\n    *           Document care services and expenses\n    *           Annual Tax Savings: $2,100 - $3,500\n\n \n-\n\n**Core Strategy 4: Business Acquisition Preparation**\n-----------------------------------------------------\n\n### **5-Year Plan**\n\n*           **Phase 1: Capital Accumulation (Years 1-2)**\n    *           Build business acquisition fund through FLP\n    *           Establish business credit profile\n    *           Research target industries\n    *           Timeline: 24 months\n*           **Phase 2: Acquisition Strategy (Years 3-5)**\n    *           Identify target businesses\n    *           Structure purchase through FLP\n    *           Plan for tax-efficient acquisition\n    *           Timeline: 36 months\n\n**Risk Mitigation Strategies**\n------------------------------\n\n### **Documentation Requirements**\n\n*           **Required Records**\n    *           Monthly financial statements\n    *           Annual business reports\n    *           Meeting minutes\n    *           Transaction logs\n    *           Expense documentation\n*           **Professional Support Team**\n    *           Tax advisor: Quarterly reviews\n    *           Legal counsel: Annual review\n    *           CPA: Monthly bookkeeping\n    *           Financial advisor: Quarterly reviews",
+              "type": "string"
+            },
+            {
+              "id": "fdd73e13-34f3-4490-90b5-c92f81fa5900",
+              "name": "user_bill",
+              "value": "={{ $('User Prompt').first().json.user_bill }}",
+              "type": "string"
+            },
+            {
+              "id": "1ab0d9e1-781b-4440-8b03-e2edcbd1daab",
+              "name": "ai_bill",
+              "value": "IV. Detailed Strategy\nRecommendations\nIn this section, we'll provide in-depth descriptions of each major\nstrategy, including relevant tax code references, potential tax\nsavings calculations, implementation plans, and risk analyses.\na) Qualified Opportunity Zone (QOZ) Investment\nDescription:\nInvest capital gains from the sale of company shares into a\nQualified Opportunity Zone fund to defer and potentially reduce\ncapital gains tax.\nRelevant tax code:\nIRC Section 1400Z-2\nPotential tax savings calculation:\nAssuming $100,000 in capital gains:\nImmediate tax deferral: $23,800 (assuming 23.8% long-term\ncapital gains rate)\nPotential 10% reduction in deferred gain after 5 years: $2,380\nPotential tax-free appreciation on QOZ investment if held for\n10+ years\nImplementation plan:\n1. Identify and vet suitable QOZ funds aligned with client's risk\ntolerance\n2. Sell company shares and invest gains into chosen QOZ fund\nwithin 180 days\n3. Make appropriate elections on Form 8949 when filing taxes\n4. Monitor investment and hold for at least 5 years, ideally 10+\nyears\nRisk analysis:\nModerate risk due to potential fluctuations in QOZ investments\nIlliquidity risk as investments should be held long-term\nRegulatory risk if QOZ rules change\nb) Charitable Remainder Trust (CRT)\nDescription:\nTransfer appreciated assets (e.g., company shares) to a CRT to\ngenerate immediate tax deductions and manage capital gains.\nRelevant tax code:\nIRC Sections 664, 7520, 2055, 2522\nPotential tax savings calculation:\nAssuming $500,000 in appreciated assets transferred to CRT:\n- Immediate tax deduction: ~$100,000 (varies based on trust terms\nand IRS rates)\n- Avoided capital gains tax: ~$119,000 (assuming 23.8% long-term\ncapital gains rate)\nImplementation plan:\n1. Determine appropriate CRT type (CRAT or CRUT) based on client\nneeds\n2. Draft and execute CRT documents with legal counsel\n3. Transfer appreciated assets to the CRT\n4. Obtain qualified appraisal for non-cash assets\n5. File Form 5227 annually to report CRT activities\nRisk analysis:\nLow investment risk as assets can be diversified within the trust\nIrrevocable transfer, so assets cannot be reclaimed\nPotential for reduced overall returns compared to outright sale and\nreinvestment\nc) Real Estate Professional Status for Vacation\nRental\nDescription:\nMrs. Ennis qualifies as a real estate professional to potentially\noffset rental property losses against other income.\nRelevant tax code:\nIRC Section 469(c)(7)\nPotential tax savings calculation:\nAssuming $20,000 in rental property losses:\nPotential tax savings: $4,400 (assuming 22% marginal tax rate)\nImplementation plan:\n1. Mrs. Ennis must work 750+ hours annually in real estate\nactivities\n2. Maintain detailed time logs of all real estate activities\n3. Ensure more than half of Mrs. Ennis's working hours are in real\nestate\n4. Acquire and manage the vacation rental property\n5. Properly document and report rental income and expenses\nRisk analysis:\nLow tax risk if properly documented, but requires significant\ntime commitment\nPotential for IRS scrutiny, necessitating meticulous record\u0002keeping\nOpportunity cost of Mrs. Ennis's time in other potentially\nprofitable activities\nd) 1031 Exchange for Vacation Rental Property\nDescription:\nUse a 1031 exchange to defer capital gains tax on the sale of the\nvacation rental property. This strategy has been recommended\nwith the idea of potential future gains on the sale of the asset.\nRelevant tax code:\nIRC Section 1031\nPotential tax savings calculation:\nAssuming a $500,000 property exchange with $200,000 in capital\ngains:\nDeferred capital gains tax: $47,600 (assuming 23.8% long\u0002term capital gains rate)\nImplementation plan:\n1. Identify a suitable replacement property for the exchange\n2. Engage a qualified intermediary to facilitate the exchange\n3. Sell the relinquished property\n4. Identify replacement property within 45 days of sale\n5. Complete the purchase of the replacement property within 180\ndays\n6. File Form 8824 with tax return\nRisk analysis:\nModerate risk due to strict timing requirements\nProperty market fluctuations may affect value of exchanged\nproperties\nPotential for partial tax liability if replacement property is of\nlesser value\ne) Tax-Efficient Bitcoin Investment Strategies\nDescription:\nImplement strategies like tax-loss harvesting and long-term\nholding to minimize tax impact of Bitcoin investments.\nRelevant tax code:\nIRS Notice 2014-21, IRC Section 1091 (wash sale rule doesn't apply to\ncrypto)\nPotential tax savings calculation:\nVaries based on investment amount and market performance.\nExample:\n$10,000 in losses harvested could offset $10,000 in gains, saving\n$2,380 in taxes (at 23.8% rate)\nImplementation plan:\n1. Establish a system for tracking cost basis of all Bitcoin purchases\n2. Implement a tax-loss harvesting strategy during market dips\n3. Hold Bitcoin for over one year when possible to qualify for long\u0002term capital gains rates\n4. Consider using Bitcoin IRAs for tax-advantaged crypto investing\n5. Properly report all crypto transactions on Form 8949\nRisk analysis:\nHigh market risk due to Bitcoin's volatility\nRegulatory risk as crypto tax laws may change\nComplexity in tracking and reporting numerous transactions\ng) Retirement Account Optimization\nDescription:\nEnhance contributions to and management of retirement accounts\nto optimize tax benefits.\nRelevant tax code:\nIRC Sections 401, 408, 415\nPotential tax savings calculation:\nAssuming $19,500 contribution to a traditional 401(k):\nTax savings: $4,290 (assuming 22% marginal tax rate)\nImplementation plan:\n1. Maximize contributions to available retirement accounts (401(k),\nIRA)\n2. Consider Backdoor Roth IRA strategy if income exceeds direct\ncontribution limits\n3. Evaluate potential for setting up a Solo 401(k) for the business\n4. Implement age-based catch-up contributions when eligible\n5. Regularly rebalance and optimize investment allocation within\naccounts\nRisk analysis:\nInvestment risk based on chosen allocation\nLiquidity limitations due to early withdrawal penalties\nPotential for future tax rate changes affecting traditional account\nwithdrawals\nh) Short-Term Rental Strategy with Accelerated\nDepreciation\nDescription:\nAcquire and operate an Airbnb property as a short-term rental, utilizing\nthe 100-hour material participation rule and accelerated depreciation\nmethods to maximize tax benefits.\nRelevant tax code:\nIRC Section 469(c)(7) - Material participation in real estate activities\nIRC Section 168(k) - Bonus depreciation\nIRC Section 179 - Election to expense certain depreciable business\nassets\nPotential tax savings calculation: Assuming a $500,000 property\npurchase:\nFirst-year depreciation deduction: Up to $200,000 (using 100%\nbonus depreciation)\nPotential tax savings: $44,000 (assuming 22% marginal tax rate)\nOngoing annual depreciation: Approximately $18,000 per year (39-\nyear life for residential rental property)\nImplementation plan:\n1.Identify and acquire a suitable property for Airbnb rental\n2.Conduct a cost segregation study to maximize depreciation benefits\nSet up the property for short-term rentals (furnishings, amenities,\netc.)\n3.\nImplement a system to track rental income, expenses, and time\nspent on the activity\n4.\nEnsure at least 100 hours of material participation in the rental\nactivity annually\n5.\nConsult with Taxtics to properly report rental activity and\ndepreciation on tax returns\n6.\nRisk analysis:\nMarket risk: Fluctuations in real estate market and short-term\nrental demand\nRegulatory risk: Changes in local laws regarding short-term\nrentals\nTax law risk: Potential future changes to bonus depreciation rules\nOperational risk: Managing property and ensuring consistent\nbookings\nMitigation strategies:\nThorough market research before property acquisition\nStay informed about local short-term rental regulations\nDiversify depreciation strategies (bonus depreciation, Section\n179, regular MACRS)\nConsider professional property management to ensure efficient\noperations",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "3fd9e582-7c4f-4336-a529-bfb84531c34f",
+      "name": "Strategy Recommendations",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        80,
+        1940
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
+              "name": "system",
+              "value": "You are a family office tax strategist.\n\nWe will use the template as an outline.\n\nCreate section \"Implementation Roadmap\".\n\nCore Strategy Focus:\nIntegrate the Family Operating System - our framework for transforming personal finances into strategic business operations, typically converting 50% of personal expenses into business deductions through proper entity structure and documentation.\n\n\nSection Requirements:\n1. Length: appropriate length to delive high quality end result for client so that they feel as though they got what they paid for\n2. Voice: Direct and personal but without greetings/introductions\n3. Format: Start with section heading only\n4. Always consider the year as the current year.\n5. Enhance Risk Management and Compliance:\n6. Incorporate more detailed guidance on documentation requirements.\n7. Emphasize the importance of maintaining a clear separation between personal and business activities.\n8. Provide specific examples of acceptable business purposes for expenses.\n9. Include a section on potential IRS audit triggers and how to mitigate them.\n10. Improve Organization and Structure:\n11. Reorganize the content to create a more logical flow.\n12. Use clearer headings and subheadings.\n13. Eliminate redundancies.\n14. Expand Implementation Roadmap:\n15. Provide a more detailed, step-by-step roadmap, potentially incorporating checklists and timelines.\n16. Include specific instructions for setting up accounting systems and expense tracking procedures.\n17. Address the automation aspect directly, outlining how technology will be used to streamline implementation.\n18. Address Dependent Care and Business Acquisition:\n19. Add sections on dependent care strategies and business acquisition planning, even if they are less detailed than in Plan 1.\n20. Provide an overview of how the FOS structure can be adapted to accommodate these needs.\n21. Clarify Long-Term Vision:\n22. Include a section on long-term financial planning and how the FOS strategy fits into the client's overall goals.\n23. Briefly discuss asset protection and wealth transfer considerations.\n24. Explain Acronyms\n25. Define acronyms like FLP, FMC, and FOS the first time they are used.\n\nSection Structure:\n1. Begin with **Implementation Roadmap**\n3. Present recommendations with specific:\n    - Tax savings potential\n    - Documentation requirements\n    - Entity structure implications\n    - Implementation steps\n    - Compliance considerations\n    - Focus on current vs optimized structure\n    - Include specific savings projections with tables\n    - Show rate comparisons\n    - Detail compliance requirements\n    - Detail organizational design\n    - Show entity relationships\n    - Include control flow explanations\n    - Emphasize tax implications\n    - Present risk management framework\n    - Include protection strategies\n    - Show risk assessment\n    - Address legal requirements\n    - Detail growth strategies\n    - Include projection models\n    - Show investment strategy\n    - Emphasize tax efficiency\n    - Focus on generational transfer\n    - Detail trust structures\n    - Show transfer strategy\n    - Include tax implications\n\n",
+              "type": "string"
+            },
+            {
+              "id": "314db41d-d2d3-4a69-81f7-a3b50ebecfa8",
+              "name": "user_beyer",
+              "value": "={{ $('User Prompt').first().json.user_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "70b16846-7644-4878-b2e7-8023d99add7b",
+              "name": "ai_beyer",
+              "value": "**Implementation Roadmap**\n==========================\n\n**Phase Implementation Analysis**\n---------------------------------\n\n \n-\n\n**Phase 1: Entity Formation (90 Days)**\n---------------------------------------\n\n### **Days 1-30**\n\n*           Engage legal counsel\n*           Draft trust documents\n*           File for EIN numbers\n*           Begin bank account setup\n\n### **Days 31-60**\n\n*           Form FLP and FMC\n*           Develop operating agreements\n*           Set up accounting systems\n*           Initialize payroll systems\n\n### **Days 61-90**\n\n*           Complete asset transfers\n*           Finalize documentation systems\n*           Staff training and procedures\n*           System testing and verification\n\n**Phase 2: Systems Setup (60 Days)**\n------------------------------------\n\n### **Key Implementation Steps**\n\n*           QuickBooks Online setup and customization\n*           Document management system implementation\n*           Expense tracking software integration\n*           Banking and payment systems setup\n*           Reporting templates creation\n\n**Phase 3: Benefits Optimization (30 Days)**\n--------------------------------------------\n\n*           Adjust 401(k) contributions\n*           Optimize HSA funding\n*           Implement dependent care strategies\n*           Review and adjust withholding\n\n \n-\n\n**Critical Success Factors**\n----------------------------\n\n### **Documentation Requirements**\n\n*           Entity formation documents\n*           Operating agreements\n*           Banking resolutions\n*           Meeting minutes\n\n###  \n\n### **Professional Team**\n\n*           Tax Advisor\n*           Legal Counsel\n*           CPA\n\n**Monitoring and Adjustment**\n-----------------------------\n\n*           Monthly financial review meetings\n*           Quarterly compliance checks\n*           Annual strategy assessment\n*           Ongoing documentation updates",
+              "type": "string"
+            },
+            {
+              "id": "33399e50-7b2e-46fa-8508-0b5bdfe50bea",
+              "name": "user_bill",
+              "value": "={{ $('User Prompt').first().json.user_bill }}",
+              "type": "string"
+            },
+            {
+              "id": "8b23783d-c268-414e-8450-5271e5164e61",
+              "name": "ai_bill",
+              "value": "VI. Implementation\nRoadmap\nThis section outlines a detailed timeline for implementing the\nproposed strategies, key milestones, action items, and\nresponsibilities. We'll also address potential obstacles and solutions.\nDetailed Timeline:\nQ3 2024 (July - September):\n1. Set up Charitable Remainder Trust (CRT)\nWeek 1-2: Consult with attorney to draft CRT documents\nWeek 3-4: Execute CRT documents and transfer assets\nWeek 5-6: Obtain qualified appraisal for non-cash assets\nWeek 7-8: File necessary forms with IRS\n2. Begin Bitcoin investment strategy implementation\nWeek 1: Set up system for tracking Bitcoin cost basis\nWeek 2-4: Develop tax-loss harvesting strategy\nWeek 5-8: Implement strategy and monitor performance\nQ4 2024 (October - December):\n3. Identify and invest in Qualified Opportunity Zone (QOZ) fund\nWeek 1-4: Research and vet potential QOZ funds\nWeek 5-6: Select fund and complete investment\nWeek 7-8: Ensure proper documentation for tax reporting\n4. Maximize retirement account contributions\nOngoing: Adjust contributions to max out 401(k) by year-end\nWeek 1-2: Evaluate eligibility for Backdoor Roth IRA\nQ1 2025 (January - March):\n5. Begin process for vacation rental property acquisition and arrange\ncost segregation\nShort-Term Rental Strategy Operation\nWeek 1-4: List property on Airbnb and other short-term rental\nplatforms and complete cost segregation study.\nWeek 5-12: Actively manage property, ensuring 100-hour\nparticipation requirement is met\nQ2 2025 (April - June):\n6. Mrs. Ennis starts qualifying for Real Estate Professional Status\nWeek 1: Begin detailed tiddme-logging of real estate activities\nOngoing: Ensure >750 hours per year in real estate activities\nOngoing (Throughout the year):\n8. Education credits optimization\nTrack qualified education expenses for eligible dependents\nMaintain records for tax filing\n9. Regular strategy reviews and adjustments\nQuarterly: Review and rebalance investment portfolios\nBi-annually: Assess tax strategy effectiveness and make\nadjustments\nKey Milestones and Action Items:\nCRT establishment and funding\nQOZ fund investment\nCost Segregation Study\nReal Estate Professional Status qualification\nAnnual tax filing incorporating new strategies\nResponsibilities:\nClient:\nProvide necessary financial information and documents\nMake final decisions on investments and property acquisitions\nActively manage short-term rental to meet 100-hour\nrequirement\nMaintain detailed records, especially for real estate activities\nCommit to ongoing education about implemented strategies\nPromptly inform tax advisor of any planned Bitcoin sales\nTax Advisor:\nGuide client through property selection process, considering tax\nimplications\nCoordinate with real estate professionals and lenders as needed\nArrange for cost segregation study\nCoordinate with legal counsel for CRT establishment\nProvide guidance on QOZ fund selection and 1031 exchange\nprocess\nAssist in developing and implementing Bitcoin investment\nstrategy\nPrepare and file necessary tax forms\nConduct regular strategy reviews and provide ongoing advice\nPotential Obstacles and Solutions:\n1. Obstacle: Difficulty finding suitable QOZ fund\nSolution: Expand search criteria or consider multiple smaller\ninvestments\n3. Obstacle: Challenges in meeting Real Estate Professional Status\nhours\nSolution: Carefully plan and document activities; consider\ndelegating other responsibilities\n4. Obstacle: Bitcoin volatility affecting tax strategy\nSolution: Implement stop-loss orders; diversify crypto\ninvestments\n5. Obstacle: Changes in tax laws affecting planned strategies\nSolution: Stay informed of potential changes; maintain flexibility\nin plan to adapt as needed\n6. Obstacle: Difficulty finding suitable short-term rental property\nSolution: Expand search criteria or consider multiple smaller properties\n7. Obstacle: Challenges in meeting 100-hour participation requirement\nSolution: Develop a detailed plan for property management activities;\nconsider partial outsourcing while maintaining sufficient personal\ninvolvement\n8. Obstacle: Lower than expected rental income\nSolution: Adjust pricing strategy; enhance property amenities; consider\nusing multiple rental platforms\n9. Obstacle: Changes in local regulations regarding short-term rentals\nSolution: Stay informed about local laws; have a backup plan for long\u0002term rental if needed\n10. Obstacle: Future tax law changes affecting depreciation benefits\nSolution: Stay informed of potential changes; maintain flexibility in plan\nto adapt as needed\n",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "fbf25934-48ef-4bbd-b590-23a462025699",
+      "name": "Implementation Roadmap",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        120,
+        2500
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
+              "name": "system",
+              "value": "You are a family office tax strategist.\n\nWe will use the template as an outline.\n\nCreate section \"Additional Considerations\".\n\nCore Strategy Focus:\nIntegrate the Family Operating System - our framework for transforming personal finances into strategic business operations, typically converting 50% of personal expenses into business deductions through proper entity structure and documentation.\n\n\nSection Requirements:\n1. Length: appropriate length to delive high quality end result for client so that they feel as though they got what they paid for\n2. Voice: Direct and personal but without greetings/introductions\n3. Format: Start with section heading only\n4. Always consider the year as the current year.\n5. Enhance Risk Management and Compliance:\n6. Incorporate more detailed guidance on documentation requirements.\n7. Emphasize the importance of maintaining a clear separation between personal and business activities.\n8. Provide specific examples of acceptable business purposes for expenses.\n9. Include a section on potential IRS audit triggers and how to mitigate them.\n10. Improve Organization and Structure:\n11. Reorganize the content to create a more logical flow.\n12. Use clearer headings and subheadings.\n13. Eliminate redundancies.\n14. Expand Implementation Roadmap:\n15. Provide a more detailed, step-by-step roadmap, potentially incorporating checklists and timelines.\n16. Include specific instructions for setting up accounting systems and expense tracking procedures.\n17. Address the automation aspect directly, outlining how technology will be used to streamline implementation.\n18. Address Dependent Care and Business Acquisition:\n19. Add sections on dependent care strategies and business acquisition planning, even if they are less detailed than in Plan 1.\n20. Provide an overview of how the FOS structure can be adapted to accommodate these needs.\n21. Clarify Long-Term Vision:\n22. Include a section on long-term financial planning and how the FOS strategy fits into the client's overall goals.\n23. Briefly discuss asset protection and wealth transfer considerations.\n24. Explain Acronyms\n25. Define acronyms like FLP, FMC, and FOS the first time they are used.\n\nSection Structure:\n1. Begin with **Additional Considerations**\n3. Present recommendations with specific:\n    - Tax savings potential\n    - Documentation requirements\n    - Entity structure implications\n    - Implementation steps\n    - Compliance considerations\n    - Focus on current vs optimized structure\n    - Include specific savings projections with tables\n    - Show rate comparisons\n    - Detail compliance requirements\n    - Detail organizational design\n    - Show entity relationships\n    - Include control flow explanations\n    - Emphasize tax implications\n    - Present risk management framework\n    - Include protection strategies\n    - Show risk assessment\n    - Address legal requirements\n    - Detail growth strategies\n    - Include projection models\n    - Show investment strategy\n    - Emphasize tax efficiency\n    - Focus on generational transfer\n    - Detail trust structures\n    - Show transfer strategy\n    - Include tax implications\n\n",
+              "type": "string"
+            },
+            {
+              "id": "314db41d-d2d3-4a69-81f7-a3b50ebecfa8",
+              "name": "user_beyer",
+              "value": "={{ $('User Prompt').first().json.user_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "70b16846-7644-4878-b2e7-8023d99add7b",
+              "name": "ai_beyer",
+              "value": "**Additional Considerations**\n=============================\n\n**Beyond Tax Savings: A Comprehensive Family Strategy**\n-------------------------------------------------------\n\nThe tax strategy we've outlined for the Beyer family extends far beyond mere tax savings. It creates a foundation for long-term family wealth management and business development. Let's explore these broader implications and benefits.\n\n**Asset Protection and Family Security**\n----------------------------------------\n\nThe proposed structure offers significant protection for the Beyer family's assets. By properly separating business and personal assets through the Family Limited Partnership (FLP) and Family Management Company (FMC), we create multiple layers of protection. This is particularly important given Michael's future business acquisition plans and his current position at Home Depot.\n\nThe structure also provides an elegant solution for managing the complex family dynamic of caring for both young children and elderly parents. The FMC can legitimately manage and document care expenses while providing structure for family financial decisions.\n\n**Business Growth Platform**\n----------------------------\n\nMichael's goal of purchasing a business in the next 5-10 years aligns perfectly with our structure. The FLP and FMC create an ideal platform for:\n\n*           Building business management experience before the major acquisition\n*           Establishing a strong business credit history\n*           Creating systems and procedures that can scale\n*           Developing relationships with potential lenders and investors\n\nThis foundation will prove invaluable when the time comes to acquire or start a new business venture.\n\n**Career Integration**\n----------------------\n\nGiven Michael's current position as a Product Management Manager at Home Depot, we've carefully designed this structure to complement rather than conflict with his employment. The strategy maintains:\n\n*           Full compliance with Home Depot's employment policies\n*           Protection of current benefits and stock options\n*           Opportunities for professional growth\n*           Clear separation between employment and personal business activities\n\n**Family Education and Development**\n------------------------------------\n\nOne often-overlooked benefit of this structure is its role in family education. The Beyer family can use this as a platform to:\n\n*           Teach their children about business and financial management\n*           Create family governance structures that can last generations\n*           Develop shared values around wealth and responsibility\n*           Build financial literacy among all family members\n\n**Professional Network Development**\n------------------------------------\n\nImplementing this strategy necessitates building a strong professional network, including:\n\n*           Legal counsel for entity formation and maintenance\n*           Accounting professionals for tax and financial management\n*           Investment advisors for wealth management\n*           Insurance professionals for risk management\n\nThis network becomes a valuable resource for future business and investment opportunities.\n\n**Future Adaptability**\n-----------------------\n\nThe structure we've designed provides flexibility for future changes in:\n\n*           Tax law and regulations\n*           Family circumstances\n*           Business opportunities\n*           Investment strategies\n\nThis adaptability ensures the strategy remains effective even as circumstances change.\n\n**Industry-Specific Considerations**\n------------------------------------\n\n### **Retail Sector Experience**\n\nMichael's experience at Home Depot provides valuable insights into retail operations, which could be leveraged in future business acquisitions. His industry knowledge should influence the types of businesses considered for purchase.\n\n### **Real Estate Opportunities**\n\nThe structure we've created can easily accommodate real estate investments, which might be a natural progression given the family's current property management activities through the FMC.\n\n**Risk Management Perspective**\n-------------------------------\n\nWhile our structure provides numerous benefits, it's important to acknowledge and plan for potential risks:\n\n### **1\\. Regulatory Changes**\n\n*           Regular reviews ensure compliance\n*           Professional guidance helps anticipate changes\n*           Structure can adapt as needed\n\n### **2\\. Family Dynamics**\n\n*           Clear governance prevents conflicts\n*           Professional management maintains objectivity\n*           Structured decision-making processes\n\n### **3\\. Business Evolution**\n\n*           Flexibility for new opportunities\n*           Scalability for growth\n*           Protection during transitions\n\n**Moving Forward**\n------------------\n\nSuccess with this strategy requires:\n\n*           Commitment to proper documentation\n*           Regular family meetings and communication\n*           Ongoing professional education\n*           Periodic strategy reviews and adjustments\n\nThe Beyer family's situation presents unique opportunities to leverage this structure for both immediate tax benefits and long-term family prosperity. Their mix of W-2 income, future business aspirations, and multi-generational family responsibilities makes this comprehensive approach particularly valuable.",
+              "type": "string"
+            },
+            {
+              "id": "086a2293-35bd-41ce-a0a2-cbe2ea76ed44",
+              "name": "user_bill",
+              "value": "={{ $('User Prompt').first().json.user_bill }}",
+              "type": "string"
+            },
+            {
+              "id": "8d312376-a146-4005-a75e-c4c1db9479f1",
+              "name": "ai_bill",
+              "value": "VII. Additional\nConsiderations\nIn this section, we'll discuss non-tax benefits of the proposed strategies,\npotential future opportunities, and specific considerations to your industry.\nNon-tax benefits of proposed strategies:\n1. Charitable Remainder Trust (CRT)\nPhilanthropic impact: Supporting chosen charities\nEstate planning: Reducing taxable estate\nIncome stream: Potential for increased cash flow during retirement\n2. Qualified Opportunity Zone (QOZ) investment\nPortfolio diversification: Exposure to real estate development\nPotential for high returns in emerging markets\nContribution to economic development in underserved areas\n3. Real Estate Professional Status\nBusiness expansion: Opportunity to develop expertise in real estate\nNetwork building: Connections in the real estate industry\nSkill development: Property management and investment skills\n4. Bitcoin investment strategy\nPortfolio diversification: Exposure to cryptocurrency markets\nPotential for high returns: Historically volatile but with upside\npotential\nTechnological adaptation: Staying current with financial\ntechnology trends\nPotential future opportunities:\n1. Expansion of tech company\nConsider R&D tax credits for technology development\nExplore export incentives if expanding internationally\nInvestigate state-specific tech industry tax incentives\n2. Green energy investments\nSolar Investment Tax Credit (ITC) for property improvements\nElectric Vehicle Tax Credit for business vehicles\nEnergy-efficient building deductions (Section 179D)\nIndustry-specific considerations (Tech Industry):\n1. Intellectual Property (IP) management\nConsider IP holding company structures for tax efficiency\nExplore patent box regimes if expanding internationally\n2. Employee compensation\nStock option plans and their tax implications\nDeferred compensation arrangements for key employees\n3. State and local tax considerations\nNexus issues for software sales and cloud-based services\nState-specific R&D tax credits\n4. International tax planning\nTransfer pricing for international operations\nForeign tax credits and repatriation strategies\n5. Cybersecurity investments\nPotential tax deductions for cybersecurity measures\n",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "68266295-4776-46d0-8bef-a2c552952ad8",
+      "name": "Additional Considerations",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        120,
+        2740
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
+              "name": "system",
+              "value": "You are a family office tax strategist.\n\nWe will use the template as an outline.\n\nCreate section \"Ongoing Optimization Plan\".\n\nCore Strategy Focus:\nIntegrate the Family Operating System - our framework for transforming personal finances into strategic business operations, typically converting 50% of personal expenses into business deductions through proper entity structure and documentation.\n\n\nSection Requirements:\n1. Length: appropriate length to delive high quality end result for client so that they feel as though they got what they paid for\n2. Voice: Direct and personal but without greetings/introductions\n3. Format: Start with section heading only\n4. Always consider the year as the current year.\n5. Enhance Risk Management and Compliance:\n6. Incorporate more detailed guidance on documentation requirements.\n7. Emphasize the importance of maintaining a clear separation between personal and business activities.\n8. Provide specific examples of acceptable business purposes for expenses.\n9. Include a section on potential IRS audit triggers and how to mitigate them.\n10. Improve Organization and Structure:\n11. Reorganize the content to create a more logical flow.\n12. Use clearer headings and subheadings.\n13. Eliminate redundancies.\n14. Expand Implementation Roadmap:\n15. Provide a more detailed, step-by-step roadmap, potentially incorporating checklists and timelines.\n16. Include specific instructions for setting up accounting systems and expense tracking procedures.\n17. Address the automation aspect directly, outlining how technology will be used to streamline implementation.\n18. Address Dependent Care and Business Acquisition:\n19. Add sections on dependent care strategies and business acquisition planning, even if they are less detailed than in Plan 1.\n20. Provide an overview of how the FOS structure can be adapted to accommodate these needs.\n21. Clarify Long-Term Vision:\n22. Include a section on long-term financial planning and how the FOS strategy fits into the client's overall goals.\n23. Briefly discuss asset protection and wealth transfer considerations.\n24. Explain Acronyms\n25. Define acronyms like FLP, FMC, and FOS the first time they are used.\n\nSection Structure:\n1. Begin with **Ongoing Optimization Plan**\n3. Present recommendations with specific:\n    - Tax savings potential\n    - Documentation requirements\n    - Entity structure implications\n    - Implementation steps\n    - Compliance considerations\n    - Focus on current vs optimized structure\n    - Include specific savings projections with tables\n    - Show rate comparisons\n    - Detail compliance requirements\n    - Detail organizational design\n    - Show entity relationships\n    - Include control flow explanations\n    - Emphasize tax implications\n    - Present risk management framework\n    - Include protection strategies\n    - Show risk assessment\n    - Address legal requirements\n    - Detail growth strategies\n    - Include projection models\n    - Show investment strategy\n    - Emphasize tax efficiency\n    - Focus on generational transfer\n    - Detail trust structures\n    - Show transfer strategy\n    - Include tax implications",
+              "type": "string"
+            },
+            {
+              "id": "314db41d-d2d3-4a69-81f7-a3b50ebecfa8",
+              "name": "user_beyer",
+              "value": "={{ $('User Prompt').first().json.user_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "70b16846-7644-4878-b2e7-8023d99add7b",
+              "name": "ai_beyer",
+              "value": "**Ongoing Optimization Plan**\n=============================\n\n**Maintaining Strategic Excellence**\n------------------------------------\n\nA tax strategy is not a static document but a living system that requires regular attention and optimization. For the Beyer family, ongoing success depends on regular monitoring, timely adjustments, and proactive planning. Here's how we'll ensure the strategy remains effective and compliant over time.\n\n**Quarterly Review Process**\n----------------------------\n\nWe've designed a quarterly review system that focuses on four key areas throughout the year:\n\n### **First Quarter (January-March)**\n\nOur first quarter review focuses on tax preparation and current year planning. During this time, we:\n\n*           Analyze previous year's results against projections\n*           Identify any gaps in documentation or compliance\n*           Update strategies based on new tax laws\n*           Set specific tax reduction targets for current year\n\n### **Second Quarter (April-June)**\n\nAfter tax season, we focus on structural optimization:\n\n*           Review entity structures and relationships\n*           Evaluate effectiveness of business expense classifications\n*           Assess family compensation arrangements\n*           Update investment strategies and goals\n\n###  \n\n### **Third Quarter (July-September)**\n\nMid-year focuses on growth and future planning:\n\n*           Evaluate business acquisition opportunities\n*           Review real estate investment potential\n*           Update family education and training plans\n*           Assess technology and system needs\n\n### **Fourth Quarter (October-December)**\n\nYear-end planning becomes our priority:\n\n*           Project year-end tax positions\n*           Implement last-minute tax saving strategies\n*           Plan for upcoming year\n*           Review and adjust family goals\n\n**Continuous Monitoring Systems**\n---------------------------------\n\n### **Monthly Review Checklist**\n\n*           Financial statement review\n*           Cash flow analysis\n*           Expense categorization check\n*           Documentation completeness verification\n\n### **Technology Integration**\n\n*           QuickBooks Online monitoring\n*           Expense tracking system review\n*           Document management system updates\n*           Digital receipt organization\n\n**Professional Team Coordination**\n----------------------------------\n\nSuccess requires coordinated effort from your professional team:\n\n### **Tax Advisor (Quarterly Meetings)**\n\n*           Strategy review and adjustment\n*           Tax projection updates\n*           New opportunity identification\n*           Compliance verification\n\n*           Goal progress tracking\n\n**Future Growth Integration**\n-----------------------------\n\n### **Business Expansion**\n\n*           Evaluating acquisition opportunities\n*           Scaling operations\n*           Enhancing management systems\n*           Building business value\n\n### **Wealth Building**\n\n*           Investment diversification\n*           Asset protection enhancement\n*           Estate planning integration\n*           Retirement strategy optimization\n\n**Commitment to Excellence**\n----------------------------\n\nLong-term success requires:\n\n*           Regular strategy reviews\n*           Proactive planning\n*           Professional team coordination\n*           Family engagement\n*           Consistent documentation\n*           Continuous education\n\nThrough this ongoing optimization process, we ensure the Beyer family's tax strategy remains effective, compliant, and aligned with their evolving goals and circumstances.",
+              "type": "string"
+            },
+            {
+              "id": "c0ed9d28-aff5-4996-88b9-ef17deb213bf",
+              "name": "user_bill",
+              "value": "={{ $('User Prompt').first().json.user_bill }}",
+              "type": "string"
+            },
+            {
+              "id": "158b88b2-5005-451f-bdaa-40e640d6577a",
+              "name": "ai_bill",
+              "value": "VIII. Ongoing\nOptimization Plan\nThis section outlines the plan for continuous tax strategy\noptimization, ensuring that the implemented strategies remain\neffective and adapt to changing circumstances.\nSchedule for regular strategy reviews:\n1. Quarterly reviews:\nAssess performance of QOZ investments\nReview Bitcoin investment strategy and performance\nEvaluate real estate activities and progress towards Professional\nStatus\nCheck progress on retirement account contributions\n2. Semi-annual reviews:\nComprehensive review of all implemented strategies\nAssess effectiveness of CRT in terms of tax savings and income\ngeneration\nReview vacation rental property performance (once acquired)\n3. Annual reviews:\nFull tax projection for the coming year\nComprehensive analysis of all strategies' performance\nReview and adjust long-term financial and tax goals\nProcess for adapting to business changes or new\ntax laws:\n1. Monitoring system:\nRegular briefings from legal and tax professionals\nComplete personal research to stay educated\n2. Impact analysis:\nFor each significant change, conduct a thorough analysis of its\nimpact on current strategies\nDevelop multiple scenarios to understand potential outcomes\n3. Strategy adjustment:\nQuarterly meetings to discuss any necessary strategy\nadjustments\nDevelop action plans for implementing changes\nSet clear timelines and responsibilities for adjustments\n4. Client communication:\nRegular updates to the client on potential impacts of changes\nClear explanations of recommended adjustments and their\nrationale\nContinuous education and updates:\n1. Educational resources:\nhttps://www.bdo.com/insights/industries/technology/techs\u00022024-guide-to-tax-planning\nhttps://pro.bloombergtax.com/insights/corporate-tax\u0002planning/tax-challenges-for-the-technology-industry/\nhttps://www.rocketmortgage.com/learn/cost-segregation\nhttps://coinwire.com/crypto-tax-loss-harvesting/\n2. Strategy-specific updates:\nQuarterly reports on CRT performance and charitable impact\nRegular briefings on Bitcoin market trends and tax implications\n3. Annual tax strategy workshop:\nComprehensive review of all strategies\nDiscussion of new tax-saving opportunities\nLong-term planning and goal-setting session\n4. On-demand consultations:\nAvailability for client questions and concerns as they arise\nRapid response system for time-sensitive tax issues\n5. Family education:\nAnnual family meeting to discuss overall wealth and tax strategy\nAge-appropriate financial education for dependents",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "28a0feee-adf3-49f3-824d-8ed9513bb73b",
+      "name": "Ongoing Optimization Plan",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        120,
+        2980
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
+              "name": "system",
+              "value": "You are a family office tax strategist.\n\nWe will use the template as an outline.\n\nCreate section \"Tax Strategy Summary\".\n\nCore Strategy Focus:\nIntegrate the Family Operating System - our framework for transforming personal finances into strategic business operations, typically converting 50% of personal expenses into business deductions through proper entity structure and documentation.\n\n\nSection Requirements:\n1. Length: appropriate length to delive high quality end result for client so that they feel as though they got what they paid for\n2. Voice: Direct and personal but without greetings/introductions\n3. Format: Start with section heading only\n4. Always consider the year as the current year.\n5. Enhance Risk Management and Compliance:\n6. Incorporate more detailed guidance on documentation requirements.\n7. Emphasize the importance of maintaining a clear separation between personal and business activities.\n8. Provide specific examples of acceptable business purposes for expenses.\n9. Include a section on potential IRS audit triggers and how to mitigate them.\n10. Improve Organization and Structure:\n11. Reorganize the content to create a more logical flow.\n12. Use clearer headings and subheadings.\n13. Eliminate redundancies.\n14. Expand Implementation Roadmap:\n15. Provide a more detailed, step-by-step roadmap, potentially incorporating checklists and timelines.\n16. Include specific instructions for setting up accounting systems and expense tracking procedures.\n17. Address the automation aspect directly, outlining how technology will be used to streamline implementation.\n18. Address Dependent Care and Business Acquisition:\n19. Add sections on dependent care strategies and business acquisition planning, even if they are less detailed than in Plan 1.\n20. Provide an overview of how the FOS structure can be adapted to accommodate these needs.\n21. Clarify Long-Term Vision:\n22. Include a section on long-term financial planning and how the FOS strategy fits into the client's overall goals.\n23. Briefly discuss asset protection and wealth transfer considerations.\n24. Explain Acronyms\n25. Define acronyms like FLP, FMC, and FOS the first time they are used.\n\nSection Structure:\n1. Begin with **Tax Strategy Summary**\n2. Write a brief overview of the topic, addressing the reader directly in the second person. Avoid overly formal language and phrases like 'based on'.\n3. Present recommendations with specific:\n    - Tax savings potential\n    - Documentation requirements\n    - Entity structure implications\n    - Implementation steps\n    - Compliance considerations\n    - Focus on current vs optimized structure\n    - Include specific savings projections with tables\n    - Show rate comparisons\n    - Detail compliance requirements\n    - Detail organizational design\n    - Show entity relationships\n    - Include control flow explanations\n    - Emphasize tax implications\n    - Present risk management framework\n    - Include protection strategies\n    - Show risk assessment\n    - Address legal requirements\n    - Detail growth strategies\n    - Include projection models\n    - Show investment strategy\n    - Emphasize tax efficiency\n    - Focus on generational transfer\n    - Detail trust structures\n    - Show transfer strategy\n    - Include tax implications\n",
+              "type": "string"
+            },
+            {
+              "id": "314db41d-d2d3-4a69-81f7-a3b50ebecfa8",
+              "name": "user_beyer",
+              "value": "={{ $('User Prompt').first().json.user_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "70b16846-7644-4878-b2e7-8023d99add7b",
+              "name": "ai_beyer",
+              "value": " \n=\n\n**Tax Strategy Summary**\n========================\n\n**Client:** Michael & Diana Beyer\n\n**Prepared:** December 10, 2024\n\n**Current Situation Overview**\n\n*           **AGI:** $290,899\n*           **Federal Tax:** $44,469\n*           **State Tax:** $13,407\n*           **Family Structure:** Married with 4 dependents (2 children, 2 elderly parents)\n*           **Primary Income:** Product Management Manager at Home Depot\n*           **Current Tax Rate:** Effective rate of 15.3%\n\n**Core Strategy Components**\n----------------------------\n\n### **1\\. Family Operating System Implementation**\n\n**Expected Annual Tax Savings: $20,000 - $35,000**\n\n*           Living Trust establishment\n*           Family Limited Partnership (99% ownership)\n*           Family Management Company (S-Corp)\n*           Legitimate business expense conversion\n\n### **2\\. Benefits Optimization**\n\n**Expected Annual Tax Savings: $8,000 - $12,000**\n\n*           Maximize 401(k): $22,500\n*           HSA Family Contribution: $7,750\n*           Dependent Care FSA: $5,000\n*           Elder care expense optimization\n\n### **3\\. Business Development Platform**\n\n**Strategic Value: Foundation for Future Growth**\n\n*           Structure for business acquisition\n*           Asset protection framework\n*           Professional management experience\n*           Business credit establishment\n\n**Implementation Timeline**\n---------------------------\n\n### **Phase 1: Immediate Actions (90 Days)**\n\n*           Entity formation\n*           Documentation systems setup\n*           Professional team assembly\n*           Initial expense restructuring\n\n### **Phase 2: Optimization (90-180 Days)**\n\n*           Benefits adjustment\n*           Expense categorization\n*           System refinement\n*           Team coordination\n\n### **Phase 3: Growth (6-12 Months)**\n\n*           Business acquisition preparation\n*           Investment strategy implementation\n*           Family education program\n*           Long-term planning\n\n**Projected Outcomes**\n----------------------\n\n### **Financial Impact**\n\n*           First Year Tax Savings: $23,000 - $37,000\n*           Improved Cash Flow: $2,000/month\n*           Protected Assets: 100% of personal wealth\n*           Business Platform: Ready for acquisition\n\n### **Non-Financial Benefits**\n\n*           Asset Protection\n*           Family Governance Structure\n*           Business Management Experience\n*           Succession Planning Framework\n\n**Risk Management**\n-------------------\n\n### **Key Considerations**\n\n*           Previous IRS audit history\n*           Multiple dependent situation\n*           Future business acquisition plans\n*           Employment relationship maintenance\n\n### **Mitigation Strategies**\n\n*           Robust documentation systems\n*           Regular professional review\n*           Clear operational boundaries\n*           Ongoing compliance monitoring\n\n**Next Steps**\n--------------\n\n### **Immediate Actions (Next 30 Days)**\n\n1.  Entity formation initiation\n2.  Professional team assembly\n3.  Documentation system setup\n4.  Initial family meeting\n\n### **Required Decisions**\n\n1.  Entity structure approval\n2.  Professional team selection\n3.  Banking relationship establishment\n4.  Investment strategy determination\n\n**Monitoring and Adjustment**\n-----------------------------\n\n*           **Monthly:** Financial review\n*           **Quarterly:** Strategy assessment\n*           **Annual:** Comprehensive planning\n*           **As-Needed:** Strategy adjustment",
+              "type": "string"
+            },
+            {
+              "id": "7a759d71-de17-48e8-ab30-ad6910e2b557",
+              "name": "user_bill",
+              "value": "={{ $('User Prompt').first().json.user_bill }}",
+              "type": "string"
+            },
+            {
+              "id": "9fd8a6d9-94ad-4bf1-9623-1360a7f89556",
+              "name": "ai_bill",
+              "value": "Tax Strategy Summary\nClient Profile Overview\nName: Bill Ennis\nAge: 56\nFiling Status: Married, Joint\nAdjusted Gross Income (AGI): $170,000\nTax Liabilities: Federal Tax $21,000; State Tax $9,000\nBusiness Structure: S Corporation (Tech Company)\nFamily Structure: Married with three dependents:\nAryanna Ennis (college)\nGianna Ennis (college)\nDominic Ennis (high school)\nRisk Tolerance: Moderate\nGoals:\nReduce tax liability\nMitigate capital gains on company shares\nPurchase a vacation rental property\nCore Strategies\nQualified Opportunity Zone (QOZ) Investment\n\nObjective: Defer and potentially reduce capital gains tax from company shares.\nTax Benefit:\nImmediate tax deferral on $100,000 of gains (~$23,800 deferral).\n10% reduction on deferred gain after five years.\nPotential for tax-free appreciation if held for 10+ years.\nCharitable Remainder Trust (CRT)\n\nObjective: Offset capital gains and create an income stream.\nTax Benefit:\nImmediate deduction of $100,000 (approximation).\nAvoidance of ~$23,800 in capital gains tax.\nOngoing income via trust reinvestments.\nShort-Term Rental Strategy with Accelerated Depreciation\n\nObjective: Minimize taxes while building a real estate portfolio.\nTax Benefit:\nFirst-year depreciation of $200,000 on a $500,000 property.\nEstimated $44,000 tax savings in Year 1 at a 22% tax rate.\nTax-Efficient Bitcoin Investment Strategies\n\nObjective: Minimize taxable gains on volatile cryptocurrency holdings.\nTax Benefit:\nOffset realized Bitcoin gains through tax-loss harvesting.\nEstimated savings of ~$2,380 per $10,000 in harvested losses.\nEducation Tax Credits Optimization\n\nObjective: Maximize available credits for college-aged dependents.\nTax Benefit:\nUp to $2,500 per eligible student via the American Opportunity Credit.\nRetirement Account Optimization\n\nObjective: Maximize tax-deferred contributions and future growth.\nTax Benefit:\nImmediate deduction of $4,290 from a $19,500 contribution (22% rate).\n1031 Exchange for Vacation Rental\n\nObjective: Defer taxes on gains from future real estate transactions.\nTax Benefit:\nDefer up to $47,600 in taxes on a $200,000 gain.\nTax-Loss Harvesting Strategy for Company Shares\n\nObjective: Mitigate taxes on appreciated investments.\nTax Benefit: Fully offset realized gains from company shares or Bitcoin.\nProjected Savings\nTotal potential federal tax savings: $30,000–$50,000 annually based on strategy implementation.\nImplementation Priorities\nEstablish CRT for immediate deduction and gain management.\nPurchase vacation rental property and execute cost segregation.\nBegin QOZ investment to defer capital gains.\nImplement tax-loss harvesting for Bitcoin holdings and company shares.\nAdditional Recommendations\nUtilize a family management company for eligible expense deductions.\nReassess tax strategies quarterly for changes in laws or asset performance.\nEducate family members on financial management for sustainability.\nThis tailored strategy for Bill Ennis focuses on leveraging investment opportunities, real estate strategies, and tax-efficient financial planning to meet both short-term and long-term goals.",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "8bf43486-7de6-408e-a7a1-3f0494a706e5",
+      "name": "Tax Strategy Summary",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        120,
+        3220
+      ]
+    },
+    {
+      "parameters": {
+        "text": "={{ $('Execute Workflow Trigger').first().json.text.slice(0,300) }}",
+        "attributes": {
+          "attributes": [
+            {
+              "name": "client_name",
+              "description": "Client Name"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "b8a7bb9a-9245-4e04-956b-0c87eacf3337",
+      "name": "Information Extractor",
+      "type": "@n8n/n8n-nodes-langchain.informationExtractor",
+      "typeVersion": 1,
+      "position": [
+        160,
+        380
+      ]
+    },
+    {
+      "parameters": {
+        "model": "claude-3-haiku-20240307",
+        "options": {}
+      },
+      "id": "8be82636-e75c-4a1a-9bd2-db508e368919",
+      "name": "Anthropic Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.2,
+      "position": [
+        200,
+        520
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "xBWJQjIePD8Jl6hU",
+          "name": "Meerkat Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "return {\"data\": $input.last().json.output};"
+      },
+      "id": "8a899a95-0225-4248-aa4d-4b1ae08ea4ad",
+      "name": "Output HTML",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -660,
+        380
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "696bea3f-3a2d-42d1-8b9a-6457dcdb29e7",
+      "name": "Merge",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [
+        1980,
+        380
+      ]
+    },
+    {
+      "parameters": {
+        "model": "gpt-4o",
+        "options": {
+          "maxTokens": 16000,
+          "responseFormat": "json_object",
+          "temperature": 0.1
+        }
+      },
+      "id": "f6ba0367-4f98-474f-ac2b-a663cbe35210",
+      "name": "OpenAI Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
+      "typeVersion": 1,
+      "position": [
+        -440,
+        580
+      ],
+      "credentials": {
+        "openAiApi": {
+          "id": "9JkEtAFuDdryUy6O",
+          "name": "Meerkat - OpenAi account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\n\t\"html\": \"<html>\\n   <head>\\n      <style>\\n         body { font-family: 'Georgia','Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; line-height: 1.6; color: #0b090a; background-color: #fff ; } \\n         h2 { color: #0b090a; margin-bottom: 20px; } \\n         h3 { color: #0b090a; margin-top: 20px; margin-bottom: 10px; } \\n         p { margin-bottom: 10px; } \\n         ul { margin-bot\"\n}"
+      },
+      "id": "93a92448-2db2-425f-bb50-10b3812805ba",
+      "name": "Structured Output Parser",
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        -180,
+        580
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
+              "name": "system",
+              "value": "You are a family office tax strategist.\n\nWe will use the template as an outline.\n\nCreate section \"Financial Projections\".\n\nCore Strategy Focus:\nIntegrate the Family Operating System - our framework for transforming personal finances into strategic business operations, typically converting 50% of personal expenses into business deductions through proper entity structure and documentation.\n\n\nSection Requirements:\n1. Length: appropriate length to delive high quality end result for client so that they feel as though they got what they paid for\n2. Voice: Direct and personal but without greetings/introductions\n3. Format: Start with section heading only\n4. Always consider the year as the current year.\n5. Enhance Risk Management and Compliance:\n6. Incorporate more detailed guidance on documentation requirements.\n7. Emphasize the importance of maintaining a clear separation between personal and business activities.\n8. Provide specific examples of acceptable business purposes for expenses.\n9. Include a section on potential IRS audit triggers and how to mitigate them.\n10. Improve Organization and Structure:\n11. Reorganize the content to create a more logical flow.\n12. Use clearer headings and subheadings.\n13. Eliminate redundancies.\n14. Expand Implementation Roadmap:\n15. Provide a more detailed, step-by-step roadmap, potentially incorporating checklists and timelines.\n16. Include specific instructions for setting up accounting systems and expense tracking procedures.\n17. Address the automation aspect directly, outlining how technology will be used to streamline implementation.\n18. Address Dependent Care and Business Acquisition:\n19. Add sections on dependent care strategies and business acquisition planning, even if they are less detailed than in Plan 1.\n20. Provide an overview of how the FOS structure can be adapted to accommodate these needs.\n21. Clarify Long-Term Vision:\n22. Include a section on long-term financial planning and how the FOS strategy fits into the client's overall goals.\n23. Briefly discuss asset protection and wealth transfer considerations.\n24. Explain Acronyms\n25. Define acronyms like FLP, FMC, and FOS the first time they are used.\n\nSection Structure:\n1. Begin with **Financial Projections**\n2. Write a brief overview of the topic, addressing the reader directly in the second person. Avoid overly formal language and phrases like 'based on'.\n3. Present recommendations with specific:\n    - Tax savings potential\n    - Documentation requirements\n    - Entity structure implications\n    - Implementation steps\n    - Compliance considerations\n    - Focus on current vs optimized structure\n    - Include specific savings projections with tables\n    - Show rate comparisons\n    - Detail compliance requirements\n    - Detail organizational design\n    - Show entity relationships\n    - Include control flow explanations\n    - Emphasize tax implications\n    - Present risk management framework\n    - Include protection strategies\n    - Show risk assessment\n    - Address legal requirements\n    - Detail growth strategies\n    - Include projection models\n    - Show investment strategy\n    - Emphasize tax efficiency\n    - Focus on generational transfer\n    - Detail trust structures\n    - Show transfer strategy\n    - Include tax implications\n",
+              "type": "string"
+            },
+            {
+              "id": "314db41d-d2d3-4a69-81f7-a3b50ebecfa8",
+              "name": "user_beyer",
+              "value": "={{ $('User Prompt').first().json.user_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "70b16846-7644-4878-b2e7-8023d99add7b",
+              "name": "ai_beyer",
+              "value": "V. Financial Projections\n5-Year Projection with Current Structure\nYearIncomeTax LiabilityEffective Tax Rate2024$290,899$44,46915.3%2025$299,626$46,24115.4%2026$308,615$48,14315.6%2027$317,873$50,06915.8%2028$327,409$52,07215.9%\n5-Year Projection with Proposed Strategies\nYearIncomeBusiness IncomeTax DeductionsNet Tax LiabilityEffective Tax Rate2024$290,899$30,000$65,000$29,46910.1%2025$299,626$35,000$68,250$31,24110.4%2026$308,615$40,000$71,663$33,14310.7%2027$317,873$45,000$75,246$35,06911.0%2028$327,409$50,000$79,008$37,07211.3%\nDetailed Assumptions\n\nIncome Growth\n\nBase salary increase: 3% annually\nBusiness income growth: $5,000 per year\nInvestment returns: 5% annually\n\n\nTax Deductions\n\nFamily Operating System deductions\nMaximum retirement contributions\nHSA contributions\nDependent care expenses\nBusiness expense conversions\n\n\nBusiness Development\n\nGrowing management company revenue\nExpanding legitimate business activities\nReal estate investment preparation\n\n\n\nSensitivity Analysis\nFactorImpact on Tax Liability1% higher income growth+0.3% effective tax ratePartial strategy implementation+2-3% effective tax rateBusiness income 20% lower+0.8% effective tax rateTax law changesVaries significantlyAdditional dependents-0.5% per dependent\nComparative Analysis\nAnnual Tax Savings:\n\nYear 1: $15,000 (33.7% reduction)\nYear 2: $15,000 (32.4% reduction)\nYear 3: $15,000 (31.2% reduction)\nYear 4: $15,000 (29.9% reduction)\nYear 5: $15,000 (28.8% reduction)\n\nTotal 5-Year Savings: $75,000\nKey Performance Indicators:\n\nAverage annual tax reduction: 31.2%\nCumulative business income: $200,000\nTotal tax deductions generated: $359,167\nAverage effective tax rate reduction: 4.7%",
+              "type": "string"
+            },
+            {
+              "id": "cd36234f-fd05-4ce3-8f57-b5dad746c3ef",
+              "name": "user_bill",
+              "value": "={{ $('User Prompt').first().json.user_bill }}",
+              "type": "string"
+            },
+            {
+              "id": "8257785c-f189-4cc0-9186-ba57f364af70",
+              "name": "ai_bill",
+              "value": "V. Financial\nProjections\nYear Income\nTax\nLiability\nEffective\nTax Rate\n2024 $170,000 $21,832 12.8%\n2025 $175,100 $22,763 13.0%\n2026 $180,353 $23,732 13.2%\n2027 $185,764 $24,740 13.3%\n2028 $191,337 $25,789 13.5%\nIn this section, we'll provide 5-year projections for your financial\nsituation, both with the current structure and with the proposed\nstrategies we’ve implemented. We'll also outline the assumptions\nused and provide a sensitivity analysis.\n5-year projection with current structure:\nYear Income\nRental\nIncome\nDepreciation\nNet Tax\nLiability\nEffective\nTax Rate\n2024 $170,000 $30,000 $200,000 $0 0%\n2025 $175,100 $40,000 $18,000 $19,162 8.9%\n2026 $180,353 $42,000 $18,000 $20,998 9.4%\n2027 $185,764 $44,100 $18,000 $22,910 10.0%\n2028 $191,337 $46,305 $18,000 $24,901 10.5%\n5-year projection with proposed strategies:\nDetailed assumptions used in projections:\n1. Annual income growth rate: 3%\n2. Inflation rate: 2%\n3. Full implementation of QOZ investment and CRT\n4. Successful qualification for Real Estate Professional Status\n5. Consistent education expenses for eligible dependents\n6. Stable Bitcoin value with effective tax-loss harvesting\n7. Maximized retirement account contributions\n8. Short-term rental property purchased for $500,000 in 2024\n9. 100% bonus depreciation taken in the first year\n10. Rental income starts at $30,000 in 2024 and grows by 5% annually\n11. Regular depreciation of $18,000 per year after the first year\n12. All other income and deductions grow by 3% annually\n13. Tax rates and brackets remain constant over the projection period\nFactor Impact on Tax Liability\n1% increase in income growth +0.2% in effective tax rate\nPartial implementation of strategies +1-2% in effective tax rate\nFailure to qualify for Real Estate\nProfessional Status\n+0.5% in effective tax rate\n20% Bitcoin appreciation\n+0.3% in effective tax rate (if\ngains realized)\nChanges in tax law Varies, potentially significant\nImpact of 10% higher/lower purchase\nprice on depreciation and tax savings\nEffect of 20% higher/lower rental\nincome on overall tax liability\nEffect of potential changes in capital\ngains tax rates\nVaries, significant factor\nSensitivity analysis:\nVaries, potentially significant\nVaries, potentially significant\nYear Current Strategy\nWith Short-Term\nRental Strategy\n2024 12.8% 0%\n2025 13.0% 8.9%\n2026 13.2% 9.4%\n2027 13.3% 10.0%\n2028 13.5% 10.5%\nComparative charts and graphs:\nEffective Tax Rate Comparison\n5-Year Projection Comparison\nYear Current Structure Propose Strategies\nTax Liability ETR Tax Liability ETR\n2024 $21,832 12.8% $15,300 9.0%\n2025 $22,763 13.0% $15,759 9.0%\n2026 $23,732 13.2% $16,232 9.0%\n2027 $24,740 13.3% $16,719 9.0%\n2028 $25,789 13.5% $17,220 9.0%\nETR = Effective Tax Rate\nKey Assumptions\n3% annual income growth\n2% inflation rate\nFull strategy implementation in Year 1\nSuccessful Real Estate Professional Status\nConsistent education expenses\nStable Bitcoin value\nMaximized retirement contributions\nSensitivity Analysis\nIncome growth: +1% = +0.2% ETR\nPartial implementation: +1-2% ETR\nNo Real Estate Prof. Status: +0.5% ETR\n20% Bitcoin appreciation: +0.3% ETR\nTax law changes: Potentially significant\nThis section provides a clear comparison between the current tax\nsituation and the potential benefits of implementing the proposed\nstrategies. The projections and sensitivity analysis offer insights into\nthe potential tax savings and factors that could impact these savings.\n",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "1d1a18aa-6f47-47ea-bcfc-717fa2e3644b",
+      "name": "Financial Projections",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        120,
+        2260
+      ]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "=Executive Summary",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "=Executive Summary"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "9db0de49-0cbb-42e0-a720-2c200ddd9d6c",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "=Current Situation Analysis",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Current Situation Analysis"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "4426258f-6e18-49ec-89b9-f910d5812469",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Detailed Business Structure Overview",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Detailed Business Structure Overview"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "fbbe4eaf-fe71-4d26-94c2-32adad185e29",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Identified Tax Planning Opportunities",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Identified Tax Planning Opportunities"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "293ba543-4322-41ee-80df-268f500370ff",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Strategy Recommendations",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Strategy Recommendations"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "81bda41d-1b26-401a-a5f6-921a7dffee55",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Implementation Roadmap",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Implementation Roadmap"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "fa5cfb50-31f2-4d85-a00f-28c5e7b250cd",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Additional Considerations",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Additional Considerations"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "d34c291a-b362-435c-8295-039229f2f6ba",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Ongoing Optimization Plan",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Ongoing Optimization Plan"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "b99596d1-046e-4f48-92ce-97df85076121",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Tax Strategy Summary",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Tax Strategy Summary"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "acfbed92-5d4e-4e32-b7c9-994da209d881",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Financial Projections",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Financial Projections"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "955d50ae-3da1-4bae-be3a-46d8b3ee70ba",
+      "name": "Switch1",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        -300,
+        1120
+      ]
+    },
+    {
+      "parameters": {
+        "model": "claude-3-5-sonnet-20241022",
+        "options": {
+          "temperature": 0
+        }
+      },
+      "id": "b9f33f76-9c1f-457c-8280-bcfe8fd27013",
+      "name": "Anthropic Chat Model1",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.2,
+      "position": [
+        1580,
+        2320
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "xBWJQjIePD8Jl6hU",
+          "name": "Meerkat Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "name": "get_chart_from_table",
+        "description": "Get a chart in <img> tag from table\n\nWith return sructure:\n{\n\"response\":\n\"<img src=\"https://quickchart.io/chart/render/sf-37f41296-3573-4e8d-ad3c-6b19a0b7942d\" />\"\n}",
+        "workflowId": {
+          "__rl": true,
+          "value": "n3OED5CS2ynw0ZXY",
+          "mode": "list",
+          "cachedResultName": "Chart Creation"
+        },
+        "specifyInputSchema": true,
+        "jsonSchemaExample": "{\n\t\"table\": \"Table text\"\n}"
+      },
+      "id": "3a91559a-b562-4b6f-8091-e09e802831ea",
+      "name": "Call n8n Workflow Tool1",
+      "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
+      "typeVersion": 1.2,
+      "position": [
+        1760,
+        2320
+      ]
+    },
+    {
+      "parameters": {
+        "jsonSchemaExample": "{\"html\": \"<h3>Financial Projection Analysis</h3>\\n          <p>The analysis shows significant potential tax savings through the Family Operating System (FOS) implementation over a 5-year period.</p>\\n          \\n          <h3>Projected Annual Tax Savings</h3>\\n          <table border='1'>\\n              <tr>\\n                  <th>Year</th>\\n                  <th>Tax Savings</th>\\n                  <th>Savings Rate</th>\\n              </tr>\\n              <tr>\\n                  <td>2024</td>\\n                  <td>$28,750</td>\\n                  <td>48.9%</td>\\n              </tr>\\n              <tr>\\n                  <td>2025</td>\\n                  <td>$29,813</td>\\n                  <td>48.9%</td>\\n              </tr>\\n              <tr>\\n                  <td>2026</td>\\n                  <td>$31,005</td>\\n                  <td>48.9%</td>\\n              </tr>\\n              <tr>\\n                  <td>2027</td>\\n                  <td>$32,245</td>\\n                  <td>48.9%</td>\\n              </tr>\\n              <tr>\\n                  <td>2028</td>\\n                  <td>$33,535</td>\\n                  <td>48.9%</td>\\n              </tr>\\n          </table>\\n          \\n          <p>The projections demonstrate a consistent annual savings rate of 48.9%, with tax savings increasing from $28,750 in 2024 to $33,535 in 2028. The cumulative savings over the five-year period amounts to $155,348, representing a significant financial benefit from implementing the FOS structure.</p>\", \n  \"img\": \"<img src=\\\"https://quickchart.io/chart/render/sf-c0e7e21b-403b-4266-b7e1-f120e24bd26e\\\" />\"}"
+      },
+      "id": "16f4dbd3-1071-4ecb-8bd1-d55510e0c9e5",
+      "name": "Structured Output Parser1",
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        1900,
+        2320
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
+              "name": "system",
+              "value": "={{ $json.system }}\n4. Write a text at the beginning of the section, contextualizing the subject of the section, however take into account the text as a time, it is part of a document, so take into account what has already been written in {previous sections}..\n5. Give a written context conclusion that summarizes and explains important points at the end of the section. Don't use the word \"Conclusion:\" or \"Summary:\" I want the text directly. Remember to consider what has already been said in previous sections, that is, do not be repetitive.\n6. Don't use graph mermaid in markdown\n7. Graph insertion:\n   - Insert the [{graph here}] markup when:\n     a) There are numerical or statistical data that can be visualized (percentages, values, comparisons)\n     b) The text specifically mentions trends, growth, or decline\n     c) There are comparative data between periods or categories\n   - The markup should be inserted:\n     a) Immediately after the paragraph containing the data\n     b) On a separate line with spacing before and after\n     c) With a suggested graph type in parentheses, example: [{graph here - bar chart}] or [{graph here - line chart}]\n   - Do not insert the markup when:\n     a) Data is too limited (less than 3 data points)\n     b) Information is already in list or table format\n     c) The text is purely qualitative without numerical data\n\nExample:\nExports grew by 15% in January, 22% in February, and 18% in March, showing a positive trend in the first quarter.\n\n[{graph here - line chart}]\n\nFormat all content with Markdown structure.\n\nInclude relevant numerical analysis in table format showing before/after scenarios.\n\n{previous sections}\n{{ $('preprocess').item.json.previousOutput }}\n\nAvoid Redundancy considering the {previous sections} created previously.",
+              "type": "string"
+            },
+            {
+              "id": "314db41d-d2d3-4a69-81f7-a3b50ebecfa8",
+              "name": "user_beyer",
+              "value": "={{ $json.user_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "70b16846-7644-4878-b2e7-8023d99add7b",
+              "name": "ai_beyer",
+              "value": "={{ $json.ai_beyer }}",
+              "type": "string"
+            },
+            {
+              "id": "25626cb6-489c-499f-a641-6393ad94e73a",
+              "name": "previous_ai",
+              "value": "={{ $('preprocess').item.json.previousOutput }}",
+              "type": "string"
+            },
+            {
+              "id": "a5d040b7-b7c5-45e6-a660-ad0042166446",
+              "name": "user_bill",
+              "value": "={{ $json.user_bill }}",
+              "type": "string"
+            },
+            {
+              "id": "184cf9c6-84c4-436e-ba8e-366a799b1e47",
+              "name": "ai_bill",
+              "value": "={{ $json.ai_bill }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "802108f0-edd2-4c58-a8c1-579a1bee47d7",
+      "name": "Get Prompt1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        420,
+        2100
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "insert",
+        "insertMode": "override",
+        "messages": {
+          "messageValues": [
+            {
+              "type": "user",
+              "message": "={{ $json.user_beyer }}"
+            },
+            {
+              "type": "ai",
+              "message": "={{ $json.ai_beyer }}"
+            },
+            {
+              "type": "user",
+              "message": "={{ $json.user_bill }}"
+            },
+            {
+              "type": "ai",
+              "message": "={{ $json.ai_bill }}"
+            }
+          ]
+        }
+      },
+      "id": "b836539c-9c0d-43a9-8bf0-19b1dfd58aa9",
+      "name": "Chat Memory Manager",
+      "type": "@n8n/n8n-nodes-langchain.memoryManager",
+      "typeVersion": 1.1,
+      "position": [
+        640,
+        2100
+      ]
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "tax-plan-key",
+        "contextWindowLength": 0
+      },
+      "id": "0377815e-aaba-498d-b4ff-d19ebe1e4a87",
+      "name": "Window Buffer Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        660,
+        2320
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "f608c99a-8d10-4433-967e-2b1c63ae60e0",
+              "name": "system",
+              "value": "={{ $('Get Prompt1').item.json.system }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "00a1e4b9-5bf4-4496-9f95-967155e8876e",
+      "name": "System Prompt1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1000,
+        2100
+      ]
+    },
+    {
+      "parameters": {
+        "model": "claude-3-5-sonnet-20241022",
+        "options": {}
+      },
+      "id": "418242c5-0e88-48af-8b66-966efbe6f977",
+      "name": "Anthropic Chat Model7",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.2,
+      "position": [
+        1240,
+        2340
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "xBWJQjIePD8Jl6hU",
+          "name": "Meerkat Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "tax-plan-key",
+        "contextWindowLength": 10
+      },
+      "id": "30924146-7d4f-496a-9397-c7355e3f2fe2",
+      "name": "Window Buffer Memory9",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.3,
+      "position": [
+        1360,
+        2320
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "bad86184-8c02-432d-92ab-225af2c1feff",
+              "name": "output",
+              "value": "={{ $('Get Prompt1').item.json.previous_ai }}\n{{ $('AI Agent6').item.json.output }}\n{{$('Chart Output').item.json.output.html }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": "={{ false }}",
+        "options": {}
+      },
+      "id": "6755673d-2aaf-416d-b18a-d03c9a57f918",
+      "name": "Return Accumulator Section1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2000,
+        2100
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "markdownToHtml",
+        "markdown": "={{ $('Output HTML').item.json.data }}",
+        "options": {
+          "tables": true
+        }
+      },
+      "id": "f7d67bb4-c7dd-4c0a-a50a-d006b91c01f3",
+      "name": "Markdown",
+      "type": "n8n-nodes-base.markdown",
+      "typeVersion": 1,
+      "position": [
+        -40,
+        380
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('User Prompt').first().json.prompt }}",
+        "options": {
+          "systemMessage": "={{ $json.system }}"
+        }
+      },
+      "id": "b91dbb69-8e88-4271-acde-053cf776f400",
+      "name": "AI Agent4",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        960,
+        740
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('User Prompt').first().json.prompt }}",
+        "options": {
+          "systemMessage": "={{ $json.system }}"
+        }
+      },
+      "id": "53fe7c8e-5a3c-4786-bd8c-87ef6030f452",
+      "name": "AI Agent5",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        1180,
+        1560
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.data }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "=You will rewrite the markdown text following the outlined requirements:\n\n1. Eliminate Redundancy\n- Review the submitted texts to eliminate redundancies, particularly at the beginning of new sections. Ensure the flow resembles that of a cohesive, single report rather than a compilation of various pieces in one document. Make sure the overall purpose of the text is clear and not lost among the different sections. \n- Consolidate repeated explanations of key concepts, such as core structures (e.g., \"Living Trust → FLP → FMC\") and money flow patterns, into a single, concise section.\n- Merge duplicate implementation steps into a unified sequence.\n\n2. Maintain All Sections\n\n- Preserve every section of the original document.\n\n3. Organize Financial Projections\n   - Consolidate scattered tax savings numbers and financial projections into a single section for clarity.\n   - Resolve discrepancies in projections across sections to ensure uniformity.\n\n\n4. Streamline Current Situation Analysis:\n   - Remove repeated elements from the situation analysis, client profiles, and financial overviews.\n   - Present this information in a single, well-organized section.\n\n\n5. Unify Implementation Steps:\n   - Combine fragmented implementation steps and ensure they appear in one section.\n   - Present timelines and action items only once in a clear and consistent format.\n\nRevise the current document with a focus on eliminating redundancies and reorganizing information for greater clarity and conciseness.\n\nReturn the result as an markdown text in json."
+        }
+      },
+      "id": "ef353328-4571-49f2-a12e-a2c7f55e19d1",
+      "name": "AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        -400,
+        380
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.output }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "=Process the input markdown and return a JSON with the following structure:\n\n{\n  \"markdown\": \"markdown formatted content with:\n          - ** heading at the start\n          - Result img markdown from get_chart_from_table() function using the table data\n          - Formatted using markdown\n          - Proper markdown structure\",\n}\n\nSteps:\n1. Create one table from the input markdown\n2. Pass this table to get_chart_from_table() to get the chart image\n3. Format the markdown content following the structure above\n4. Return both the markdown and image in JSON format"
+        }
+      },
+      "id": "0155681f-43f9-49b5-b5aa-f9e15e8cb5f9",
+      "name": "Chart Output",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        1580,
+        2100
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('User Prompt').first().json.prompt }}",
+        "options": {
+          "systemMessage": "={{ $json.system }}"
+        }
+      },
+      "id": "86cda39c-910e-45da-947e-82ce1dfe5445",
+      "name": "AI Agent6",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        1220,
+        2100
+      ]
+    }
+  ],
+  "pinData": {
+    "Execute Workflow Trigger": [
+      {
+        "json": {
+          "numpages": 2,
+          "numrender": 2,
+          "info": {
+            "PDFFormatVersion": "1.4",
+            "Language": null,
+            "EncryptFilterName": null,
+            "IsLinearized": false,
+            "IsAcroFormPresent": false,
+            "IsXFAPresent": false,
+            "IsCollectionPresent": false,
+            "IsSignaturesPresent": false,
+            "Title": "Untitled document",
+            "Producer": "Skia/PDF m133 Google Docs Renderer"
+          },
+          "text": "# Personal Information\n- Name: Jessie Jackson\n- Email: test@gmail.com\n- Phone: +1 678.939.3882\n- Filing Status: Single\n- Occupation: Pharmacist\n# Income Sources\n- Primary Sources: Salary, Capital gains, Rental income\n- Annual Income: $200,000\n- Additional Income: Capital gains in real estate\n# Tax Deductions & Credits\nCurrent Deductions:\n- Mortgage interest\n- Property taxes\n- Charitable contributions\n# Investment & Assets\n## Retirement & Investment Accounts\n- 401(k) Balance: $20,000\n- Brokerage Account Balance: $10,000\n## Cryptocurrency Holdings\n- Crypto.com: -$7,000\n- Uphold: -$6,000\n- Robinhood: -$70,000\n## Real Estate\n- Primary Residence: 3633 Dudley Ave, Baltimore, MD 21213\n- Status: Under contract to be sold on 12/16 for $120,000\n- Previous Property Transaction:\n- Purchase Price: $250,000\n- Sale Price: $410,000\n## Business Information\n- Entity Type: LLC\n- Years in Operation: 5 years\n- Annual Revenue: $30,000-$40,000\n- Initial Acquisition Cost: $70,000-$80,000\n- Monthly Cashflow: $15,000-$20,000\n# Debts & Liabilities\n- Current Debts: Student Loans, Credit Cards\n\n- Tax Status: Outstanding taxes for previous and current year\n# Investment Profile\n- Risk Tolerance: Aggressive\n# Notable Financial Events\n- Brokerage Account Losses: $22,000\n- Cryptocurrency Gains: $30,000\n# Additional Notes\n- Currently owns primary residence (pending sale)\n- No dependents\n- Single business ownership\n- Monthly cashflow indicates significant regular income",
+          "version": "2.16.105"
+        }
+      }
+    ]
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [
+    {
+      "createdAt": "2024-12-27T15:27:59.273Z",
+      "updatedAt": "2024-12-27T15:27:59.273Z",
+      "id": "8RbCKw8lngp96QRS",
+      "name": "TAXTICXS"
+    }
+  ],
+  "triggerCount": 0,
+  "updatedAt": "2025-01-13T17:12:10.000Z",
+  "versionId": "8c9417d4-d8dc-426c-8219-48fab0a29bf8"
+}
