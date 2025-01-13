@@ -1,39 +1,6 @@
 {
   "active": false,
   "connections": {
-    "Google Drive": {
-      "main": [
-        [
-          {
-            "node": "Extract from File",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "When clicking ‘Test workflow’": {
-      "main": [
-        [
-          {
-            "node": "Google Drive",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Execute Workflow Trigger": {
-      "main": [
-        [
-          {
-            "node": "User Prompt",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Convert to File1": {
       "main": [
         [
@@ -188,7 +155,7 @@
       "main": [
         [
           {
-            "node": "Chat Memory Manager1",
+            "node": "Get Prompt",
             "type": "main",
             "index": 0
           }
@@ -419,7 +386,7 @@
       "main": [
         [
           {
-            "node": "AI Agent",
+            "node": "All Sections1",
             "type": "main",
             "index": 0
           }
@@ -658,19 +625,166 @@
       "main": [
         [
           {
-            "node": "Chart Output",
+            "node": "AI Agent9",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "AI Agent4": {
+    "Split Sections1": {
       "main": [
         [
           {
-            "node": "Return Section",
+            "node": "loop1",
             "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "loop1": {
+      "main": [
+        [
+          {
+            "node": "Code",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Anthropic Chat Model8": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent7",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent7": {
+      "main": [
+        [
+          {
+            "node": "Return Accumulator Section",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "All Sections1": {
+      "main": [
+        [
+          {
+            "node": "Split Sections1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "AI Agent8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent8",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent8",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Anthropic Chat Model9": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent8",
+            "type": "ai_languageModel",
             "index": 0
           }
         ]
@@ -680,7 +794,29 @@
       "main": [
         [
           {
-            "node": "Return Accumulator Section",
+            "node": "AI Agent7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "Markdown",
             "type": "main",
             "index": 0
           }
@@ -714,6 +850,39 @@
         ]
       ]
     },
+    "Anthropic Chat Model10": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent9",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Workflow Trigger": {
+      "main": [
+        [
+          {
+            "node": "User Prompt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent8": {
+      "main": [
+        [
+          {
+            "node": "loop1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "Chart Output": {
       "main": [
         [
@@ -725,11 +894,11 @@
         ]
       ]
     },
-    "AI Agent": {
+    "AI Agent9": {
       "main": [
         [
           {
-            "node": "Markdown",
+            "node": "Chart Output",
             "type": "main",
             "index": 0
           }
@@ -739,55 +908,11 @@
   },
   "createdAt": "2024-12-23T15:46:44.633Z",
   "id": "lc5BmfzHTCR8VX49",
-  "meta": null,
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
   "name": "[TAXTICXS] Client Insights",
   "nodes": [
-    {
-      "parameters": {
-        "operation": "download",
-        "fileId": {
-          "__rl": true,
-          "value": "1R2FkDg14fbjTKViJbr5X4HU0dQc6zRgc",
-          "mode": "list",
-          "cachedResultName": " Jessie Jackson.pdf",
-          "cachedResultUrl": "https://drive.google.com/file/d/1R2FkDg14fbjTKViJbr5X4HU0dQc6zRgc/view?usp=drivesdk"
-        },
-        "options": {}
-      },
-      "id": "8f77cd84-3c5c-4ae2-ad08-1938ecce3087",
-      "name": "Google Drive",
-      "type": "n8n-nodes-base.googleDrive",
-      "typeVersion": 3,
-      "position": [
-        6360,
-        3840
-      ]
-    },
-    {
-      "parameters": {
-        "operation": "pdf",
-        "options": {}
-      },
-      "id": "8747aa6c-87d3-4255-97fc-29f7cadd09cc",
-      "name": "Extract from File",
-      "type": "n8n-nodes-base.extractFromFile",
-      "typeVersion": 1,
-      "position": [
-        6600,
-        3840
-      ]
-    },
-    {
-      "parameters": {},
-      "id": "10395403-e916-4733-b677-73a9e4ab64f9",
-      "name": "When clicking ‘Test workflow’",
-      "type": "n8n-nodes-base.manualTrigger",
-      "typeVersion": 1,
-      "position": [
-        6140,
-        3840
-      ]
-    },
     {
       "parameters": {},
       "id": "a0a62858-c27a-43fa-b2e4-b39f4d31fe1c",
@@ -795,8 +920,8 @@
       "type": "n8n-nodes-base.executeWorkflowTrigger",
       "typeVersion": 1,
       "position": [
-        580,
-        1800
+        520,
+        1760
       ]
     },
     {
@@ -821,8 +946,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3700,
-        1020
+        3540,
+        1200
       ]
     },
     {
@@ -838,8 +963,8 @@
       "type": "n8n-nodes-base.convertToFile",
       "typeVersion": 1.1,
       "position": [
-        3460,
-        1020
+        3300,
+        1200
       ]
     },
     {
@@ -864,8 +989,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        3920,
-        1020
+        3760,
+        1200
       ],
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -893,8 +1018,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        4500,
-        1180
+        4680,
+        1320
       ]
     },
     {
@@ -912,8 +1037,8 @@
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.1,
       "position": [
-        3500,
-        1340
+        3680,
+        1480
       ]
     },
     {
@@ -938,8 +1063,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        3720,
-        1340
+        3900,
+        1480
       ],
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -967,21 +1092,21 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        4300,
-        1180
+        4480,
+        1320
       ]
     },
     {
       "parameters": {
-        "html": "<html>\n   <head>\n      <style>body { font-family: 'Georgia','Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; line-height: 1.6; color: #0b090a; background-color: #fff ; } h2 { color: #0b090a; margin-bottom: 20px; } h3 { color: #0b090a; margin-top: 20px; margin-bottom: 10px; } p { margin-bottom: 10px; } ul { margin-bottom: 10px; padding-left: 20px; } table { width: 100%; border-collapse: collapse; margin-bottom: 20px; } th, td { border: 1px solid #ccc; padding: 10px; text-align: left; } th { background-color: #e7e7e7; } \n      .Subtitle { margin-top:0pt; margin-bottom:16pt; page-break-before:auto; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-family:Arial; font-size:15pt; font-style:normal; color:#666666 }\n\t\t\t.Title { margin-top:0pt; margin-bottom:3pt; page-break-before:auto; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:26pt }\n\t\t\t.awlist1 { list-style:none; counter-reset:awlistcounter60_0 }\n\t\t\t.awlist1 > li:before { content:'●'; counter-increment:awlistcounter60_0 }\n\t\t\t.awlist2 { list-style:none; counter-reset:awlistcounter38_0 }\n\t\t\t.awlist2 > li:before { content:'●'; counter-increment:awlistcounter38_0 }\t\t\n        @media (max-width: 900px) { \nimg { \n   max-width: 100%;\n   height: auto;\n}\nli,h1, h2, h3, h4, h5, h6, p, tr { font-family: 'Arial'; color:#0b090a}\n.table-container {\n    overflow-x: auto;\n    -webkit-overflow-scrolling: touch;\n}\n\ntable {\n    width: 100%;\n    border-collapse: collapse;\n}\n\ntd, th {\n    padding: 8px;\n    text-align: left;\n    border: 1px solid #000;\n}\n}\t\n      </style>\n   </head>\n   <body>\n     <p class=\"Title\" style=\"margin-top:28.4pt; margin-bottom:0pt; page-break-inside:auto; page-break-after:auto; line-height:normal; widows:0; orphans:0; font-size:56.5pt\">\n\t\t\t\t<strong><span style=\"font-family:'Georgia'; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"margin-top:28.4pt; margin-bottom:0pt; page-break-inside:auto; page-break-after:auto; line-height:normal; widows:0; orphans:0; font-size:56.5pt\">\n\t\t\t\t<strong><span style=\"font-family:'Georgia'; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"margin-top:28.4pt; margin-bottom:0pt; page-break-inside:auto; page-break-after:auto; line-height:normal; widows:0; orphans:0; font-size:56.5pt\">\n\t\t\t\t<strong><span style=\"font-family:'Georgia'; \">{{$json.output.client_name.toUpperCase() }}</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:5.2pt; margin-left:14.1pt; line-height:normal; widows:0; orphans:0; font-size:24.5pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; color:#da0404\">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:5.2pt; line-height:normal; widows:0; orphans:0; font-size:22.5pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; color:#da0404\">Tax Planning Report | Year {{ new Date().getFullYear() }}</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"line-height:normal; widows:0; orphans:0; font-size:10pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:15.7pt; line-height:normal; widows:0; orphans:0; font-size:19pt\">\n\t\t\t\t<strong><span style=\"font-family:'Georgia'\n                          ; \">&#xa0;</span></strong><strong><span style=\"font-family:'Georgia'; \">Presented by Fitz Hall</span></strong>\n\t\t\t</p>\n\t\t\t<h1 style=\"margin-top:24pt; page-break-inside:auto; page-break-after:auto; line-height:normal; font-size:23pt\">\n\t\t\t\t<a id=\"_qvoly82ig0k3\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n     <h1 style=\"margin-top:24pt; page-break-inside:auto; page-break-after:auto; line-height:normal; font-size:23pt\">\n\t\t\t\t<a id=\"_qvoly82ig0k3\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n\t\t\t<h1 style=\"margin-top:24pt; page-break-inside:auto; page-break-after:auto; line-height:normal; font-size:23pt\">\n\t\t\t\t<a id=\"_xcxevk9wu0e\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n\t\t\t<h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n     <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n\t\t\t<p style=\"line-height:normal\">\n\t\t\t\t&#xa0;\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"margin-right:77.05pt; line-height:normal; widows:0; orphans:0\">\n\t\t\t\t<a id=\"_z0b2r8w1cnip\"></a>&#xa0;\n\t\t\t</p>\n     <p class=\"Title\" style=\"margin-right:77.05pt; line-height:normal; widows:0; orphans:0\">\n\t\t\t\t<a id=\"_z0b2r8w1cnip\"></a>&#xa0;\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"line-height:normal; widows:0; orphans:0\">\n\t\t\t\t<a id=\"_ob78r7otydpj\"></a><strong><span style=\"font-family:Merriweather; \">TABLE OF CONTENTS</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:0.55pt; line-height:normal; widows:0; orphans:0; font-size:10pt\">\n\t\t\t\t<strong><span style=\"font-family:Tahoma; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-top:6.45pt; margin-left:25.2pt; line-height:normal; widows:0; orphans:0; padding-left:1.15pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tExecutive Summary\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"2\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:33.67pt; line-height:normal; widows:0; orphans:0; padding-left:1.53pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tCurrent Situation Analysis\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.2pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"3\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-top:0.05pt; margin-left:42.15pt; line-height:normal; widows:0; orphans:0; padding-left:1.9pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tDetailed Business Structure Overview\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.2pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"4\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:39.69pt; line-height:normal; widows:0; orphans:0; padding-left:0.81pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tIdentified Tax Planning Opportunities\n\t\t\t\t</li>\n\t\t\t</ol>\n           <p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"5\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:31.22pt; line-height:normal; widows:0; orphans:0; padding-left:0.43pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tFinancial Projections\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\n\t\t\t<p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"6\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:31.22pt; line-height:normal; widows:0; orphans:0; padding-left:0.43pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tStrategy Recommendations\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.2pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"7\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:39.69pt; line-height:normal; widows:0; orphans:0; padding-left:0.81pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tImplementation Roadmap\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"8\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:48.16pt; line-height:normal; widows:0; orphans:0; padding-left:1.19pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tAdditional Considerations\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"9\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:56.63pt; line-height:normal; widows:0; orphans:0; padding-left:1.52pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tOngoing Optimization Plan\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.2pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"10\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:40.57pt; line-height:normal; widows:0; orphans:0; padding-left:0.53pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tTax Strategy Summary\n\t\t\t\t</li>\n\t\t\t</ol>\n     <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n     <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n      <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n      <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n     {{ $('AI Agent').item.json.output.html }}\n   </body>\n</html>"
+        "html": "<html>\n   <head>\n      <style>body { font-family: 'Georgia','Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 20px; line-height: 1.6; color: #0b090a; background-color: #fff ; } h2 { color: #0b090a; margin-bottom: 20px; } h3 { color: #0b090a; margin-top: 20px; margin-bottom: 10px; } p { margin-bottom: 10px; } ul { margin-bottom: 10px; padding-left: 20px; } table { width: 100%; border-collapse: collapse; margin-bottom: 20px; } th, td { border: 1px solid #ccc; padding: 10px; text-align: left; } th { background-color: #e7e7e7; } \n      .Subtitle { margin-top:0pt; margin-bottom:16pt; page-break-before:auto; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-family:Arial; font-size:15pt; font-style:normal; color:#666666 }\n\t\t\t.Title { margin-top:0pt; margin-bottom:3pt; page-break-before:auto; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:26pt }\n\t\t\t.awlist1 { list-style:none; counter-reset:awlistcounter60_0 }\n\t\t\t.awlist1 > li:before { content:'●'; counter-increment:awlistcounter60_0 }\n\t\t\t.awlist2 { list-style:none; counter-reset:awlistcounter38_0 }\n\t\t\t.awlist2 > li:before { content:'●'; counter-increment:awlistcounter38_0 }\t\t\n        @media (max-width: 900px) { \nimg { \n   max-width: 100%;\n   height: auto;\n}\nli,h1, h2, h3, h4, h5, h6, p, tr { font-family: 'Arial'; color:#0b090a}\n.table-container {\n    overflow-x: auto;\n    -webkit-overflow-scrolling: touch;\n}\n\ntable {\n    width: 100%;\n    border-collapse: collapse;\n}\n\ntd, th {\n    padding: 8px;\n    text-align: left;\n    border: 1px solid #000;\n}\n}\t\n      </style>\n   </head>\n   <body>\n     <p class=\"Title\" style=\"margin-top:28.4pt; margin-bottom:0pt; page-break-inside:auto; page-break-after:auto; line-height:normal; widows:0; orphans:0; font-size:56.5pt\">\n\t\t\t\t<strong><span style=\"font-family:'Georgia'; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"margin-top:28.4pt; margin-bottom:0pt; page-break-inside:auto; page-break-after:auto; line-height:normal; widows:0; orphans:0; font-size:56.5pt\">\n\t\t\t\t<strong><span style=\"font-family:'Georgia'; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"margin-top:28.4pt; margin-bottom:0pt; page-break-inside:auto; page-break-after:auto; line-height:normal; widows:0; orphans:0; font-size:56.5pt\">\n\t\t\t\t<strong><span style=\"font-family:'Georgia'; \">{{$json.output.client_name.toUpperCase() }}</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:5.2pt; margin-left:14.1pt; line-height:normal; widows:0; orphans:0; font-size:24.5pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; color:#da0404\">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:5.2pt; line-height:normal; widows:0; orphans:0; font-size:22.5pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; color:#da0404\">Tax Planning Report | Year {{ new Date().getFullYear() }}</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"line-height:normal; widows:0; orphans:0; font-size:10pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:15.7pt; line-height:normal; widows:0; orphans:0; font-size:19pt\">\n\t\t\t\t<strong><span style=\"font-family:'Georgia'\n                          ; \">&#xa0;</span></strong><strong><span style=\"font-family:'Georgia'; \">Presented by Fitz Hall</span></strong>\n\t\t\t</p>\n\t\t\t<h1 style=\"margin-top:24pt; page-break-inside:auto; page-break-after:auto; line-height:normal; font-size:23pt\">\n\t\t\t\t<a id=\"_qvoly82ig0k3\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n     <h1 style=\"margin-top:24pt; page-break-inside:auto; page-break-after:auto; line-height:normal; font-size:23pt\">\n\t\t\t\t<a id=\"_qvoly82ig0k3\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n\t\t\t<h1 style=\"margin-top:24pt; page-break-inside:auto; page-break-after:auto; line-height:normal; font-size:23pt\">\n\t\t\t\t<a id=\"_xcxevk9wu0e\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n\t\t\t<h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n     <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n\t\t\t<p style=\"line-height:normal\">\n\t\t\t\t&#xa0;\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"margin-right:77.05pt; line-height:normal; widows:0; orphans:0\">\n\t\t\t\t<a id=\"_z0b2r8w1cnip\"></a>&#xa0;\n\t\t\t</p>\n     <p class=\"Title\" style=\"margin-right:77.05pt; line-height:normal; widows:0; orphans:0\">\n\t\t\t\t<a id=\"_z0b2r8w1cnip\"></a>&#xa0;\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"line-height:normal; widows:0; orphans:0\">\n\t\t\t\t<a id=\"_ob78r7otydpj\"></a><strong><span style=\"font-family:Merriweather; \">TABLE OF CONTENTS</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:0.55pt; line-height:normal; widows:0; orphans:0; font-size:10pt\">\n\t\t\t\t<strong><span style=\"font-family:Tahoma; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-top:6.45pt; margin-left:25.2pt; line-height:normal; widows:0; orphans:0; padding-left:1.15pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tExecutive Summary\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"2\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:33.67pt; line-height:normal; widows:0; orphans:0; padding-left:1.53pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tCurrent Situation Analysis\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.2pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"3\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-top:0.05pt; margin-left:42.15pt; line-height:normal; widows:0; orphans:0; padding-left:1.9pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tDetailed Business Structure Overview\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.2pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"4\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:39.69pt; line-height:normal; widows:0; orphans:0; padding-left:0.81pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tIdentified Tax Planning Opportunities\n\t\t\t\t</li>\n\t\t\t</ol>\n           <p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"5\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:31.22pt; line-height:normal; widows:0; orphans:0; padding-left:0.43pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tFinancial Projections\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\n\t\t\t<p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"6\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:31.22pt; line-height:normal; widows:0; orphans:0; padding-left:0.43pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tStrategy Recommendations\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.2pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"7\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:39.69pt; line-height:normal; widows:0; orphans:0; padding-left:0.81pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tImplementation Roadmap\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"8\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:48.16pt; line-height:normal; widows:0; orphans:0; padding-left:1.19pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tAdditional Considerations\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.25pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"9\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:56.63pt; line-height:normal; widows:0; orphans:0; padding-left:1.52pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tOngoing Optimization Plan\n\t\t\t\t</li>\n\t\t\t</ol>\n\t\t\t<p style=\"margin-top:0.2pt; line-height:normal; widows:0; orphans:0; font-size:27pt\">\n\t\t\t\t<strong><span style=\"font-family:Georgia; \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<ol start=\"10\" style=\"margin:0pt; padding-left:0pt; list-style-type:upper-roman\">\n\t\t\t\t<li style=\"margin-left:40.57pt; line-height:normal; widows:0; orphans:0; padding-left:0.53pt; font-family:Georgia; font-size:19pt; font-weight:bold\">\n\t\t\t\t\tTax Strategy Summary\n\t\t\t\t</li>\n\t\t\t</ol>\n     <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n     <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n      <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n      <h1 style=\"margin-top:0pt; margin-right:77.05pt; line-height:normal; widows:0; orphans:0; font-size:23pt\">\n\t\t\t\t<a id=\"_qkx5n2f0zp8y\"></a><strong>&#xa0;</strong>\n\t\t\t</h1>\n     {{ $('Markdown').item.json.data }}\n   </body>\n</html>"
       },
       "id": "c01ec05c-c16a-4099-be31-399976d42a62",
       "name": "HTML",
       "type": "n8n-nodes-base.html",
       "typeVersion": 1.2,
       "position": [
-        2680,
-        1180
+        2940,
+        1380
       ]
     },
     {
@@ -999,7 +1124,7 @@
     },
     {
       "parameters": {
-        "functionCode": "const newItems = [];\n\nfor (let i = 0; i < items.length; i++) {\n  const item = items[i];\n  \n  // Get the JSON from the \"test\" node of the previous item, if it exists\n  let previousItem = null;\n  if ($runIndex > 0) {\n    previousItem = $('Return Section').first(0, $runIndex - 1).json.output;\n  }\n  \n  // Get the JSON from the last node of the current item in the loop\n  const loopJson = item.json;\n  \n  // Create a new object with both JSON data\n  const newItem = {\n    previousOutput: previousItem,\n    data: loopJson.section\n  };\n  \n  newItems.push(newItem);\n}\n\nreturn newItems;"
+        "functionCode": "const newItems = [];\n\nfor (let i = 0; i < items.length; i++) {\n  const item = items[i];\n  \n  // Get the JSON from the \"test\" node of the previous item, if it exists\n  let previousItem = [];\n  let previousReview = [];\n  if ($runIndex > 0) {\n    previousItem = $('Return Section').first(0, $runIndex - 1).json.output;\n    previousReview = $('Return Section').first(0, $runIndex - 1).json.review;\n  }\n\n  \n  // Get the JSON from the last node of the current item in the loop\n  const loopJson = item.json;\n  \n  // Create a new object with both JSON data\n  const newItem = {\n    previousOutput: previousItem,\n    previousReview: previousReview,\n    data: loopJson.section\n  };\n  \n  newItems.push(newItem);\n}\n\nreturn newItems;"
       },
       "id": "ee80d39b-6984-457e-b0f1-9c412110f512",
       "name": "preprocess",
@@ -1117,7 +1242,7 @@
       "typeVersion": 3.4,
       "position": [
         2260,
-        1540
+        1720
       ]
     },
     {
@@ -1150,8 +1275,8 @@
       "type": "@n8n/n8n-nodes-langchain.memoryManager",
       "typeVersion": 1.1,
       "position": [
-        2500,
-        1540
+        6760,
+        500
       ]
     },
     {
@@ -1165,8 +1290,8 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        2520,
-        1700
+        6640,
+        700
       ]
     },
     {
@@ -1180,8 +1305,8 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        3240,
-        1720
+        7360,
+        720
       ]
     },
     {
@@ -1194,8 +1319,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.2,
       "position": [
-        3120,
-        1720
+        7240,
+        720
       ],
       "credentials": {
         "anthropicApi": {
@@ -1223,8 +1348,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        2900,
-        1540
+        7020,
+        540
       ]
     },
     {
@@ -1319,8 +1444,8 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        2800,
-        2480
+        2780,
+        2540
       ]
     },
     {
@@ -1330,7 +1455,7 @@
             {
               "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
               "name": "system",
-              "value": "={{ $json.system }}\n4. Write a text at the beginning of the section, contextualizing the subject of the section, however take into account the text as a time, it is part of a document, so take into account what has already been written in {previous sections}..\n5. Give a written context conclusion that summarizes and explains important points at the end of the section. Don't use the word \"Conclusion:\" or \"Summary:\" I want the text directly. Remember to consider what has already been said in previous sections, that is, do not be repetitive.\n6. Don't use graph mermaid in markdown\n\nFormat all content with Markdown structure.\n\nInclude relevant numerical analysis in table format showing before/after scenarios.\n\n{previous sections}\n{{ $('preprocess').item.json.previousOutput }}\n\nAvoid Redundancy considering the {previous sections} created previously.",
+              "value": "=Here are the previous sections of the document. Use this context to create the next section, ensuring cohesion and continuity:\n\"{{ $('preprocess').item.json.previousOutput.toJsonString() }}\"\n\n\n{{ $json.system }}\n4. Write a text at the beginning of the section, contextualizing the subject of the section, however take into account the text as a time, it is part of a document, so take into account what has already been written in {previous sections}..\n5. Give a written context conclusion that summarizes and explains important points at the end of the section. Don't use the word \"Conclusion:\" or \"Summary:\" I want the text directly. Remember to consider what has already been said in previous sections, that is, do not be repetitive.\n6. Don't use graph mermaid in markdown\n\nFormat all content with Markdown structure.\n\nInclude relevant numerical analysis in table format showing before/after scenarios.",
               "type": "string"
             },
             {
@@ -1349,7 +1474,7 @@
               "id": "25626cb6-489c-499f-a641-6393ad94e73a",
               "name": "previous_ai",
               "value": "={{ $('preprocess').item.json.previousOutput }}",
-              "type": "string"
+              "type": "array"
             },
             {
               "id": "a5d040b7-b7c5-45e6-a660-ad0042166446",
@@ -1362,6 +1487,12 @@
               "name": "ai_bill",
               "value": "={{ $json.ai_bill }}",
               "type": "string"
+            },
+            {
+              "id": "e762941d-9214-4a51-b7fa-3c7079704a52",
+              "name": "previous_review",
+              "value": "={{ $('preprocess').item.json.previousReview }}",
+              "type": "array"
             }
           ]
         },
@@ -1441,7 +1572,13 @@
             {
               "id": "bad86184-8c02-432d-92ab-225af2c1feff",
               "name": "output",
-              "value": "={{ $('Get Prompt').item.json.previous_ai }}\n{{ $json.output }}",
+              "value": "={{ $('Get Prompt').item.json.previous_ai.append($('AI Agent5').item.json.output) }}",
+              "type": "string"
+            },
+            {
+              "id": "d05fb089-5f12-4cd2-ab37-ef88dce422a6",
+              "name": "review",
+              "value": "={{ $('Get Prompt').item.json.previous_review.append($json.output) }}",
               "type": "string"
             }
           ]
@@ -1453,7 +1590,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        3720,
+        4060,
         2360
       ]
     },
@@ -1465,7 +1602,13 @@
               "id": "bad86184-8c02-432d-92ab-225af2c1feff",
               "name": "output",
               "value": "={{ $json.output }}",
-              "type": "string"
+              "type": "array"
+            },
+            {
+              "id": "0078e05d-0b55-4f66-b9aa-b982cee876f3",
+              "name": "review",
+              "value": "={{ $json.review }}",
+              "type": "array"
             }
           ]
         },
@@ -1476,8 +1619,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        5420,
-        4100
+        5640,
+        4120
       ]
     },
     {
@@ -1827,8 +1970,8 @@
       "type": "@n8n/n8n-nodes-langchain.informationExtractor",
       "typeVersion": 1,
       "position": [
-        2320,
-        1180
+        2580,
+        1380
       ]
     },
     {
@@ -1841,8 +1984,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.2,
       "position": [
-        2360,
-        1320
+        2620,
+        1520
       ],
       "credentials": {
         "anthropicApi": {
@@ -1853,15 +1996,15 @@
     },
     {
       "parameters": {
-        "jsCode": "return {\"data\": $input.last().json.output};"
+        "jsCode": "return {\"data\": $input.last().json.output,\"review\": $input.last().json.review};"
       },
       "id": "688e8b53-a581-48a0-b5a2-cc9f13d3cbe5",
       "name": "Output HTML",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1500,
-        1180
+        1120,
+        1400
       ]
     },
     {
@@ -1871,8 +2014,8 @@
       "type": "n8n-nodes-base.merge",
       "typeVersion": 3,
       "position": [
-        4140,
-        1180
+        4320,
+        1320
       ]
     },
     {
@@ -1889,8 +2032,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1,
       "position": [
-        1720,
-        1380
+        7780,
+        900
       ],
       "credentials": {
         "openAiApi": {
@@ -1908,8 +2051,8 @@
       "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
       "typeVersion": 1.2,
       "position": [
-        1980,
-        1380
+        8040,
+        900
       ]
     },
     {
@@ -2220,7 +2363,7 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        1860,
+        2020,
         1920
       ]
     },
@@ -2236,8 +2379,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.2,
       "position": [
-        3740,
-        3120
+        4140,
+        3140
       ],
       "credentials": {
         "anthropicApi": {
@@ -2264,8 +2407,8 @@
       "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
       "typeVersion": 1.2,
       "position": [
-        3920,
-        3120
+        4320,
+        3140
       ]
     },
     {
@@ -2277,8 +2420,8 @@
       "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
       "typeVersion": 1.2,
       "position": [
-        4060,
-        3120
+        4460,
+        3140
       ]
     },
     {
@@ -2288,7 +2431,7 @@
             {
               "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
               "name": "system",
-              "value": "={{ $json.system }}\n4. Write a text at the beginning of the section, contextualizing the subject of the section, however take into account the text as a time, it is part of a document, so take into account what has already been written in {previous sections}..\n5. Give a written context conclusion that summarizes and explains important points at the end of the section. Don't use the word \"Conclusion:\" or \"Summary:\" I want the text directly. Remember to consider what has already been said in previous sections, that is, do not be repetitive.\n6. Don't use graph mermaid in markdown\n6. Don't use graph mermaid in markdown\n\nFormat all content with Markdown structure.\n\nInclude relevant numerical analysis in table format showing before/after scenarios.\n\n{previous sections}\n{{ $('preprocess').item.json.previousOutput }}\n\nAvoid Redundancy considering the {previous sections} created previously.",
+              "value": "=Here are the previous sections of the document. Use this context to create the next section, ensuring cohesion and continuity:\n\"{{ $('preprocess').item.json.previousOutput.toJsonString() }}\"\n\n{{ $json.system }}\n4. Write a text at the beginning of the section, contextualizing the subject of the section, however take into account the text as a time, it is part of a document, so take into account what has already been written in {previous sections}..\n5. Give a written context conclusion that summarizes and explains important points at the end of the section. Don't use the word \"Conclusion:\" or \"Summary:\" I want the text directly. Remember to consider what has already been said in previous sections, that is, do not be repetitive.\n6. Don't use graph mermaid in markdown\n7. Graph insertion:\n   - Insert the [{graph here}] markup when:\n     a) There are numerical or statistical data that can be visualized (percentages, values, comparisons)\n     b) The text specifically mentions trends, growth, or decline\n     c) There are comparative data between periods or categories\n   - The markup should be inserted:\n     a) Immediately after the paragraph containing the data\n     b) On a separate line with spacing before and after\n     c) With a suggested graph type in parentheses, example: [{graph here - bar chart}] or [{graph here - line chart}]\n   - Do not insert the markup when:\n     a) Data is too limited (less than 3 data points)\n     b) Information is already in list or table format\n     c) The text is purely qualitative without numerical data\n\nExample:\nExports grew by 15% in January, 22% in February, and 18% in March, showing a positive trend in the first quarter.\n\n[{graph here - line chart}]\n\nFormat all content with Markdown structure.\n\nInclude relevant numerical analysis in table format showing before/after scenarios.\n\nAvoid Redundancy considering the {previous sections} created previously.",
               "type": "string"
             },
             {
@@ -2307,7 +2450,7 @@
               "id": "25626cb6-489c-499f-a641-6393ad94e73a",
               "name": "previous_ai",
               "value": "={{ $('preprocess').item.json.previousOutput }}",
-              "type": "string"
+              "type": "array"
             },
             {
               "id": "a5d040b7-b7c5-45e6-a660-ad0042166446",
@@ -2320,6 +2463,12 @@
               "name": "ai_bill",
               "value": "={{ $json.ai_bill }}",
               "type": "string"
+            },
+            {
+              "id": "a950c1c2-9e0e-4c5e-a2f1-43aba2383112",
+              "name": "previous_review",
+              "value": "={{ $('preprocess').item.json.previousReview }}",
+              "type": "array"
             }
           ]
         },
@@ -2448,7 +2597,13 @@
             {
               "id": "bad86184-8c02-432d-92ab-225af2c1feff",
               "name": "output",
-              "value": "={{ $('Get Prompt1').item.json.previous_ai }}\n{{ $('AI Agent6').item.json.output }}\n{{$('Chart Output').item.json.output.html }}",
+              "value": "={{ $('Get Prompt1').item.json.previous_ai.append($json.output.html) }}",
+              "type": "string"
+            },
+            {
+              "id": "1716781d-04ab-4c2c-a95c-460563e507fb",
+              "name": "review",
+              "value": "={{ $('Get Prompt1').item.json.previous_review.append($('AI Agent9').item.json.output) }}",
               "type": "string"
             }
           ]
@@ -2461,8 +2616,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        4160,
-        2900
+        4640,
+        2880
       ]
     },
     {
@@ -2485,7 +2640,7 @@
     {
       "parameters": {
         "mode": "markdownToHtml",
-        "markdown": "={{ $('Output HTML').item.json.data }}",
+        "markdown": "={{ $json.data }}",
         "options": {
           "tables": true
         }
@@ -2496,7 +2651,7 @@
       "typeVersion": 1,
       "position": [
         2120,
-        1180
+        1560
       ]
     },
     {
@@ -2512,9 +2667,451 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.7,
       "position": [
-        3120,
-        1540
+        7240,
+        540
       ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.data }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "=You will rewrite the markdown text following the outlined requirements:\n\n1. Eliminate Redundancy\n- Review the submitted texts to eliminate redundancies, particularly at the beginning of new sections. Ensure the flow resembles that of a cohesive, single report rather than a compilation of various pieces in one document. Make sure the overall purpose of the text is clear and not lost among the different sections. \n- Consolidate repeated explanations of key concepts, such as core structures (e.g., \"Living Trust → FLP → FMC\") and money flow patterns, into a single, concise section.\n- Merge duplicate implementation steps into a unified sequence.\n\n2. Maintain All Sections\n\n- Preserve every section of the original document.\n\n3. Organize Financial Projections\n   - Consolidate scattered tax savings numbers and financial projections into a single section for clarity.\n   - Resolve discrepancies in projections across sections to ensure uniformity.\n\n\n4. Streamline Current Situation Analysis:\n   - Remove repeated elements from the situation analysis, client profiles, and financial overviews.\n   - Present this information in a single, well-organized section.\n\n\n5. Unify Implementation Steps:\n   - Combine fragmented implementation steps and ensure they appear in one section.\n   - Present timelines and action items only once in a clear and consistent format.\n\nRevise the current document with a focus on eliminating redundancies and reorganizing information for greater clarity and conciseness.\n\nReturn the result as an markdown text in json."
+        }
+      },
+      "id": "f46b9ea7-3ef4-47a9-bbf1-dfc5dcdc7b26",
+      "name": "AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        7820,
+        700
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "section",
+        "options": {}
+      },
+      "id": "5e780261-fa99-4d1f-9627-a6583cb5c2d5",
+      "name": "Split Sections1",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
+      "position": [
+        1500,
+        1400
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "b327c18d-0800-477f-8110-2f3a289cd06f",
+      "name": "loop1",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        1760,
+        1400
+      ]
+    },
+    {
+      "parameters": {
+        "model": "claude-3-5-sonnet-20241022",
+        "options": {
+          "maxTokensToSample": 500
+        }
+      },
+      "id": "e439f942-807c-4bb7-9d2b-58ff0942536b",
+      "name": "Anthropic Chat Model8",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.2,
+      "position": [
+        3700,
+        2540
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "xBWJQjIePD8Jl6hU",
+          "name": "Meerkat Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=The section to evaluate is titled: \"{{ $('loop').item.json.section }}\".\nHere is the text:\n{{ $('Get Prompt').item.json.previous_ai.append($json.output).toJsonString() }}",
+        "options": {
+          "systemMessage": "=You are a professional document evaluator. Your task is to assess new sections of a document based on their relevance, cohesion, clarity, avoidance of redundancy, and consistency with the existing content. Provide constructive feedback and actionable suggestions."
+        }
+      },
+      "id": "4887af9e-1f4c-4f9a-bae8-46a383f8bec4",
+      "name": "AI Agent7",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        3680,
+        2360
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "anthropicApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"model\": \"claude-3-5-sonnet-20241022\",\n    \"max_tokens\": 1024,\n    \"system\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"You are a tax planning expert and professional writer. Your task is to rewrite sections of a Tax Plan document, incorporating feedback and criticism to improve the content. Ensure the rewritten section is precise, practical, and aligned with the goals of a tax plan. It should enhance clarity, cohesion, and consistency while addressing the provided feedback. Here is the original section from the Tax Plan:  {{$ ('Output HTML').item.json.data.toString() }}\"\n      },\n    ],\n    \"messages\": [\n      {\n        \"role\": \"user\",\n        \"content\": \"Here is the feedback for this section:\\n\\n \"\n      }\n    ]\n  }",
+        "options": {}
+      },
+      "id": "82870b64-8e6b-4c39-abb3-5767ee8f1014",
+      "name": "HTTP Request",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        5920,
+        580
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "xBWJQjIePD8Jl6hU",
+          "name": "Meerkat Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{\n  \"section\":\n  [\n    \"Executive Summary\",\n    \"Current Situation Analysis\",\n    \"Detailed Business Structure Overview\",\n    \"Identified Tax Planning Opportunities\",\n    \"Strategy Recommendations\",\n    \"Financial Projections\",\n    \"Implementation Roadmap\",\n    \"Additional Considerations\",\n    \"Ongoing Optimization Plan\",\n    \"Tax Strategy Summary\"\n]\n}\n",
+        "options": {}
+      },
+      "id": "f9605caf-24c3-474d-ba5f-be375605ccb1",
+      "name": "All Sections1",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1320,
+        1400
+      ]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "=Executive Summary",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "=Executive Summary"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "9db0de49-0cbb-42e0-a720-2c200ddd9d6c",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "=Current Situation Analysis",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Current Situation Analysis"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "4426258f-6e18-49ec-89b9-f910d5812469",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Detailed Business Structure Overview",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Detailed Business Structure Overview"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "fbbe4eaf-fe71-4d26-94c2-32adad185e29",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Identified Tax Planning Opportunities",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Identified Tax Planning Opportunities"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "293ba543-4322-41ee-80df-268f500370ff",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Strategy Recommendations",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Strategy Recommendations"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "81bda41d-1b26-401a-a5f6-921a7dffee55",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Implementation Roadmap",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Implementation Roadmap"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "fa5cfb50-31f2-4d85-a00f-28c5e7b250cd",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Additional Considerations",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Additional Considerations"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "d34c291a-b362-435c-8295-039229f2f6ba",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Ongoing Optimization Plan",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Ongoing Optimization Plan"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "b99596d1-046e-4f48-92ce-97df85076121",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Tax Strategy Summary",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Tax Strategy Summary"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "acfbed92-5d4e-4e32-b7c9-994da209d881",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Financial Projections",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Financial Projections"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "da3af65a-aecb-498a-9bd3-8fd6c352bc9f",
+      "name": "Switch",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        2060,
+        960
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d2dba19f-f922-4223-8e01-bfd288a42029",
+              "name": "data",
+              "value": "={{ $json.section }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "52caa333-8949-4cd7-8070-2f60b42327a0",
+      "name": "Edit Fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1860,
+        1180
+      ]
+    },
+    {
+      "parameters": {
+        "model": "claude-3-5-sonnet-20241022",
+        "options": {}
+      },
+      "id": "0fb76c3c-e924-4a57-bc5d-05b260133e64",
+      "name": "Anthropic Chat Model9",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.2,
+      "position": [
+        2420,
+        940
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "xBWJQjIePD8Jl6hU",
+          "name": "Meerkat Anthropic account"
+        }
+      }
     },
     {
       "parameters": {
@@ -2535,8 +3132,83 @@
     },
     {
       "parameters": {
+        "jsCode": "return {\"data\": $input.all()}"
+      },
+      "id": "4c44722b-42fe-45ad-8d4e-f5230f40f250",
+      "name": "Code",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1740,
+        1580
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "26a8a9d7-5588-4a6f-91b8-7f078e28aaa0",
+              "name": "data",
+              "value": "={{ $json.data.map(item => item.json.output).join(\"\\n\\n\") }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "59f95c1d-25c0-4505-bfd7-9f3835acd19f",
+      "name": "Edit Fields2",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1960,
+        1580
+      ]
+    },
+    {
+      "parameters": {
+        "model": "claude-3-5-sonnet-20241022",
+        "options": {
+          "maxTokensToSample": 500
+        }
+      },
+      "id": "2b9ba6f0-cc0d-4527-982f-8324dc0f327d",
+      "name": "Anthropic Chat Model10",
+      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
+      "typeVersion": 1.2,
+      "position": [
+        3740,
+        3080
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "xBWJQjIePD8Jl6hU",
+          "name": "Meerkat Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
         "promptType": "define",
-        "text": "={{ $json.output }}",
+        "text": "=Here is the section:\\n\\n \n\"{{ $('loop1').item.json.section }}\"\n\nHere is the feedback for this section:\\n\\n\n\"{{ $('Output HTML').item.json.review[$runIndex] }}\"\n",
+        "options": {
+          "systemMessage": "=You are a tax planning expert and professional writer. Your task is to rewrite sections of a Tax Plan document, incorporating feedback and criticism to improve the content. Ensure the rewritten section is precise, practical, and aligned with the goals of a tax plan. It should enhance clarity, cohesion, and consistency while addressing the provided feedback.\n\nHere is the original section from the Tax Plan:  {{$ ('Output HTML').item.json.data.toString() }}\n\nDon't write \"Here's the rewritten incorporating the feedback:\", I want the section returned directly.\n\nFormat all content with Markdown structure.\n\nBegin with **{{ $('loop1').item.json.section }}**"
+        }
+      },
+      "id": "60259807-6958-489e-88fa-7dfaf4e0d894",
+      "name": "AI Agent8",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        2400,
+        700
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('AI Agent6').item.json.output }}",
         "hasOutputParser": true,
         "options": {
           "systemMessage": "=Process the input markdown and return a JSON with the following structure:\n\n{\n  \"markdown\": \"markdown formatted content with:\n          - ** heading at the start\n          - Result img markdown from get_chart_from_table() function using the table data\n          - Formatted using markdown\n          - Proper markdown structure\",\n}\n\nSteps:\n1. Create one table from the input markdown\n2. Pass this table to get_chart_from_table() to get the chart image\n3. Format the markdown content following the structure above\n4. Return both the markdown and image in JSON format"
@@ -2547,26 +3219,25 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.7,
       "position": [
-        3740,
-        2900
+        4140,
+        2920
       ]
     },
     {
       "parameters": {
         "promptType": "define",
-        "text": "={{ $json.data }}",
-        "hasOutputParser": true,
+        "text": "=The section to evaluate is titled: \"{{ $('loop').item.json.section }}\".\nHere is the text:\n{{ $('Get Prompt1').item.json.previous_ai.append($json.output).toJsonString() }}",
         "options": {
-          "systemMessage": "=You will rewrite the markdown text following the outlined requirements:\n\n1. Eliminate Redundancy\n- Review the submitted texts to eliminate redundancies, particularly at the beginning of new sections. Ensure the flow resembles that of a cohesive, single report rather than a compilation of various pieces in one document. Make sure the overall purpose of the text is clear and not lost among the different sections. \n- Consolidate repeated explanations of key concepts, such as core structures (e.g., \"Living Trust → FLP → FMC\") and money flow patterns, into a single, concise section.\n- Merge duplicate implementation steps into a unified sequence.\n\n2. Maintain All Sections\n\n- Preserve every section of the original document.\n\n3. Organize Financial Projections\n   - Consolidate scattered tax savings numbers and financial projections into a single section for clarity.\n   - Resolve discrepancies in projections across sections to ensure uniformity.\n\n\n4. Streamline Current Situation Analysis:\n   - Remove repeated elements from the situation analysis, client profiles, and financial overviews.\n   - Present this information in a single, well-organized section.\n\n\n5. Unify Implementation Steps:\n   - Combine fragmented implementation steps and ensure they appear in one section.\n   - Present timelines and action items only once in a clear and consistent format.\n\nRevise the current document with a focus on eliminating redundancies and reorganizing information for greater clarity and conciseness.\n\nReturn the result as an markdown text in json."
+          "systemMessage": "=You are a professional document evaluator. Your task is to assess new sections of a document based on their relevance, cohesion, clarity, avoidance of redundancy, and consistency with the existing content. Provide constructive feedback and actionable suggestions. Make it clear in the text that you are not removing any images from the text."
         }
       },
-      "id": "f46b9ea7-3ef4-47a9-bbf1-dfc5dcdc7b26",
-      "name": "AI Agent",
+      "id": "6295183e-a158-4a51-8490-40985d975c43",
+      "name": "AI Agent9",
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.7,
       "position": [
-        1760,
-        1180
+        3720,
+        2900
       ]
     }
   ],
@@ -2607,6 +3278,6 @@
     }
   ],
   "triggerCount": 0,
-  "updatedAt": "2025-01-10T19:14:48.000Z",
-  "versionId": "f7075abc-f02d-48b8-a2d6-48b9b4ec402f"
+  "updatedAt": "2025-01-13T19:58:59.000Z",
+  "versionId": "6bfc6f34-5956-4731-8b46-3e77bf81ca7c"
 }
