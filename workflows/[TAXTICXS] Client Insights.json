@@ -60,7 +60,7 @@
       "main": [
         [
           {
-            "node": "Output HTML",
+            "node": "Output Text",
             "type": "main",
             "index": 0
           }
@@ -118,66 +118,11 @@
         ]
       ]
     },
-    "Chat Memory Manager1": {
-      "main": [
-        [
-          {
-            "node": "First System Prompt",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Window Buffer Memory2": {
-      "ai_memory": [
-        [
-          {
-            "node": "Chat Memory Manager1",
-            "type": "ai_memory",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Window Buffer Memory3": {
-      "ai_memory": [
-        [
-          {
-            "node": "AI Agent4",
-            "type": "ai_memory",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Executive Summary": {
       "main": [
         [
           {
             "node": "Get Prompt",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Anthropic Chat Model5": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent4",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "First System Prompt": {
-      "main": [
-        [
-          {
-            "node": "AI Agent4",
             "type": "main",
             "index": 0
           }
@@ -382,17 +327,6 @@
         ]
       ]
     },
-    "Output HTML": {
-      "main": [
-        [
-          {
-            "node": "All Sections1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Merge": {
       "main": [
         [
@@ -430,7 +364,7 @@
       "main": [
         [
           {
-            "node": "Get Prompt1",
+            "node": "Get Prompt",
             "type": "main",
             "index": 0
           }
@@ -470,83 +404,6 @@
         ]
       ]
     },
-    "Get Prompt1": {
-      "main": [
-        [
-          {
-            "node": "Chat Memory Manager",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Chat Memory Manager": {
-      "main": [
-        [
-          {
-            "node": "System Prompt1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Window Buffer Memory": {
-      "ai_memory": [
-        [
-          {
-            "node": "Chat Memory Manager",
-            "type": "ai_memory",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "System Prompt1": {
-      "main": [
-        [
-          {
-            "node": "AI Agent6",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Anthropic Chat Model7": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent6",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Window Buffer Memory9": {
-      "ai_memory": [
-        [
-          {
-            "node": "AI Agent6",
-            "type": "ai_memory",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Return Accumulator Section1": {
-      "main": [
-        [
-          {
-            "node": "Return Section",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Split Sections1": {
       "main": [
         [
@@ -576,28 +433,6 @@
         ]
       ]
     },
-    "Anthropic Chat Model8": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent7",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "All Sections1": {
-      "main": [
-        [
-          {
-            "node": "Split Sections1",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Edit Fields": {
       "main": [
         [
@@ -609,29 +444,7 @@
         ]
       ]
     },
-    "Anthropic Chat Model9": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent8",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Code": {
-      "main": [
-        [
-          {
-            "node": "Edit Fields2",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Edit Fields2": {
       "main": [
         [
           {
@@ -669,107 +482,11 @@
         ]
       ]
     },
-    "Anthropic Chat Model10": {
-      "ai_languageModel": [
-        [
-          {
-            "node": "AI Agent9",
-            "type": "ai_languageModel",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Execute Workflow Trigger": {
       "main": [
         [
           {
             "node": "User Prompt",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "AI Agent9": {
-      "main": [
-        [
-          {
-            "node": "Wait",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Switch": {
-      "main": [
-        [
-          {
-            "node": "AI Agent8",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent8",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent8",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent8",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent8",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent8",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent8",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent8",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent8",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent8",
             "type": "main",
             "index": 0
           }
@@ -850,29 +567,65 @@
         ]
       ]
     },
-    "AI Agent8": {
+    "Split Sections2": {
       "main": [
         [
           {
-            "node": "loop1",
+            "node": "loop2",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "AI Agent6": {
+    "loop2": {
       "main": [
         [
           {
-            "node": "AI Agent9",
+            "node": "Output Text/Review",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields3",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "AI Agent7": {
+    "Edit Fields3": {
+      "main": [
+        [
+          {
+            "node": "Switch2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields4": {
       "main": [
         [
           {
@@ -883,11 +636,11 @@
         ]
       ]
     },
-    "Chart Output": {
+    "Edit Fields5": {
       "main": [
         [
           {
-            "node": "Return Accumulator Section1",
+            "node": "Return Accumulator Section",
             "type": "main",
             "index": 0
           }
@@ -905,11 +658,258 @@
         ]
       ]
     },
+    "AI Agent [Review]": {
+      "main": [
+        [
+          {
+            "node": "loop2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Output Text": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch2": {
+      "main": [
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Output Text/Review": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields7",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Prompts [RW]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prompts [RW]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prompts [RW]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prompts [RW]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prompts [RW]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prompts [RW]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prompts [RW]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prompts [RW]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prompts [RW]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Prompts [RW]",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prompts [RW]": {
+      "main": [
+        [
+          {
+            "node": "AI Agent [Rw]",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent [Rw]": {
+      "main": [
+        [
+          {
+            "node": "loop1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Chart Output": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "Split Sections2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields7": {
+      "main": [
+        [
+          {
+            "node": "Split Sections1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request2": {
+      "main": [
+        [
+          {
+            "node": "Google Drive1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
     "AI Agent5": {
       "main": [
         [
           {
-            "node": "AI Agent7",
+            "node": "If",
             "type": "main",
             "index": 0
           }
@@ -931,7 +931,7 @@
       "type": "n8n-nodes-base.executeWorkflowTrigger",
       "typeVersion": 1,
       "position": [
-        580,
+        760,
         1800
       ]
     },
@@ -957,8 +957,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3540,
-        1200
+        5960,
+        880
       ]
     },
     {
@@ -974,8 +974,8 @@
       "type": "n8n-nodes-base.convertToFile",
       "typeVersion": 1.1,
       "position": [
-        3300,
-        1200
+        5720,
+        880
       ]
     },
     {
@@ -1000,8 +1000,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        3760,
-        1200
+        6280,
+        840
       ],
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -1029,8 +1029,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        4680,
-        1320
+        6880,
+        1000
       ]
     },
     {
@@ -1048,8 +1048,8 @@
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.1,
       "position": [
-        3680,
-        1480
+        5880,
+        1160
       ]
     },
     {
@@ -1074,8 +1074,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        3900,
-        1480
+        6100,
+        1160
       ],
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -1103,8 +1103,8 @@
       "type": "n8n-nodes-base.aggregate",
       "typeVersion": 1,
       "position": [
-        4480,
-        1320
+        6680,
+        1000
       ]
     },
     {
@@ -1116,8 +1116,8 @@
       "type": "n8n-nodes-base.html",
       "typeVersion": 1.2,
       "position": [
-        2980,
-        1400
+        5400,
+        1080
       ]
     },
     {
@@ -1129,19 +1129,19 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 3,
       "position": [
-        1360,
+        1580,
         1800
       ]
     },
     {
       "parameters": {
-        "functionCode": "const newItems = [];\n\nfor (let i = 0; i < items.length; i++) {\n  const item = items[i];\n  \n  // Get the JSON from the \"test\" node of the previous item, if it exists\n  let previousItem = [];\n  let previousReview = [];\n  if ($runIndex > 0) {\n    previousItem = $('Return Section').first(0, $runIndex - 1).json.output;\n    previousReview = $('Return Section').first(0, $runIndex - 1).json.review;\n  }\n\n  \n  // Get the JSON from the last node of the current item in the loop\n  const loopJson = item.json;\n  \n  // Create a new object with both JSON data\n  const newItem = {\n    previousOutput: previousItem,\n    previousReview: previousReview,\n    data: loopJson.section\n  };\n  \n  newItems.push(newItem);\n}\n\nreturn newItems;"
+        "functionCode": "const newItems = [];\n\nfor (let i = 0; i < items.length; i++) {\n  const item = items[i];\n  \n  // Get the JSON from the \"test\" node of the previous item, if it exists\n  let previousItem = [];\n  if ($runIndex > 0) {\n    previousItem = $('Return Section').first(0, $runIndex - 1).json.output;\n  }\n\n  \n  // Get the JSON from the last node of the current item in the loop\n  const loopJson = item.json;\n  \n  // Create a new object with both JSON data\n  const newItem = {\n    previousOutput: previousItem,\n    data: loopJson.section\n  };\n  \n  newItems.push(newItem);\n}\n\nreturn newItems;"
       },
       "id": "ee80d39b-6984-457e-b0f1-9c412110f512",
       "name": "preprocess",
       "type": "n8n-nodes-base.function",
       "position": [
-        1620,
+        1840,
         1900
       ]
     },
@@ -1156,7 +1156,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        980,
+        1140,
         1800
       ]
     },
@@ -1191,7 +1191,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        780,
+        960,
         1800
       ]
     },
@@ -1205,7 +1205,7 @@
       "type": "n8n-nodes-base.splitOut",
       "typeVersion": 1,
       "position": [
-        1140,
+        1360,
         1800
       ]
     },
@@ -1252,115 +1252,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        2260,
-        1720
-      ]
-    },
-    {
-      "parameters": {
-        "mode": "insert",
-        "insertMode": "override",
-        "messages": {
-          "messageValues": [
-            {
-              "type": "user",
-              "message": "={{ $json.user_beyer }}"
-            },
-            {
-              "type": "ai",
-              "message": "={{ $json.ai_beyer }}"
-            },
-            {
-              "type": "user",
-              "message": "={{ $json.user_bill }}"
-            },
-            {
-              "type": "ai",
-              "message": "={{ $json.ai_bill }}"
-            }
-          ]
-        }
-      },
-      "id": "b3d7ac7b-fa46-49df-8c17-1c0f8d33a5f2",
-      "name": "Chat Memory Manager1",
-      "type": "@n8n/n8n-nodes-langchain.memoryManager",
-      "typeVersion": 1.1,
-      "position": [
-        6760,
-        500
-      ]
-    },
-    {
-      "parameters": {
-        "sessionIdType": "customKey",
-        "sessionKey": "tax-plan-key",
-        "contextWindowLength": 0
-      },
-      "id": "1a633d10-a21d-4753-9ab5-1f489774cf7a",
-      "name": "Window Buffer Memory2",
-      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
-      "typeVersion": 1.3,
-      "position": [
-        6640,
-        700
-      ]
-    },
-    {
-      "parameters": {
-        "sessionIdType": "customKey",
-        "sessionKey": "tax-plan-key",
-        "contextWindowLength": 10
-      },
-      "id": "a0885fb4-ec5f-4450-a89c-73b973296e38",
-      "name": "Window Buffer Memory3",
-      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
-      "typeVersion": 1.3,
-      "position": [
-        7360,
-        720
-      ]
-    },
-    {
-      "parameters": {
-        "model": "claude-3-5-sonnet-20241022",
-        "options": {}
-      },
-      "id": "0fd6db6a-953a-49be-b6aa-3b36b0e26bac",
-      "name": "Anthropic Chat Model5",
-      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
-      "typeVersion": 1.2,
-      "position": [
-        7240,
-        720
-      ],
-      "credentials": {
-        "anthropicApi": {
-          "id": "xBWJQjIePD8Jl6hU",
-          "name": "Meerkat Anthropic account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "f608c99a-8d10-4433-967e-2b1c63ae60e0",
-              "name": "system",
-              "value": "={{ $('Executive Summary').item.json.system }}",
-              "type": "string"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "0a017987-eb80-49b5-b475-7df4ab803694",
-      "name": "First System Prompt",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        7020,
-        540
+        2540,
+        1780
       ]
     },
     {
@@ -1406,7 +1299,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        2240,
+        2540,
         1980
       ]
     },
@@ -1440,8 +1333,8 @@
       "type": "@n8n/n8n-nodes-langchain.memoryManager",
       "typeVersion": 1.1,
       "position": [
-        2760,
-        2340
+        3060,
+        2800
       ]
     },
     {
@@ -1455,8 +1348,8 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        2780,
-        2540
+        3080,
+        3000
       ]
     },
     {
@@ -1466,7 +1359,7 @@
             {
               "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
               "name": "system",
-              "value": "=Here are the previous sections of the document. Use this context to create the next section, ensuring cohesion and continuity:\n\"{{ $('preprocess').item.json.previousOutput.toJsonString() }}\"\n\n\n\n{{ $json.system }}\n4. Write a text at the beginning of the section, contextualizing the subject of the section, however take into account the text as a time, it is part of a document, so take into account what has already been written in previous sections.\n5. Give a written context conclusion that summarizes and explains important points at the end of the section. Don't use the word \"Conclusion:\" or \"Summary:\" I want the text directly. Remember to consider what has already been said in previous sections, that is, do not be repetitive.\n6. Never include diagrams in graph TD. Avoid creating graphical flowcharts or arrows indicating relationships between elements (e.g., A --> B).\n\nFormat all content with Markdown structure.\n\nInclude relevant numerical analysis in table format showing before/after scenarios.",
+              "value": "=Here are the previous sections of the document. Use this context to create the next section, ensuring cohesion and continuity:\n\"{{ $('preprocess').item.json.previousOutput.toJsonString() }}\"\n\n\n\n{{ $json.system }}\n4. Write a text at the beginning of the section, contextualizing the subject of the section, however take into account the text as a time, it is part of a document, so take into account what has already been written in previous sections.\n5. Give a written context conclusion that summarizes and explains important points at the end of the section. Don't use the word \"Conclusion:\" or \"Summary:\" I want the text directly. Remember to consider what has already been said in previous sections, that is, do not be repetitive.\n6. Never include diagrams in graph TD. Avoid creating graphical flowcharts or arrows indicating relationships between elements (e.g., A --> B).\n7. Include relevant numerical analysis in table format showing before/after scenarios.\n{{ $if([\"Identified Tax Planning Opportunities\", \"Strategy Recommendations\",\"Financial Projections\"].includes($('loop').item.json.section), \"8. Graph insertion: - Insert the [{graph here}] markup when: a) There are numerical or statistical data that can be visualized (percentages, values, comparisons) b) The text specifically mentions trends, growth, or declinec) There are comparative data between periods or categories- The markup should be inserted:a) Immediately after the paragraph containing the datab) On a separate line with spacing before and afterc) With a suggested graph type in parentheses, example: [{graph here - bar chart}] or [{graph here - line chart}]- Do not insert the markup when:a) Data is too limited (less than 3 data points)b) Information is already in list or table format c) The text is purely qualitative without numerical data Example: Exports grew by 15% in January, 22% in February, and 18% in March, showing a positive trend in the first quarter. [{graph here - line chart}]\", \"\") }}\n\n\nFormat all content with Markdown structure.",
               "type": "string"
             },
             {
@@ -1498,12 +1391,6 @@
               "name": "ai_bill",
               "value": "={{ $json.ai_bill }}",
               "type": "string"
-            },
-            {
-              "id": "e762941d-9214-4a51-b7fa-3c7079704a52",
-              "name": "previous_review",
-              "value": "={{ $('preprocess').item.json.previousReview }}",
-              "type": "array"
             }
           ]
         },
@@ -1514,8 +1401,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        2580,
-        2340
+        2880,
+        2800
       ]
     },
     {
@@ -1537,8 +1424,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        3120,
-        2340
+        3420,
+        2800
       ]
     },
     {
@@ -1552,8 +1439,8 @@
       "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
       "typeVersion": 1.3,
       "position": [
-        3460,
-        2540
+        3760,
+        3000
       ]
     },
     {
@@ -1566,8 +1453,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.2,
       "position": [
-        3360,
-        2540
+        3660,
+        3000
       ],
       "credentials": {
         "anthropicApi": {
@@ -1583,13 +1470,7 @@
             {
               "id": "bad86184-8c02-432d-92ab-225af2c1feff",
               "name": "output",
-              "value": "={{ $('Get Prompt').item.json.previous_ai.append($('AI Agent5').item.json.output) }}",
-              "type": "string"
-            },
-            {
-              "id": "d05fb089-5f12-4cd2-ab37-ef88dce422a6",
-              "name": "review",
-              "value": "={{ $('Get Prompt').item.json.previous_review.append($json.output) }}",
+              "value": "={{ $('Get Prompt').item.json.previous_ai.append($json.output) }}",
               "type": "string"
             }
           ]
@@ -1601,8 +1482,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        4060,
-        2360
+        5260,
+        2820
       ]
     },
     {
@@ -1614,12 +1495,6 @@
               "name": "output",
               "value": "={{ $json.output }}",
               "type": "array"
-            },
-            {
-              "id": "0078e05d-0b55-4f66-b9aa-b982cee876f3",
-              "name": "review",
-              "value": "={{ $json.review }}",
-              "type": "array"
             }
           ]
         },
@@ -1630,8 +1505,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        5640,
-        4120
+        5480,
+        4080
       ]
     },
     {
@@ -1677,7 +1552,7 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        2280,
+        2540,
         2200
       ]
     },
@@ -1724,8 +1599,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        2240,
-        2480
+        2540,
+        2440
       ]
     },
     {
@@ -1771,8 +1646,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        2240,
-        2740
+        2540,
+        2700
       ]
     },
     {
@@ -1818,8 +1693,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        2280,
-        3300
+        2540,
+        3180
       ]
     },
     {
@@ -1865,8 +1740,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        2280,
-        3540
+        2540,
+        3440
       ]
     },
     {
@@ -1912,8 +1787,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        2280,
-        3780
+        2540,
+        3680
       ]
     },
     {
@@ -1959,8 +1834,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        2280,
-        4020
+        2540,
+        3940
       ]
     },
     {
@@ -1981,8 +1856,8 @@
       "type": "@n8n/n8n-nodes-langchain.informationExtractor",
       "typeVersion": 1,
       "position": [
-        2580,
-        1380
+        5000,
+        1060
       ]
     },
     {
@@ -1995,8 +1870,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.2,
       "position": [
-        2640,
-        1600
+        5060,
+        1280
       ],
       "credentials": {
         "anthropicApi": {
@@ -2006,27 +1881,14 @@
       }
     },
     {
-      "parameters": {
-        "jsCode": "return {\"data\": $input.last().json.output,\"review\": $input.last().json.review};"
-      },
-      "id": "688e8b53-a581-48a0-b5a2-cc9f13d3cbe5",
-      "name": "Output HTML",
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        1120,
-        1400
-      ]
-    },
-    {
       "parameters": {},
       "id": "a5ef1aa3-baf8-4146-982d-e9a405d592a3",
       "name": "Merge",
       "type": "n8n-nodes-base.merge",
       "typeVersion": 3,
       "position": [
-        4320,
-        1320
+        6520,
+        1000
       ]
     },
     {
@@ -2043,8 +1905,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
       "typeVersion": 1,
       "position": [
-        7780,
-        900
+        10020,
+        1880
       ],
       "credentials": {
         "openAiApi": {
@@ -2062,8 +1924,8 @@
       "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
       "typeVersion": 1.2,
       "position": [
-        8040,
-        900
+        10280,
+        1880
       ]
     },
     {
@@ -2109,8 +1971,8 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        2280,
-        3060
+        2540,
+        2960
       ]
     },
     {
@@ -2125,8 +1987,8 @@
       "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
       "typeVersion": 1.2,
       "position": [
-        4140,
-        3140
+        4420,
+        2600
       ],
       "credentials": {
         "anthropicApi": {
@@ -2153,217 +2015,21 @@
       "type": "@n8n/n8n-nodes-langchain.toolWorkflow",
       "typeVersion": 1.2,
       "position": [
-        4320,
-        3140
+        4560,
+        2600
       ]
     },
     {
       "parameters": {
-        "jsonSchemaExample": "{\"html\": \"<h3>Financial Projection Analysis</h3>\\n          <p>The analysis shows significant potential tax savings through the Family Operating System (FOS) implementation over a 5-year period.</p>\\n          \\n          <h3>Projected Annual Tax Savings</h3>\\n          <table border='1'>\\n              <tr>\\n                  <th>Year</th>\\n                  <th>Tax Savings</th>\\n                  <th>Savings Rate</th>\\n              </tr>\\n              <tr>\\n                  <td>2024</td>\\n                  <td>$28,750</td>\\n                  <td>48.9%</td>\\n              </tr>\\n              <tr>\\n                  <td>2025</td>\\n                  <td>$29,813</td>\\n                  <td>48.9%</td>\\n              </tr>\\n              <tr>\\n                  <td>2026</td>\\n                  <td>$31,005</td>\\n                  <td>48.9%</td>\\n              </tr>\\n              <tr>\\n                  <td>2027</td>\\n                  <td>$32,245</td>\\n                  <td>48.9%</td>\\n              </tr>\\n              <tr>\\n                  <td>2028</td>\\n                  <td>$33,535</td>\\n                  <td>48.9%</td>\\n              </tr>\\n          </table>\\n          \\n          <p>The projections demonstrate a consistent annual savings rate of 48.9%, with tax savings increasing from $28,750 in 2024 to $33,535 in 2028. The cumulative savings over the five-year period amounts to $155,348, representing a significant financial benefit from implementing the FOS structure.</p>\"}"
+        "jsonSchemaExample": "{\"markdown\": \"### Financial Projection Analysis\\\\nThe analysis shows significant potential tax savings through the Family Operating System (FOS) implementation over a 5-year period.\"}"
       },
       "id": "1352edee-25b8-47e9-9051-a9536f733b53",
       "name": "Structured Output Parser1",
       "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
       "typeVersion": 1.2,
       "position": [
-        4460,
-        3140
-      ]
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "45aa9fb0-50e4-49c2-bc30-21c49f598865",
-              "name": "system",
-              "value": "=Here are the previous sections of the document. Use this context to create the next section, ensuring cohesion and continuity:\n\"{{ $('preprocess').item.json.previousOutput.toJsonString() }}\"\n\n{{ $json.system }}\n4. Write a text at the beginning of the section, contextualizing the subject of the section, however take into account the text as a time, it is part of a document, so take into account what has already been written in previous sections.\n5. Give a written context conclusion that summarizes and explains important points at the end of the section. Don't use the word \"Conclusion:\" or \"Summary:\" I want the text directly. Remember to consider what has already been said in previous sections, that is, do not be repetitive.\n6. Graph insertion:\n   - Insert the [{graph here}] markup when:\n     a) There are numerical or statistical data that can be visualized (percentages, values, comparisons)\n     b) The text specifically mentions trends, growth, or decline\n     c) There are comparative data between periods or categories\n   - The markup should be inserted:\n     a) Immediately after the paragraph containing the data\n     b) On a separate line with spacing before and after\n     c) With a suggested graph type in parentheses, example: [{graph here - bar chart}] or [{graph here - line chart}]\n   - Do not insert the markup when:\n     a) Data is too limited (less than 3 data points)\n     b) Information is already in list or table format\n     c) The text is purely qualitative without numerical data\n7. Never include diagrams in graph TD. Avoid creating graphical flowcharts or arrows indicating relationships between elements (e.g., A --> B).\n\nExample:\nExports grew by 15% in January, 22% in February, and 18% in March, showing a positive trend in the first quarter.\n\n[{graph here - line chart}]\n\nFormat all content with Markdown structure.\n\nInclude relevant numerical analysis in table format showing before/after scenarios.\n\nAvoid Redundancy considering the {previous sections} created previously.",
-              "type": "string"
-            },
-            {
-              "id": "314db41d-d2d3-4a69-81f7-a3b50ebecfa8",
-              "name": "user_beyer",
-              "value": "={{ $json.user_beyer }}",
-              "type": "string"
-            },
-            {
-              "id": "70b16846-7644-4878-b2e7-8023d99add7b",
-              "name": "ai_beyer",
-              "value": "={{ $json.ai_beyer }}",
-              "type": "string"
-            },
-            {
-              "id": "25626cb6-489c-499f-a641-6393ad94e73a",
-              "name": "previous_ai",
-              "value": "={{ $('preprocess').item.json.previousOutput }}",
-              "type": "array"
-            },
-            {
-              "id": "a5d040b7-b7c5-45e6-a660-ad0042166446",
-              "name": "user_bill",
-              "value": "={{ $json.user_bill }}",
-              "type": "string"
-            },
-            {
-              "id": "184cf9c6-84c4-436e-ba8e-366a799b1e47",
-              "name": "ai_bill",
-              "value": "={{ $json.ai_bill }}",
-              "type": "string"
-            },
-            {
-              "id": "a950c1c2-9e0e-4c5e-a2f1-43aba2383112",
-              "name": "previous_review",
-              "value": "={{ $('preprocess').item.json.previousReview }}",
-              "type": "array"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "8c085eb2-ec58-4665-a531-7fb4efb6a805",
-      "name": "Get Prompt1",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        2580,
-        2900
-      ]
-    },
-    {
-      "parameters": {
-        "mode": "insert",
-        "insertMode": "override",
-        "messages": {
-          "messageValues": [
-            {
-              "type": "user",
-              "message": "={{ $json.user_beyer }}"
-            },
-            {
-              "type": "ai",
-              "message": "={{ $json.ai_beyer }}"
-            },
-            {
-              "type": "user",
-              "message": "={{ $json.user_bill }}"
-            },
-            {
-              "type": "ai",
-              "message": "={{ $json.ai_bill }}"
-            }
-          ]
-        }
-      },
-      "id": "53a14851-0908-4a89-a60d-9bb81ea4777c",
-      "name": "Chat Memory Manager",
-      "type": "@n8n/n8n-nodes-langchain.memoryManager",
-      "typeVersion": 1.1,
-      "position": [
-        2800,
-        2900
-      ]
-    },
-    {
-      "parameters": {
-        "sessionIdType": "customKey",
-        "sessionKey": "tax-plan-key",
-        "contextWindowLength": 0
-      },
-      "id": "a7f684b5-4838-45cd-97e9-348f0327dd7e",
-      "name": "Window Buffer Memory",
-      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
-      "typeVersion": 1.3,
-      "position": [
-        2820,
-        3120
-      ]
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "f608c99a-8d10-4433-967e-2b1c63ae60e0",
-              "name": "system",
-              "value": "={{ $('Get Prompt1').item.json.system }}",
-              "type": "string"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "e38335d8-8d60-4de7-9cf4-815d8061ec44",
-      "name": "System Prompt1",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        3160,
-        2900
-      ]
-    },
-    {
-      "parameters": {
-        "model": "claude-3-5-sonnet-20241022",
-        "options": {}
-      },
-      "id": "17b36284-b719-40be-a77d-1c8c8c856703",
-      "name": "Anthropic Chat Model7",
-      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
-      "typeVersion": 1.2,
-      "position": [
-        3400,
-        3140
-      ],
-      "credentials": {
-        "anthropicApi": {
-          "id": "xBWJQjIePD8Jl6hU",
-          "name": "Meerkat Anthropic account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "sessionIdType": "customKey",
-        "sessionKey": "tax-plan-key",
-        "contextWindowLength": 10
-      },
-      "id": "64fc448e-4156-4249-86dc-2168b4e9c0e6",
-      "name": "Window Buffer Memory9",
-      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
-      "typeVersion": 1.3,
-      "position": [
-        3520,
-        3120
-      ]
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "bad86184-8c02-432d-92ab-225af2c1feff",
-              "name": "output",
-              "value": "={{ $('Get Prompt1').item.json.previous_ai.append($json.output.html) }}",
-              "type": "string"
-            },
-            {
-              "id": "1716781d-04ab-4c2c-a95c-460563e507fb",
-              "name": "review",
-              "value": "={{ $('Get Prompt1').item.json.previous_review.append($('AI Agent9').item.json.output) }}",
-              "type": "string"
-            }
-          ]
-        },
-        "includeOtherFields": "={{ false }}",
-        "options": {}
-      },
-      "id": "92b0c2fd-caa5-4192-b6e2-a29cdf5f54b5",
-      "name": "Return Accumulator Section1",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        4640,
-        2880
+        4700,
+        2600
       ]
     },
     {
@@ -2379,25 +2045,8 @@
       "type": "n8n-nodes-base.markdown",
       "typeVersion": 1,
       "position": [
-        2120,
-        1560
-      ]
-    },
-    {
-      "parameters": {
-        "promptType": "define",
-        "text": "={{ $('User Prompt').first().json.prompt }}",
-        "options": {
-          "systemMessage": "={{ $json.system }}"
-        }
-      },
-      "id": "d0741a99-7121-4906-a031-2b71427c9214",
-      "name": "AI Agent4",
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 1.7,
-      "position": [
-        7240,
-        540
+        4540,
+        1240
       ]
     },
     {
@@ -2414,8 +2063,8 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.7,
       "position": [
-        7820,
-        700
+        10060,
+        1680
       ]
     },
     {
@@ -2428,8 +2077,8 @@
       "type": "n8n-nodes-base.splitOut",
       "typeVersion": 1,
       "position": [
-        1500,
-        1400
+        3820,
+        1080
       ]
     },
     {
@@ -2441,80 +2090,8 @@
       "type": "n8n-nodes-base.splitInBatches",
       "typeVersion": 3,
       "position": [
-        1760,
-        1400
-      ]
-    },
-    {
-      "parameters": {
-        "model": "claude-3-5-sonnet-20241022",
-        "options": {
-          "maxTokensToSample": 500
-        }
-      },
-      "id": "e439f942-807c-4bb7-9d2b-58ff0942536b",
-      "name": "Anthropic Chat Model8",
-      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
-      "typeVersion": 1.2,
-      "position": [
-        3700,
-        2540
-      ],
-      "credentials": {
-        "anthropicApi": {
-          "id": "xBWJQjIePD8Jl6hU",
-          "name": "Meerkat Anthropic account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "method": "POST",
-        "url": "https://api.anthropic.com/v1/messages",
-        "authentication": "predefinedCredentialType",
-        "nodeCredentialType": "anthropicApi",
-        "sendHeaders": true,
-        "headerParameters": {
-          "parameters": [
-            {
-              "name": "anthropic-version",
-              "value": "2023-06-01"
-            }
-          ]
-        },
-        "sendBody": true,
-        "specifyBody": "json",
-        "jsonBody": "={\n    \"model\": \"claude-3-5-sonnet-20241022\",\n    \"max_tokens\": 1024,\n    \"system\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"You are a tax planning expert and professional writer. Your task is to rewrite sections of a Tax Plan document, incorporating feedback and criticism to improve the content. Ensure the rewritten section is precise, practical, and aligned with the goals of a tax plan. It should enhance clarity, cohesion, and consistency while addressing the provided feedback. Here is the original section from the Tax Plan:  {{$ ('Output HTML').item.json.data.toString() }}\"\n      },\n    ],\n    \"messages\": [\n      {\n        \"role\": \"user\",\n        \"content\": \"Here is the feedback for this section:\\n\\n \"\n      }\n    ]\n  }",
-        "options": {}
-      },
-      "id": "82870b64-8e6b-4c39-abb3-5767ee8f1014",
-      "name": "HTTP Request",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [
-        5920,
-        580
-      ],
-      "credentials": {
-        "anthropicApi": {
-          "id": "xBWJQjIePD8Jl6hU",
-          "name": "Meerkat Anthropic account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "mode": "raw",
-        "jsonOutput": "{\n  \"section\":\n  [\n    \"Executive Summary\",\n    \"Current Situation Analysis\",\n    \"Detailed Business Structure Overview\",\n    \"Identified Tax Planning Opportunities\",\n    \"Strategy Recommendations\",\n    \"Financial Projections\",\n    \"Implementation Roadmap\",\n    \"Additional Considerations\",\n    \"Ongoing Optimization Plan\",\n    \"Tax Strategy Summary\"\n]\n}\n",
-        "options": {}
-      },
-      "id": "f9605caf-24c3-474d-ba5f-be375605ccb1",
-      "name": "All Sections1",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        1320,
-        1400
+        4180,
+        1080
       ]
     },
     {
@@ -2536,103 +2113,21 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        1860,
-        1180
+        4280,
+        860
       ]
     },
     {
       "parameters": {
-        "model": "claude-3-5-sonnet-20241022",
-        "options": {}
-      },
-      "id": "0fb76c3c-e924-4a57-bc5d-05b260133e64",
-      "name": "Anthropic Chat Model9",
-      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
-      "typeVersion": 1.2,
-      "position": [
-        2420,
-        940
-      ],
-      "credentials": {
-        "anthropicApi": {
-          "id": "xBWJQjIePD8Jl6hU",
-          "name": "Meerkat Anthropic account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "jsCode": "return {\"data\": $input.all()}"
+        "jsCode": "const out = $input.all().flatMap(item => item.json?.content?.map(contentItem => contentItem.text) || [])\n\nreturn {\"data\": out.join(\"\\n\\n\")}"
       },
       "id": "4c44722b-42fe-45ad-8d4e-f5230f40f250",
       "name": "Code",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1740,
-        1580
-      ]
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "26a8a9d7-5588-4a6f-91b8-7f078e28aaa0",
-              "name": "data",
-              "value": "={{ $json.data.map(item => item.json.output).join(\"\\n\\n\") }}",
-              "type": "string"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "59f95c1d-25c0-4505-bfd7-9f3835acd19f",
-      "name": "Edit Fields2",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        1960,
-        1580
-      ]
-    },
-    {
-      "parameters": {
-        "model": "claude-3-5-sonnet-20241022",
-        "options": {
-          "maxTokensToSample": 500
-        }
-      },
-      "id": "2b9ba6f0-cc0d-4527-982f-8324dc0f327d",
-      "name": "Anthropic Chat Model10",
-      "type": "@n8n/n8n-nodes-langchain.lmChatAnthropic",
-      "typeVersion": 1.2,
-      "position": [
-        3740,
-        3080
-      ],
-      "credentials": {
-        "anthropicApi": {
-          "id": "xBWJQjIePD8Jl6hU",
-          "name": "Meerkat Anthropic account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "promptType": "define",
-        "text": "=The section to evaluate is titled: \"{{ $('loop').item.json.section }}\".\nHere is the text:\n{{ $('Get Prompt1').item.json.previous_ai.append($json.output).toJsonString() }}",
-        "options": {
-          "systemMessage": "=You are a professional document evaluator. Your task is to assess new sections of a document based on their relevance, cohesion, clarity, avoidance of redundancy, and consistency with the existing content. Provide constructive feedback and actionable suggestions."
-        }
-      },
-      "id": "6295183e-a158-4a51-8490-40985d975c43",
-      "name": "AI Agent9",
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 1.7,
-      "position": [
-        3720,
-        2900
+        4380,
+        1260
       ]
     },
     {
@@ -2896,8 +2391,8 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        2060,
-        960
+        4480,
+        640
       ]
     },
     {
@@ -3161,68 +2656,548 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        2020,
+        2240,
         1920
       ]
     },
     {
       "parameters": {
-        "promptType": "define",
-        "text": "=Here is the section:\\n\\n \n\"{{ $('loop1').item.json.section }}\"\n\nHere is the feedback for this section:\\n\\n\n\"{{ $('Output HTML').item.json.review[$runIndex] }}\"\n",
-        "options": {
-          "systemMessage": "=You are a tax planning expert and professional writer. Your task is to rewrite sections of a Tax Plan document, incorporating feedback and criticism to improve the content. Ensure the rewritten section is precise, practical, and aligned with the goals of a tax plan. It should enhance clarity, cohesion, and consistency while addressing the provided feedback.\n\nHere is the original section from the Tax Plan:  {{$ ('Output HTML').item.json.data.toString() }}\n\nDon't write \"Here's the rewritten incorporating the feedback:\", I want the section returned directly.\n\nFormat all content with Markdown structure.\n\nBegin with **{{ $('loop1').item.json.section }}**\n\n{{ $if($('loop1').item.json.section == \"Financial Projections\", \"Do not remove images and url present in the text\", \"\") }}"
-        }
+        "fieldToSplitOut": "section",
+        "options": {}
       },
-      "id": "60259807-6958-489e-88fa-7dfaf4e0d894",
-      "name": "AI Agent8",
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 1.7,
+      "id": "4879d2d8-ee29-43f6-b740-2a6cff7380b3",
+      "name": "Split Sections2",
+      "type": "n8n-nodes-base.splitOut",
+      "typeVersion": 1,
       "position": [
-        2400,
-        700
+        1980,
+        1320
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "05b67ed4-8e58-456d-b529-6a9a76886426",
+      "name": "loop2",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        2360,
+        1320
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d2dba19f-f922-4223-8e01-bfd288a42029",
+              "name": "data",
+              "value": "={{ $json.section }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "c7de522c-a01f-45d9-8916-7d6854041574",
+      "name": "Edit Fields3",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        2420,
+        960
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "610c6b9c-8664-43a4-b1dc-f61d9ef5c746",
+              "leftValue": "={{ $('AI Agent5').item.json.output }}",
+              "rightValue": "graph here",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "b74f579e-f6c6-4625-8db9-62e374aa0244",
+      "name": "If",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        4040,
+        2820
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "777d74cc-b4de-4469-b531-0b08a51ee482",
+              "name": "output",
+              "value": "={{ $('AI Agent5').item.json.output }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "7f6f4001-f126-4cea-9bdb-2fc80b7ecc5b",
+      "name": "Edit Fields4",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        4540,
+        2840
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "e69d5292-0ee3-4ad6-9e5c-b44ce3d733e6",
+              "name": "output",
+              "value": "={{ $json.output.markdown }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "d7ced3af-876b-48a5-939a-b39065f7a20b",
+      "name": "Edit Fields5",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        4820,
+        2380
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "91270fe4-4e44-4772-b84c-7b302ac2886d",
+      "name": "Wait",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        4240,
+        2380
+      ],
+      "webhookId": "b8b5e9c7-8812-451d-9b1b-a713d16209be"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "anthropicApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"model\": \"claude-3-5-sonnet-20241022\",\n    \"max_tokens\": 1000,\n    \"system\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"You are a professional document evaluator. Your task is to assess new sections of a document based on their relevance, cohesion, clarity, avoidance of redundancy, and consistency with the existing content. Provide constructive feedback and actionable suggestions. Here is the text {{ $('Output Text').item.json.data.toJsonString()\n  .replace(/([^\\\\])\"/g, '$1\\\\\"')\n  .replace(/\\\\\\\\/g, \"\\\\\")\n  .replace(/\\n/g, \"\\\\n\"); }}\",\n        \"cache_control\": {\"type\": \"ephemeral\"}\n      }\n    ],\n    \"messages\": [\n      {\n        \"role\": \"user\",\n        \"content\": \"The section to evaluate is titled: {{ $json.data }}\"\n      }\n    ]\n  }",
+        "options": {}
+      },
+      "id": "a1c492f6-2ed2-4c5e-b276-379e6fc02d1b",
+      "name": "AI Agent [Review]",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2980,
+        1360
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "xBWJQjIePD8Jl6hU",
+          "name": "Meerkat Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "return {\"data\": $input.last().json.output};"
+      },
+      "id": "ebfda215-2aea-4b3e-a1f3-28acb9360f8c",
+      "name": "Output Text",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1640,
+        1320
+      ]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "=Executive Summary",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "=Executive Summary"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "9db0de49-0cbb-42e0-a720-2c200ddd9d6c",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "=Current Situation Analysis",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Current Situation Analysis"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "4426258f-6e18-49ec-89b9-f910d5812469",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Detailed Business Structure Overview",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Detailed Business Structure Overview"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "fbbe4eaf-fe71-4d26-94c2-32adad185e29",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Identified Tax Planning Opportunities",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Identified Tax Planning Opportunities"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "acfbed92-5d4e-4e32-b7c9-994da209d881",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Financial Projections",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Financial Projections"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "293ba543-4322-41ee-80df-268f500370ff",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Strategy Recommendations",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Strategy Recommendations"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "81bda41d-1b26-401a-a5f6-921a7dffee55",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Implementation Roadmap",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Implementation Roadmap"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "fa5cfb50-31f2-4d85-a00f-28c5e7b250cd",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Additional Considerations",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Additional Considerations"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "d34c291a-b362-435c-8295-039229f2f6ba",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Ongoing Optimization Plan",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Ongoing Optimization Plan"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 2
+                },
+                "conditions": [
+                  {
+                    "id": "b99596d1-046e-4f48-92ce-97df85076121",
+                    "leftValue": "={{ $json.data }}",
+                    "rightValue": "Tax Strategy Summary",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "Tax Strategy Summary"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "3fffdd42-6f8f-4426-ab06-950eb365e39e",
+      "name": "Switch2",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        2620,
+        880
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return {\"data\": $('Output Text').first().json.data,\"review\": $input.all().flatMap(item => \n  item.json?.content?.map(contentItem => contentItem.text) || []\n)};"
+      },
+      "id": "0f1995c7-3543-42b5-be95-880e58ebfb6f",
+      "name": "Output Text/Review",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3480,
+        1080
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "anthropicApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"model\": \"claude-3-5-sonnet-20241022\",\n    \"max_tokens\": 8192,\n    \"system\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"{{ $json.system\n  .replace(/([^\\\\])\"/g, '$1\\\\\"')\n  .replace(/\\\\\\\\/g, \"\\\\\")\n  .replace(/\\n/g, \"\\\\n\")   }}\",\n        \"cache_control\": {\"type\": \"ephemeral\"}\n      }\n    ],\n    \"messages\": [\n      {\n        \"role\": \"user\",\n        \"content\": \"{{ $json.text.replace(/([^\\\\])\"/g, '$1\\\\\"')\n  .replace(/\\\\\\\\/g, \"\\\\\")\n  .replace(/\\n/g, \"\\\\n\") }}\"\n      }\n    ]\n  }",
+        "options": {}
+      },
+      "id": "82742247-0cd2-4c62-8862-631f7d02791e",
+      "name": "AI Agent [Rw]",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4940,
+        380
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "xBWJQjIePD8Jl6hU",
+          "name": "Meerkat Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6ff301e1-f95d-4f36-8450-f476b26e86a0",
+              "name": "system",
+              "value": "=You are a tax planning expert and professional writer. Your task is to rewrite sections of a Tax Plan document, incorporating feedback and criticism to improve the content. Ensure the rewritten section is precise, practical, and aligned with the goals of a tax plan. It should enhance clarity, cohesion, and consistency while addressing the provided feedback.\n\nHere is the Tax Plan:  \n{{ $('Output Text/Review').item.json.data}}\n\nDon't write \"Here's the rewritten incorporating the feedback:\". I want the section returned directly.\n\nFormat all content with Markdown structure.\n\nBegin with **{{ $('loop1').item.json.section }}**",
+              "type": "string"
+            },
+            {
+              "id": "60495633-fd90-499d-bb46-a135df98719d",
+              "name": "text",
+              "value": "=Here is the section:\\n\\n \n\"{{ $('loop1').item.json.section }}\"\n\nHere is the feedback for this section:\\n\\n\n\"{{ $('Output Text/Review').item.json.review[$runIndex] }}\"",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "567c81f0-77cf-4f7c-beaf-82c1eac6044f",
+      "name": "Prompts [RW]",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        4740,
+        680
       ]
     },
     {
       "parameters": {
         "promptType": "define",
-        "text": "={{ $('User Prompt').first().json.prompt }}",
-        "options": {
-          "systemMessage": "={{ $json.system }}"
-        }
-      },
-      "id": "2b1a4a83-f02c-40e8-b2e6-9ed342935c21",
-      "name": "AI Agent6",
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 1.7,
-      "position": [
-        3380,
-        2900
-      ]
-    },
-    {
-      "parameters": {
-        "promptType": "define",
-        "text": "=The section to evaluate is titled: \"{{ $('loop').item.json.section }}\".\nHere is the text:\n{{ $('Get Prompt').item.json.previous_ai.append($json.output).toJsonString() }}",
-        "options": {
-          "systemMessage": "=You are a professional document evaluator. Your task is to assess new sections of a document based on their relevance, cohesion, clarity, avoidance of redundancy, and consistency with the existing content. Provide constructive feedback and actionable suggestions."
-        }
-      },
-      "id": "4887af9e-1f4c-4f9a-bae8-46a383f8bec4",
-      "name": "AI Agent7",
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 1.7,
-      "position": [
-        3680,
-        2360
-      ]
-    },
-    {
-      "parameters": {
-        "promptType": "define",
-        "text": "={{ $('AI Agent6').item.json.output }}",
+        "text": "={{ $('AI Agent5').item.json.output }}",
         "hasOutputParser": true,
         "options": {
-          "systemMessage": "=Convert textual graphics markup into embedded markdown images\n\nSteps:\n\nExtract Markup: Identify the graphics markup within the text. For example:\n{graph here - line chart comparing effective tax rates over 5 years}.\n\nGenerate Chart: Use the AI tool get_chart_from_table() to transform the described data or chart structure into an image. Ensure the generated chart matches the specifications in the markup.\n\nFormat Markdown: Replace the original markup with the corresponding Markdown image syntax:\n![Chart Description](image_link)\nInclude a concise and descriptive alternative text for accessibility.\n\nEmbed Image: Insert the Markdown-formatted image in the appropriate location where the markup was originally found.\n\nExample Workflow:\n\nInput:\n\nCompany analysis for Q3 performance:  \n{graph here - bar chart comparing revenue growth of Company A, B, and C in Q3 2023}\nKey findings indicate...\n\nOutput:\nCompany analysis for Q3 performance:  \n![Bar chart comparing revenue growth of Company A, B, and C in Q3 2023](generated_image_link)  \nKey findings indicate..."
+          "systemMessage": "=Convert textual graphics markup into embedded markdown images\n\nSteps:\n\nExtract Markup: Identify the graphics markup within the text. For example:\n{graph here - line chart comparing effective tax rates over 5 years}.\n\nGenerate Chart: Use the AI tool get_chart_from_table() to transform the described data or chart structure into an image. Ensure the generated chart matches the specifications in the markup.\n\nFormat Markdown: Replace the original markup with the corresponding Markdown image syntax:\n![Chart Description](image_link)\nInclude a concise and descriptive alternative text for accessibility.\n\nEmbed Image: Insert the Markdown-formatted image in the appropriate location where the markup was originally found.\n\nExample Workflow:\n\nInput Example:\n\n*Company analysis for Q3 performance*:  \n{graph here - bar chart comparing revenue growth of Company A, B, and C in Q3 2023}\nKey findings indicate...\n\nOutput Example:\n*Company analysis for Q3 performance*:  \n![Bar chart comparing revenue growth of Company A, B, and C in Q3 2023](generated_image_link)  \nKey findings indicate..."
         }
       },
       "id": "b241bf3d-fdf0-4e1f-89f8-857e8fae13a6",
@@ -3230,21 +3205,55 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.7,
       "position": [
-        4260,
-        2920
+        4440,
+        2380
       ]
     },
     {
-      "parameters": {},
-      "id": "3965e4d7-0eee-49f7-9f10-b29397a1bb4e",
-      "name": "Wait",
-      "type": "n8n-nodes-base.wait",
-      "typeVersion": 1.1,
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ef67592d-0187-44b4-a29d-8323bc327470",
+              "name": "section",
+              "value": "={{ $node[\"All Sections\"].json.section }}",
+              "type": "array"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "8f269b7b-e0a9-493d-a13d-6eaef37a4226",
+      "name": "Edit Fields2",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
       "position": [
-        4060,
-        2900
-      ],
-      "webhookId": "2c312559-1bad-4881-b51d-b91c64d82421"
+        1800,
+        1320
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ef67592d-0187-44b4-a29d-8323bc327470",
+              "name": "section",
+              "value": "={{ $node[\"All Sections\"].json.section }}",
+              "type": "array"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "29e6bca0-76a8-4dea-b854-a6ef3ca6a0cf",
+      "name": "Edit Fields7",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        3660,
+        1080
+      ]
     },
     {
       "parameters": {
@@ -3259,8 +3268,8 @@
       "type": "@n8n/n8n-nodes-langchain.agent",
       "typeVersion": 1.7,
       "position": [
-        3340,
-        2360
+        3640,
+        2820
       ]
     }
   ],
@@ -3301,6 +3310,6 @@
     }
   ],
   "triggerCount": 0,
-  "updatedAt": "2025-01-14T18:34:49.000Z",
-  "versionId": "1a336549-0d0c-48fd-9e1b-d22245e45974"
+  "updatedAt": "2025-01-15T19:57:31.000Z",
+  "versionId": "82253926-3c31-4d0c-ae3a-637024f5586e"
 }
