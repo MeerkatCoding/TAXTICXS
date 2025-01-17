@@ -23,17 +23,6 @@
         ]
       ]
     },
-    "Execute Workflow": {
-      "main": [
-        [
-          {
-            "node": "Google Drive4",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Google Drive4": {
       "main": [
         [
@@ -320,6 +309,11 @@
       "main": [
         [
           {
+            "node": "HTML1",
+            "type": "main",
+            "index": 0
+          },
+          {
             "node": "HTML",
             "type": "main",
             "index": 0
@@ -471,11 +465,6 @@
         [
           {
             "node": "Convert to File1",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Execute Workflow",
             "type": "main",
             "index": 0
           }
@@ -680,80 +669,6 @@
         ]
       ]
     },
-    "Switch2": {
-      "main": [
-        [
-          {
-            "node": "AI Agent [Review]",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent [Review]",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent [Review]",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent [Review]",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent [Review]",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent [Review]",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent [Review]",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent [Review]",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent [Review]",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "AI Agent [Review]",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Output Text/Review": {
       "main": [
         [
@@ -861,17 +776,6 @@
         ]
       ]
     },
-    "Chart Output": {
-      "main": [
-        [
-          {
-            "node": "Edit Fields5",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
     "Edit Fields2": {
       "main": [
         [
@@ -894,22 +798,129 @@
         ]
       ]
     },
-    "HTTP Request2": {
+    "AI Agent5": {
       "main": [
         [
           {
-            "node": "Google Drive1",
+            "node": "If",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "AI Agent5": {
+    "Chart Output": {
       "main": [
         [
           {
-            "node": "If",
+            "node": "Edit Fields5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTML1": {
+      "main": [
+        [
+          {
+            "node": "Execute Workflow",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch2": {
+      "main": [
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent [Review]",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Execute Workflow": {
+      "main": [
+        [
+          {
+            "node": "Google Drive4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request2": {
+      "main": [
+        [
+          {
+            "node": "Google Drive1",
             "type": "main",
             "index": 0
           }
@@ -931,7 +942,7 @@
       "type": "n8n-nodes-base.executeWorkflowTrigger",
       "typeVersion": 1,
       "position": [
-        760,
+        740,
         1800
       ]
     },
@@ -1000,8 +1011,8 @@
       "type": "n8n-nodes-base.googleDrive",
       "typeVersion": 3,
       "position": [
-        6280,
-        840
+        6220,
+        880
       ],
       "credentials": {
         "googleDriveOAuth2Api": {
@@ -1048,7 +1059,7 @@
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1.1,
       "position": [
-        5880,
+        5760,
         1160
       ]
     },
@@ -1116,8 +1127,8 @@
       "type": "n8n-nodes-base.html",
       "typeVersion": 1.2,
       "position": [
-        5400,
-        1080
+        5520,
+        900
       ]
     },
     {
@@ -2851,6 +2862,177 @@
     },
     {
       "parameters": {
+        "jsCode": "return {\"data\": $('Output Text').first().json.data,\"review\": $input.all().flatMap(item => \n  item.json?.content?.map(contentItem => contentItem.text) || []\n)};"
+      },
+      "id": "0f1995c7-3543-42b5-be95-880e58ebfb6f",
+      "name": "Output Text/Review",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3480,
+        1080
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.anthropic.com/v1/messages",
+        "authentication": "predefinedCredentialType",
+        "nodeCredentialType": "anthropicApi",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "anthropic-version",
+              "value": "2023-06-01"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"model\": \"claude-3-5-sonnet-20241022\",\n    \"max_tokens\": 8192,\n    \"system\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"{{ $json.system\n  .replace(/([^\\\\])\"/g, '$1\\\\\"')\n  .replace(/\\\\\\\\/g, \"\\\\\")\n  .replace(/\\n/g, \"\\\\n\")   }}\",\n        \"cache_control\": {\"type\": \"ephemeral\"}\n      }\n    ],\n    \"messages\": [\n      {\n        \"role\": \"user\",\n        \"content\": \"{{ $json.text.replace(/([^\\\\])\"/g, '$1\\\\\"')\n  .replace(/\\\\\\\\/g, \"\\\\\")\n  .replace(/\\n/g, \"\\\\n\") }}\"\n      }\n    ]\n  }",
+        "options": {}
+      },
+      "id": "82742247-0cd2-4c62-8862-631f7d02791e",
+      "name": "AI Agent [Rw]",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        4940,
+        380
+      ],
+      "credentials": {
+        "anthropicApi": {
+          "id": "xBWJQjIePD8Jl6hU",
+          "name": "Meerkat Anthropic account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "6ff301e1-f95d-4f36-8450-f476b26e86a0",
+              "name": "system",
+              "value": "=You are a tax planning expert and professional writer. Your task is to rewrite sections of a Tax Plan document, incorporating feedback and criticism to improve the content. Ensure the rewritten section is precise, practical, and aligned with the goals of a tax plan. It should enhance clarity, cohesion, and consistency while addressing the provided feedback. Do not remove any images that are already present in the text; just use them differently or change their location. Do not add any new images. Remove all instances of Mermaid graph usage from the text.\n\nHere is the Tax Plan:  \n{{ $('Output Text/Review').item.json.data}}\n\nDon't write \"Here's the rewritten incorporating the feedback:\". I want the section returned directly.\n\nFormat all content with Markdown structure.\n\nBegin with **{{ $('loop1').item.json.section }}**",
+              "type": "string"
+            },
+            {
+              "id": "60495633-fd90-499d-bb46-a135df98719d",
+              "name": "text",
+              "value": "=Here is the section:\\n\\n \n\"{{ $('loop1').item.json.section }}\"\n\nHere is the feedback for this section:\\n\\n\n\"{{ $('Output Text/Review').item.json.review[$runIndex] }}\"",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "567c81f0-77cf-4f7c-beaf-82c1eac6044f",
+      "name": "Prompts [RW]",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        4740,
+        680
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ef67592d-0187-44b4-a29d-8323bc327470",
+              "name": "section",
+              "value": "={{ $node[\"All Sections\"].json.section }}",
+              "type": "array"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "8f269b7b-e0a9-493d-a13d-6eaef37a4226",
+      "name": "Edit Fields2",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1800,
+        1320
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "ef67592d-0187-44b4-a29d-8323bc327470",
+              "name": "section",
+              "value": "={{ $node[\"All Sections\"].json.section }}",
+              "type": "array"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "29e6bca0-76a8-4dea-b854-a6ef3ca6a0cf",
+      "name": "Edit Fields7",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        3660,
+        1080
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('User Prompt').first().json.prompt }}",
+        "options": {
+          "systemMessage": "={{ $json.system }}"
+        }
+      },
+      "id": "3e7c0c3b-3f3c-469c-857a-88521410b330",
+      "name": "AI Agent5",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        3640,
+        2820
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('AI Agent5').item.json.output }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "=Convert textual graphics markup into embedded markdown images\n\nSteps:\n\nExtract Markup: Identify the graphics markup within the text. For example:\n{graph here - line chart comparing effective tax rates over 5 years}.\n\nGenerate Chart: Use the AI tool get_chart_from_table() to transform the described data or chart structure into an image. Ensure the generated chart matches the specifications in the markup.\n\nFormat Markdown: Replace the original markup with the corresponding Markdown image syntax:\n![Chart Description](image_link)\nInclude a concise and descriptive alternative text for accessibility.\n\nEmbed Image: Insert the Markdown-formatted image in the appropriate location where the markup was originally found.\n\nExample Workflow:\n\nInput Example:\n\n*Company analysis for Q3 performance*:  \n{graph here - bar chart comparing revenue growth of Company A, B, and C in Q3 2023}\nKey findings indicate...\n\nOutput Example:\n*Company analysis for Q3 performance*:  \n![Bar chart comparing revenue growth of Company A, B, and C in Q3 2023](generated_image_link)  \nKey findings indicate..."
+        }
+      },
+      "id": "b241bf3d-fdf0-4e1f-89f8-857e8fae13a6",
+      "name": "Chart Output",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        4440,
+        2380
+      ]
+    },
+    {
+      "parameters": {
+        "html": "<html>\n   <head>\n      <style>\n\n        /* Base styles */\nbody {\n    font-family: \"Georgia\", \"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif;\n    margin: 48px;\n    line-height: 1.6;\n    color: #0b090a;\n    background-color: #fff;\n}\n\n/* Headings */\nh2 {\n    color: #0b090a;\n    margin-bottom: 20px;\n}\n\nh3 {\n    color: #0b090a;\n    margin-top: 20px;\n    margin-bottom: 10px;\n}\n\n/* Text elements */\np {\n    margin-bottom: 10px;\n}\n\nul {\n    margin-bottom: 10px;\n    padding-left: 20px;\n}\n\nol {\n    list-style-type: circle;\n}\n\n/* Table styles */\ntable {\n    width: 100%;\n    border-collapse: collapse;\n    margin-bottom: 20px;\n}\n\nth, td {\n    border: 1px solid #000;\n    padding: 10px;\n    text-align: left;\n}\n\nth {\n    background-color: #e7e7e7;\n}\n\n/* Custom classes */\n.Subtitle {\n    margin-top: 0pt;\n    margin-bottom: 16pt;\n    page-break-before: auto;\n    page-break-inside: avoid;\n    page-break-after: avoid;\n    line-height: 115%;\n    font-size: 15pt;\n    font-style: normal;\n    color: #666666;\n  font-family: \"Georgia\";\n}\n        \n\n.Title {\n    margin-top: 0pt;\n    margin-bottom: 3pt;\n    page-break-before: auto;\n    page-break-inside: avoid;\n    page-break-after: avoid;\n    line-height: 115%;\n    font-size: 26pt;\n}\n\n.tbc ol {\n    margin: 0;\n    padding-left: 0;\n    list-style-type: upper-roman;\n    list-style-position: inside;\n}\n\n.tbc li {\n    margin-top: 6.45pt;\n    font-family: Georgia;\n    font-size: 19pt;\n    font-weight: bold;\n    line-height: normal;\n}\n\n.spacer {\n    margin-top: 0.5pt;\n    line-height: normal;\n    font-size: 12pt;\n}\n\n/* Responsive styles */\n@media (max-width: 900px) {\n    img {\n        max-width: 100%;\n        height: auto;\n    }\n\n    li, h1, h2, h3, h4, h5, h6, p, tr {\n        font-family: 'Arial';\n        color: #0b090a;\n    }\n\n    .table-container {\n        overflow-x: auto;\n        -webkit-overflow-scrolling: touch;\n    }\n}\n\n        .list-tbc {\n          display: flex;\n          flex-direction: column;\n          font-size: 20pt;\n          font-weight: bold;\n          margin-bottom: 128pt;\n        }\n        \n      </style>\n   </head>\n   <body>\n     <p class=\"Title\" style=\"margin-top:28.4pt; margin-bottom:0pt; page-break-inside:auto; page-break-after:auto; line-height:normal; widows:0; orphans:0; font-size:56.5pt\">\n\t\t\t\t<strong><span    \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"margin-top:28.4pt; margin-bottom:0pt; page-break-inside:auto; page-break-after:auto; line-height:normal; widows:0; orphans:0; font-size:56.5pt\">\n\t\t\t\t<strong><span    \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p class=\"Title\" style=\"margin-top:28.4pt; margin-bottom:0pt; page-break-inside:auto; page-break-after:auto; line-height:normal; widows:0; orphans:0; font-size:56.5pt\">\n\t\t\t\t<strong><span    \">{{$json.output.client_name.toUpperCase() }}</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:5.2pt; margin-left:14.1pt; line-height:normal; widows:0; orphans:0; font-size:24.5pt\">\n\t\t\t\t<strong><span style=\"    color:#da0404\">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p class=\"Subtitle\" style=\"margin-top:5.2pt; line-height:normal; widows:0; orphans:0; font-size:22.5pt\">\n\t\t\t\t<strong><span style=\"    color:#da0404\">Tax Planning Report | Year {{ new Date().getFullYear() }}</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"line-height:normal; widows:0; orphans:0; font-size:10pt\">\n\t\t\t\t<strong><span style=\"    \">&#xa0;</span></strong>\n\t\t\t</p>\n\t\t\t<p style=\"margin-top:15.7pt; line-height:normal; widows:0; orphans:0; font-size:19pt\">\n\t\t\t\t<strong><span style=\"font-family:'Georgia'\n                          ; \">&#xa0;</span></strong><strong><span    \">Presented by Fitz Hall</span></strong>\n\t\t\t</p>\n\t\t\t<h1 style=\"margin-top:24pt; page-break-inside:auto; page-break-after:auto; line-height:normal; font-size:23pt\">\n\t\t\t\t<a id=\"_qvoly82ig0k3\"></a><strong>&#xa0;</strong>\n            </h1>\n  <h1>TABLE OF CONTENTS</h1>\n    \n    <div class=\"list-tbc\">\n          <h3>Executive Summary</h3>\n            <h3>Current Situation Analysis</h3>\n            <h3>Detailed Business Structure Overview</h3>\n            <h3>Identified Tax Planning Opportunities</h3>\n            <h3>Financial Projections</h3>\n            <h3>Strategy Recommendations</h3>\n            <h3>Implementation Roadmap</h3>\n            <h3>Additional Considerations</h3>\n            <h3>Ongoing Optimization Plan</h3>\n            <h3>Tax Strategy Summary</h3>\n    </div>\n\n          {{ $('Markdown').item.json.data }}\n   </body>\n</html>"
+      },
+      "id": "11427993-01b3-4365-a88f-2e66e43dd854",
+      "name": "HTML1",
+      "type": "n8n-nodes-base.html",
+      "typeVersion": 1.2,
+      "position": [
+        5480,
+        1160
+      ]
+    },
+    {
+      "parameters": {
         "rules": {
           "values": [
             {
@@ -3113,164 +3295,6 @@
         2620,
         880
       ]
-    },
-    {
-      "parameters": {
-        "jsCode": "return {\"data\": $('Output Text').first().json.data,\"review\": $input.all().flatMap(item => \n  item.json?.content?.map(contentItem => contentItem.text) || []\n)};"
-      },
-      "id": "0f1995c7-3543-42b5-be95-880e58ebfb6f",
-      "name": "Output Text/Review",
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        3480,
-        1080
-      ]
-    },
-    {
-      "parameters": {
-        "method": "POST",
-        "url": "https://api.anthropic.com/v1/messages",
-        "authentication": "predefinedCredentialType",
-        "nodeCredentialType": "anthropicApi",
-        "sendHeaders": true,
-        "headerParameters": {
-          "parameters": [
-            {
-              "name": "anthropic-version",
-              "value": "2023-06-01"
-            }
-          ]
-        },
-        "sendBody": true,
-        "specifyBody": "json",
-        "jsonBody": "={\n    \"model\": \"claude-3-5-sonnet-20241022\",\n    \"max_tokens\": 8192,\n    \"system\": [\n      {\n        \"type\": \"text\",\n        \"text\": \"{{ $json.system\n  .replace(/([^\\\\])\"/g, '$1\\\\\"')\n  .replace(/\\\\\\\\/g, \"\\\\\")\n  .replace(/\\n/g, \"\\\\n\")   }}\",\n        \"cache_control\": {\"type\": \"ephemeral\"}\n      }\n    ],\n    \"messages\": [\n      {\n        \"role\": \"user\",\n        \"content\": \"{{ $json.text.replace(/([^\\\\])\"/g, '$1\\\\\"')\n  .replace(/\\\\\\\\/g, \"\\\\\")\n  .replace(/\\n/g, \"\\\\n\") }}\"\n      }\n    ]\n  }",
-        "options": {}
-      },
-      "id": "82742247-0cd2-4c62-8862-631f7d02791e",
-      "name": "AI Agent [Rw]",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [
-        4940,
-        380
-      ],
-      "credentials": {
-        "anthropicApi": {
-          "id": "xBWJQjIePD8Jl6hU",
-          "name": "Meerkat Anthropic account"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "6ff301e1-f95d-4f36-8450-f476b26e86a0",
-              "name": "system",
-              "value": "=You are a tax planning expert and professional writer. Your task is to rewrite sections of a Tax Plan document, incorporating feedback and criticism to improve the content. Ensure the rewritten section is precise, practical, and aligned with the goals of a tax plan. It should enhance clarity, cohesion, and consistency while addressing the provided feedback.\n\nHere is the Tax Plan:  \n{{ $('Output Text/Review').item.json.data}}\n\nDon't write \"Here's the rewritten incorporating the feedback:\". I want the section returned directly.\n\nFormat all content with Markdown structure.\n\nBegin with **{{ $('loop1').item.json.section }}**",
-              "type": "string"
-            },
-            {
-              "id": "60495633-fd90-499d-bb46-a135df98719d",
-              "name": "text",
-              "value": "=Here is the section:\\n\\n \n\"{{ $('loop1').item.json.section }}\"\n\nHere is the feedback for this section:\\n\\n\n\"{{ $('Output Text/Review').item.json.review[$runIndex] }}\"",
-              "type": "string"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "567c81f0-77cf-4f7c-beaf-82c1eac6044f",
-      "name": "Prompts [RW]",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        4740,
-        680
-      ]
-    },
-    {
-      "parameters": {
-        "promptType": "define",
-        "text": "={{ $('AI Agent5').item.json.output }}",
-        "hasOutputParser": true,
-        "options": {
-          "systemMessage": "=Convert textual graphics markup into embedded markdown images\n\nSteps:\n\nExtract Markup: Identify the graphics markup within the text. For example:\n{graph here - line chart comparing effective tax rates over 5 years}.\n\nGenerate Chart: Use the AI tool get_chart_from_table() to transform the described data or chart structure into an image. Ensure the generated chart matches the specifications in the markup.\n\nFormat Markdown: Replace the original markup with the corresponding Markdown image syntax:\n![Chart Description](image_link)\nInclude a concise and descriptive alternative text for accessibility.\n\nEmbed Image: Insert the Markdown-formatted image in the appropriate location where the markup was originally found.\n\nExample Workflow:\n\nInput Example:\n\n*Company analysis for Q3 performance*:  \n{graph here - bar chart comparing revenue growth of Company A, B, and C in Q3 2023}\nKey findings indicate...\n\nOutput Example:\n*Company analysis for Q3 performance*:  \n![Bar chart comparing revenue growth of Company A, B, and C in Q3 2023](generated_image_link)  \nKey findings indicate..."
-        }
-      },
-      "id": "b241bf3d-fdf0-4e1f-89f8-857e8fae13a6",
-      "name": "Chart Output",
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 1.7,
-      "position": [
-        4440,
-        2380
-      ]
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "ef67592d-0187-44b4-a29d-8323bc327470",
-              "name": "section",
-              "value": "={{ $node[\"All Sections\"].json.section }}",
-              "type": "array"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "8f269b7b-e0a9-493d-a13d-6eaef37a4226",
-      "name": "Edit Fields2",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        1800,
-        1320
-      ]
-    },
-    {
-      "parameters": {
-        "assignments": {
-          "assignments": [
-            {
-              "id": "ef67592d-0187-44b4-a29d-8323bc327470",
-              "name": "section",
-              "value": "={{ $node[\"All Sections\"].json.section }}",
-              "type": "array"
-            }
-          ]
-        },
-        "options": {}
-      },
-      "id": "29e6bca0-76a8-4dea-b854-a6ef3ca6a0cf",
-      "name": "Edit Fields7",
-      "type": "n8n-nodes-base.set",
-      "typeVersion": 3.4,
-      "position": [
-        3660,
-        1080
-      ]
-    },
-    {
-      "parameters": {
-        "promptType": "define",
-        "text": "={{ $('User Prompt').first().json.prompt }}",
-        "options": {
-          "systemMessage": "={{ $json.system }}"
-        }
-      },
-      "id": "3e7c0c3b-3f3c-469c-857a-88521410b330",
-      "name": "AI Agent5",
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 1.7,
-      "position": [
-        3640,
-        2820
-      ]
     }
   ],
   "pinData": {
@@ -3310,6 +3334,6 @@
     }
   ],
   "triggerCount": 0,
-  "updatedAt": "2025-01-16T16:42:04.000Z",
-  "versionId": "9156022a-234c-4f2b-8a51-426ef3844e08"
+  "updatedAt": "2025-01-17T19:07:23.000Z",
+  "versionId": "fc72ecdd-7ae9-49cd-8e32-36849b87880f"
 }
