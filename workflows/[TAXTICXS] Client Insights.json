@@ -1345,7 +1345,7 @@
             {
               "id": "c92aa28b-e99f-4adb-9b5c-192d5d8d5103",
               "name": "system",
-              "value": "=Here are the previous sections of the document. Use this <previous-sections> to create the next section, ensuring cohesion and continuity:\n<previous-sections>\n\"{{ $('preprocess').item.json.previousOutput.toJsonString() }}\"\n</previous-sections>\n\n<context-and-instructions>\n{{ $('Execute Workflow Trigger').item.json.sections.filter(item => item.name === $('loop').item.json.section)[0].system }}\n\nUse <tool-graph> when the graph objectively enhances the understanding of the text without unnecessary redundancy.:\n\n</context-and-instructions>\n\n<tool-graph>\n<format>\nFormat and Positioning:\n- The markup should be inserted:\n  - **Immediately** after the paragraph containing the relevant data.\n  - On a **separate line** with spacing before and after.\n  - With the suggested graph type in parentheses, e.g., `[{graph here - bar chart}]` or `[{graph here - line chart}]`.\n</format>\n\n<instructions>\n\nRestrictions to Avoid Overuse:\n- **Do not insert** the `[{graph here}]` markup when:\n  1. The presented data is too limited (fewer than 3 data points or non-conclusive information).\n  2. The information is already in a list or table format that is sufficiently clear.\n  3. The text is predominantly qualitative and does not present numbers or comparative data.\n  4. The graph does not add clear value to the text's context or would be redundant.\n\nFocus on Utility and Relevance:\n- Graphs should only be used when they are **essential** to illustrate or complement complex information or facilitate data analysis.\n- Avoid using graphs for trivial information or when the textual description is already sufficiently clear.\n\n</instructions>\n\n<example>\nExports grew by 15% in January, 22% in February, and 18% in March, showing a positive trend in the first quarter.\n</example>\n\n[{graph here - line chart}]\n\n</tool-graph>\n\nFormat all content with Markdown structure.",
+              "value": "=Here are the previous sections of the document. Use this <previous-sections> to create the next section, ensuring cohesion and continuity:\n<previous-sections>\n\"{{ $('preprocess').item.json.previousOutput.toJsonString() }}\"\n</previous-sections>\n\n<context-and-instructions>\n{{ $('Execute Workflow Trigger').item.json.sections.filter(item => item.name === $('loop').item.json.section)[0].system }}\n\nUse <tool-graph> when the graph objectively enhances the understanding of the text without unnecessary redundancy.:\n\n</context-and-instructions>\n\n<tool-graph>\n<format>\nFormat and Positioning:\n- The markup should be inserted:\n  - **Immediately** after the paragraph containing the relevant data.\n  - On a **separate line** with spacing before and after.\n  - With the suggested graph type in parentheses, e.g., `[{graph here - bar chart}]` or `[{graph here - line chart}]`.\n</format>\n\n<instructions>\n\nRestrictions to Avoid Overuse:\n- **Do not insert** the `[{graph here}]` markup when:\n  1. The presented data is too limited (fewer than 3 data points or non-conclusive information).\n  2. The information is already in a list or table format that is sufficiently clear.\n  3. The text is predominantly qualitative and does not present numbers or comparative data.\n  4. The graph does not add clear value to the text's context or would be redundant.\n\nFocus on Utility and Relevance:\n- Graphs should only be used when they are **essential** to illustrate or complement complex information or facilitate data analysis.\n- Avoid using graphs for trivial information or when the textual description is already sufficiently clear.\n\n</instructions>\n\n<example>\nExports grew by 15% in January, 22% in February, and 18% in March, showing a positive trend in the first quarter.\n\n[{graph here - line chart}]\n</example>\n\n</tool-graph>\n\nFormat all content with Markdown structure.",
               "type": "string"
             },
             {
@@ -1381,24 +1381,6 @@
     },
     {
       "parameters": {
-        "promptType": "define",
-        "text": "={{ $('AI Agent [Create]').item.json.content[0].text }}",
-        "hasOutputParser": true,
-        "options": {
-          "systemMessage": "=Convert textual graphics markup into embedded markdown images\n\nSteps:\n\nExtract Markup: Identify the graphics markup within the text. For example:\n{graph here - line chart comparing effective tax rates over 5 years}.\n\nGenerate Chart: Use the AI tool get_chart_from_table() to transform the described data or chart structure into an image. Ensure the generated chart matches the specifications in the markup.\n\nFormat Markdown: Replace the original markup with the corresponding Markdown image syntax:\n![Chart Description](image_link)\nInclude a concise and descriptive alternative text for accessibility.\n\nEmbed Image: Insert the Markdown-formatted image in the appropriate location where the markup was originally found.\n\nExample Workflow:\n\nInput Example:\n\n*Company analysis for Q3 performance*:  \n{graph here - bar chart comparing revenue growth of Company A, B, and C in Q3 2023}\nKey findings indicate...\n\nOutput Example:\n*Company analysis for Q3 performance*:  \n![Bar chart comparing revenue growth of Company A, B, and C in Q3 2023](generated_image_link)  \nKey findings indicate..."
-        }
-      },
-      "id": "b241bf3d-fdf0-4e1f-89f8-857e8fae13a6",
-      "name": "Chart Output",
-      "type": "@n8n/n8n-nodes-langchain.agent",
-      "typeVersion": 1.7,
-      "position": [
-        3820,
-        2320
-      ]
-    },
-    {
-      "parameters": {
         "operation": "extractHtmlContent",
         "extractionValues": {
           "values": [
@@ -1416,6 +1398,24 @@
       "position": [
         10300,
         -320
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('AI Agent [Create]').item.json.content[0].text }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "=Convert textual graphics markup into embedded markdown images\n\nSteps:\n\nExtract Markup: Identify the graphics markup within the text. For example:\n{graph here - line chart comparing effective tax rates over 5 years}.\n\nGenerate Chart: Use the AI tool get_chart_from_table() to transform the described data or chart structure into an image. Ensure the generated chart matches the specifications in the markup.\n\nFormat Markdown: Replace the original markup with the corresponding Markdown image syntax:\n![Chart Description](image_link)\nInclude a concise and descriptive alternative text for accessibility.\n\nEmbed Image: Insert the Markdown-formatted image in the appropriate location where the markup was originally found.\n\nExample Workflow:\n\nInput Example:\n\n*Company analysis for Q3 performance*:  \n{graph here - bar chart comparing revenue growth of Company A, B, and C in Q3 2023}\nKey findings indicate...\n\nOutput Example:\n*Company analysis for Q3 performance*:  \n![Bar chart comparing revenue growth of Company A, B, and C in Q3 2023](generated_image_link)  \nKey findings indicate..."
+        }
+      },
+      "id": "b241bf3d-fdf0-4e1f-89f8-857e8fae13a6",
+      "name": "Chart Output",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        3820,
+        2320
       ]
     }
   ],
@@ -1605,6 +1605,6 @@
     }
   ],
   "triggerCount": 0,
-  "updatedAt": "2025-01-21T19:28:15.000Z",
-  "versionId": "dd1061ef-07c4-47cf-afa6-a0a4e2cdab51"
+  "updatedAt": "2025-01-23T14:10:29.000Z",
+  "versionId": "1c792575-031c-4978-90e8-b134cff6033d"
 }
